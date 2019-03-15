@@ -1,9 +1,9 @@
 import React from 'react';
 
-const SSoc = (props) => {
+const PFuncs = (props) => {
   return (
     <div></div>
   )
 }
 
-export default SSoc
+export default PFuncs

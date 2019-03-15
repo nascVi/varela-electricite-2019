@@ -6,4 +6,4 @@ const Sservices = (props) => {
   )
 }
 
-export default Sservices;
+export default Sservices

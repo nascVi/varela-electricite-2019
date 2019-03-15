@@ -6,4 +6,4 @@ const SFoot = (props) => {
   )
 }
 
-export default SFoot;
+export default SFoot

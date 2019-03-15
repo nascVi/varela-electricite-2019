@@ -6,4 +6,4 @@ const SProjet = (props) => {
   )
 }
 
-export default SProjet;
+export default SProjet

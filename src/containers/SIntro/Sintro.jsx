@@ -6,4 +6,4 @@ const Sintro = (props) => {
   )
 }
 
-export default Sintro;
+export default Sintro

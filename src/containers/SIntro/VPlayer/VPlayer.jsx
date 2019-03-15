@@ -1,9 +1,9 @@
 import React from 'react';
 
-const SSoc = (props) => {
+const VPlayer = (props) => {
   return (
     <div></div>
   )
 }
 
-export default SSoc
+export default VPlayer

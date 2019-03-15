@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import segment from 'segment-js'
 
-function BurMenu() {
+function MusetteMenu() {
   const [] = 
   
 
@@ -12,4 +12,4 @@ function BurMenu() {
   )
 } 
 
-export default BurMenu
+export default MusetteMenu

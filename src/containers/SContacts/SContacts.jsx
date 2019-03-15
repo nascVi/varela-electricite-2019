@@ -6,4 +6,4 @@ const SContacts = (props) => {
   )
 }
 
-export default SContacts;
+export default SContacts

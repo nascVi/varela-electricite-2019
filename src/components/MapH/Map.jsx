@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react"
-import L from "leaflet"
+import React, { useEffect, useRef } from "react";
+import L from "leaflet";
 
 const style = {
   width: "100%",
@@ -44,4 +44,4 @@ function Map({ markersData }) {
   return <div id="map" style={style} />;
 }
 
-export default Map
+export default Map;

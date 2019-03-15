@@ -6,4 +6,4 @@ const SGallerie = (props) => {
   )
 }
 
-export default SGallerie;
+export default SGallerie
