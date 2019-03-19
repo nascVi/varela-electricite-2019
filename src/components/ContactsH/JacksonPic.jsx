@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ContactsH = (props) => {
+const JacksonH = (props) => {
   return (
     <div>
     // 
@@ -8,4 +8,4 @@ const ContactsH = (props) => {
   )
 }
 
-export default ContactsH
+export default JacksonH

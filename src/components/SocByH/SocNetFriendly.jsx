@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SocByH = () => {
+const SocNetFriendly = () => {
   return (
     <div>
     // pour le relai du menu nous avons parié?
@@ -9,4 +9,4 @@ const SocByH = () => {
   )
 }
 
-export default SocByH
+export default SocNetFriendly

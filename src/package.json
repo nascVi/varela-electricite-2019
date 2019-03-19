@@ -1,13 +1,14 @@
 {
-  "name": "hooks-react-leaflet-map-with-layer-of-markers",
+  "name": "varela front-end",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "homepage": "https://codesandbox.io/s/pm8pro1olm",
+  "homepage": "https://varela-electricite.fr",
   "main": "index.js",
   "dependencies": {
     "leaflet": "latest",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
-  }
+  },
+  "license": "ISC"
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ProtectH = (props) => {
+const DomoRemote = (props) => {
   return (
     <div></div>
   )
 }
 
-export default ProtectH
+export default DomoRemote
