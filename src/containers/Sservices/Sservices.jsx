@@ -2,7 +2,9 @@ import React from 'react';
 
 const Sservices = (props) => {
   return (
-    <div></div>
+    <div>
+     <h3>Services</h3>
+    </div>
   )
 }
 
