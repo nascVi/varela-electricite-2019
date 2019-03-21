@@ -5,7 +5,7 @@ const router = new Router ({
 	prefix: 'urls'
 });
 
-router.get('/', (ctx, next') => {
+router.get('/', (ctx, next) => {
 	ctx.body = urls;
 	next();
 });

@@ -1,5 +1,5 @@
 import React, {/* useState */} from 'react'
-import FadeInLogo from '../../components/HeroH/FadeInLogo'
+import FadeInLogo from '../../components/HeroH/FadeinLogo'
 
 const Hero = () => {
   
