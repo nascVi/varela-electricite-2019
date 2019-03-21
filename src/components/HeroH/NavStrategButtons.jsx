@@ -1,6 +1,8 @@
 import React from 'react';
 
-const NavStrategButtons = (props) => {
+const NavStrategButtons = () => {
+  /* svg Design des button et annimations onClick, OnMouseover, onMouseleave(dzzit effect)
+  check for pointer work*/
   return (
     <div></div>
   )
