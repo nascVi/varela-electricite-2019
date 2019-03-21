@@ -2,6 +2,8 @@ import React from "react"
 import { render } from "react-dom"
 import SMap from './containers/SMap/SMap'
 import Hero from './containers/SHero/SHero'
+import Sservices from './containers/Sservices/Sservices'
+
 
 function App() {
 
@@ -9,7 +11,8 @@ function App() {
       <div>
        <h1>Refonte Varela Electricite</h1>
        <Hero />
-       <SMap />        
+       <Sservices />
+       <SMap />
       </div>
     );
 }
