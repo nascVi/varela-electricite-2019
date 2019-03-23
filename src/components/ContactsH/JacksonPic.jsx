@@ -1,9 +1,9 @@
 import React from 'react';
 
-const JacksonH = (props) => {
+const JacksonH = () => {
   return (
     <div>
-    // 
+      
     </div>
   )
 }

@@ -4,7 +4,6 @@ import SMap from './containers/SMap/SMap'
 import Hero from './containers/SHero/SHero'
 import Sservices from './containers/Sservices/Sservices'
 
-
 function App() {
 
     return (
