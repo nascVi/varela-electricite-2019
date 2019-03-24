@@ -1,4 +1,4 @@
-// index.js
+// app.js
 const Koa = require('koa');
 const KoaBody = require('koa-body');
 
