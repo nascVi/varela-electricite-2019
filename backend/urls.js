@@ -2,7 +2,7 @@
 const Router = require('koa-router');
 
 const router = new Router ({
-	prefix: 'urls'
+	prefix: '/urls'
 });
 
 router.get('/', (ctx, next) => {
@@ -18,4 +18,4 @@ let urls = [
 	{id:104, type:'Logo', name:'Hero Logo'}
 ];
 
-module.exports =router;
+module.exports = router;

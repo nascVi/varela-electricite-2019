@@ -12,7 +12,8 @@
   "dependencies": {
     "koa": "^2.7.0",
     "koa-body": "^4.0.8",
-    "koa-router": "^7.4.0"
+    "koa-router": "^7.4.0",
+    "nodemon": "^1.18.10"
   },
   "license": "ISC"
 }
