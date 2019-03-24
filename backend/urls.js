@@ -5,9 +5,22 @@ const router = new Router ({
 	prefix: '/urls'
 });
 
-router.get('/', (ctx, next) => {
-	ctx.body = urls;
-	next();
+router.get('/:id', (ctx, next) => {
+  let getCurrentUrl = urls.filter(function(url) {
+	if (url.id == ctx.params.id) {
+		return true;
+	}
+	
+  });
+
+  if (getCurrentUrl.length) {
+  	ctx.body = getCurrentUrl[0];
+  } else {
+  	ctx.response.status = 404;
+  	ctx.body = 'Media Not Reached';
+  }
+  next();
+
 });
 
 // moke urls refs
