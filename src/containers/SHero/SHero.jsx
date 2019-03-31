@@ -1,7 +1,7 @@
 import React, {/* useState */} from 'react'
 import FadeInLogo from '../../components/HeroH/FadeinLogo'
-import NavStrategButtons from '../../components/HeroH/NavStrategButtons'
-import hBackground from '../../components/SVGs/shero/hBackground.svg'
+/*import NavStrategButtons from '../../components/HeroH/NavStrategButtons'
+import hBackground from '../../components/SVGs/shero/hBackground.svg'*/
 
 const Hero = () => {
   
@@ -13,8 +13,8 @@ const Hero = () => {
      <FadeInLogo />
      {/* Following section is using the onLoad 
 method, displaying the function ready strategButtons
-     the adrian way*/}
-     <NavStrategButtons />
+     the adrian way
+     <NavStrategButtons />*/}
     </div>
   )
 }

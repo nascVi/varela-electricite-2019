@@ -1,5 +1,5 @@
-import React from "react"
-import { render } from "react-dom"
+import React from 'react'
+import { render } from 'react-dom'
 import SMap from './containers/SMap/SMap'
 import Hero from './containers/SHero/SHero'
 import Sservices from './containers/Sservices/Sservices'
