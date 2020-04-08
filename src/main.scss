@@ -1,0 +1,85 @@
+$main-back: rgb(16, 16, 16);
+$main-font-col: rgb(246, 246, 246);
+$third-header-size: 27px;
+$second-header-size: 34px;
+$main-nav-col: rgb(46, 46, 46);
+$bright-blue: rgb(32, 141, 167);
+$caption-size: 49px;
+$header-back: rgb(216, 216, 216);
+$main-pic: $header-back url("/img/back2.jpg") 0 bottom no-repeat;
+$footer-font-col: hsl(0, 0%, 35%);
+$footer-caption-col: hsl(0, 0%, 19%);
+$arial: Arial, Helvetica, sans-serif;
+$oswald: "Oswald", $arial;
+$button-col: hsl(0, 0%, 56%);
+
+html,
+body,
+#root {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family: $oswald;
+  color: $main-font-col;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: $caption-size;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: $second-header-size;
+}
+
+h3 {
+  font-size: $third-header-size;
+}
+
+#root {
+  background: $main-back;
+}
+
+.home {
+  &__header {
+    height: 100vh;
+    background: $main-pic;
+  }
+  &__caption {
+    font-size: $caption-size;
+    color: rgba(240, 242, 242, 0.8);
+    margin-top: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  &__scroll-down {
+    width: 25px;
+    height: 70px;
+    background: url("/img/scroll.png") no-repeat;
+    margin-top: 65px;
+  }
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  background: url("/img/logo-black.png") no-repeat;
+}

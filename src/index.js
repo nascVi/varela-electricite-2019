@@ -1,19 +1,20 @@
 import React from 'react'
-import { render } from 'react-dom'
-import SMap from './containers/SMap/SMap'
-import Hero from './containers/SHero/SHero'
-import Sservices from './containers/Sservices/Sservices'
+import ReactDOM from 'react-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
+import './main.scss'
 
-function App() {
+import Header from './components/header-footer/Header'
+import Home from './home/Home'
+import Footer from './components/header-footer/Footer'
 
-    return (
-      <div>
-       <h1>Refonte Varela Electricite</h1>
-       <Hero />
-       <Sservices />
-       <SMap />
-      </div>
-    );
-}
+const Routes = () => (
+    <BrowserRouter>
+        <div>
+            <Route path="/" component={Header} />
+            <Route exact path="/" component={Home} />
+            <Footer />
+        </div>
+    </BrowserRouter>
+)
 
-render(<App />, document.getElementById("root"))
+ReactDOM.render(<Routes />, document.getElementById('root'))
