@@ -3,7 +3,8 @@ $main-font-col: rgb(246, 246, 246);
 $third-header-size: 27px;
 $second-header-size: 34px;
 $main-nav-col: rgb(46, 46, 46);
-$bright-blue: rgb(32, 141, 167);
+$link-hov-col: rgb(169, 169, 169);
+$varela-blue: rgb(32, 141, 167);
 $caption-size: 49px;
 $header-back: rgb(216, 216, 216);
 $main-pic: $header-back url("/img/back2.jpg") 0 bottom no-repeat;
@@ -12,6 +13,24 @@ $footer-caption-col: hsl(0, 0%, 19%);
 $arial: Arial, Helvetica, sans-serif;
 $oswald: "Oswald", $arial;
 $button-col: hsl(0, 0%, 56%);
+
+@keyframes hovering {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(3px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 html,
 body,
@@ -49,6 +68,28 @@ h3 {
   font-size: $third-header-size;
 }
 
+a {
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: transparent;
+    position: absolute;
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease;
+  }
+
+  &::hover {
+    color: $link-hov-col;
+  }
+}
+
 #root {
   background: $main-back;
 }
@@ -71,10 +112,11 @@ h3 {
   }
 
   &__scroll-down {
-    width: 25px;
-    height: 70px;
+    width: 50px;
+    height: 120px;
     background: url("/img/scroll.png") no-repeat;
     margin-top: 65px;
+    animation: hovering 1s ease-in-out infinite;
   }
 }
 
@@ -82,4 +124,40 @@ h3 {
   width: 150px;
   height: 150px;
   background: url("/img/logo-black.png") no-repeat;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1364px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  padding: 60px 0;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.main-nav {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+  flex-grow: 1;
+  font-size: $third-header-size;
+
+  &__item {
+    text-transform: uppercase;
+    display: inline-block;
+    color: $main-nav-col;
+
+    &.active {
+      color: $link-hov-col;
+
+      &::after {
+        background: $varela-blue;
+      }
+    }
+  }
 }
