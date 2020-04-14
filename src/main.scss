@@ -7,7 +7,8 @@ $link-hov-col: rgb(169, 169, 169);
 $varela-blue: rgb(32, 141, 167);
 $caption-size: 49px;
 $header-back: rgb(216, 216, 216);
-$main-pic: $header-back url("/img/back2.jpg") 0 bottom no-repeat;
+$main-pic: $header-back url("/video/Pexels Videos 2675511.mp4") 0 bottom
+  no-repeat;
 $footer-font-col: hsl(0, 0%, 35%);
 $footer-caption-col: hsl(0, 0%, 19%);
 $arial: Arial, Helvetica, sans-serif;
@@ -45,6 +46,10 @@ body,
 html,
 body {
   height: 100%;
+}
+
+.backgroundVid {
+  z-index: -99;
 }
 
 h1,
@@ -85,7 +90,7 @@ a {
     transition: all 0.3s ease;
   }
 
-  &::hover {
+  &:hover {
     color: $link-hov-col;
   }
 }
@@ -98,12 +103,14 @@ a {
   &__header {
     height: 100vh;
     background: $main-pic;
+    z-index: 1;
   }
   &__caption {
     font-size: $caption-size;
     color: rgba(240, 242, 242, 0.8);
     margin-top: 50px;
     transition: all 0.3s ease;
+    z-index: 1;
     cursor: pointer;
 
     &:hover {
@@ -117,6 +124,8 @@ a {
     background: url("/img/scroll.png") no-repeat;
     margin-top: 65px;
     animation: hovering 1s ease-in-out infinite;
+    color: white;
+    cursor: pointer;
   }
 }
 
@@ -124,6 +133,7 @@ a {
   width: 150px;
   height: 150px;
   background: url("/img/logo-black.png") no-repeat;
+  z-index: 1;
 }
 
 .wrapper {
