@@ -6,7 +6,7 @@ $main-nav-col: rgb(46, 46, 46);
 $varela-grey: rgb(169, 169, 169);
 $varela-blue: rgb(32, 141, 167);
 $link-hover-col: rgb(144, 242, 252);
-$caption-size: 49px;
+$caption-size: 40px;
 $header-back: rgb(216, 216, 216);
 $main-pic: $header-back url("/video/Pexels Videos 2675511.mp4") 0 bottom
   no-repeat;
@@ -15,6 +15,10 @@ $footer-caption-col: hsl(0, 0%, 19%);
 $arial: Arial, Helvetica, sans-serif;
 $oswald: "Oswald", $arial;
 $button-col: hsl(0, 0%, 56%);
+
+$large: "only screen and (max-width: 1370px)";
+$medium: "only screen and (max-width: 720px)";
+$small: "only screen and (max-width: 430px)";
 
 @keyframes hovering {
   0% {
@@ -64,6 +68,10 @@ h3 {
 h1 {
   font-size: $caption-size;
   margin-bottom: 20px;
+
+  @media #{$small} {
+    font-size: $second-header-size;
+  }
 }
 
 h2 {
@@ -105,8 +113,14 @@ a {
   &__header {
     height: 100vh;
     background: $main-pic;
+    background-color: $main-back;
     z-index: 1;
+
+    @media #{$small} {
+      background-color: 0 0;
+    }
   }
+
   &__caption {
     font-size: $caption-size;
     color: rgba(240, 242, 242, 0.8);
@@ -114,6 +128,10 @@ a {
     transition: all 0.3s ease;
     z-index: 1;
     cursor: pointer;
+
+    @media #{$small} {
+      font-size: $second-header-size;
+    }
 
     &:hover {
       color: rgb(255, 255, 255);
@@ -132,7 +150,7 @@ a {
 }
 
 .logo {
-  width: 300px;
+  width: 280px;
   height: 150px;
   background: url("/img/HeroTitle.png") no-repeat;
   z-index: 1;
@@ -148,6 +166,10 @@ a {
   padding: 60px 0;
   box-sizing: border-box;
   flex-wrap: wrap;
+
+  @media #{$large} {
+    padding: 60px 20px;
+  }
 }
 
 .main-nav {
@@ -158,6 +180,12 @@ a {
   margin-top: 50px;
   flex-grow: 1;
   font-size: $third-header-size;
+
+  @media #{$medium} {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
   &__item {
     text-transform: uppercase;
