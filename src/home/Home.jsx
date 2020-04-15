@@ -11,8 +11,8 @@ const Home = () => {
                     <div className="wrapper">
                         <div className="logo"></div>
                         <Nav context="home" />
-                        <div className="home__scroll-down"></div>
                         <div className="home__caption">VUE SUR NOS REALISATIONS</div>
+                        <div className="home__scroll-down"></div>
                     </div>
 
                 </div>

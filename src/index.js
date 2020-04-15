@@ -10,7 +10,7 @@ import Footer from './components/header-footer/Footer'
 const Routes = () => (
     <BrowserRouter>
         <div>
-            <Route path="/" component={Header} />
+            <Route path="/" render={props => (props.location.pathname !== '/') && <Header />} />
             <Route exact path="/" component={Home} />
             <Footer />
         </div>
