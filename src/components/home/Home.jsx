@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from '../ui/Nav'
-import BackgroundVideo from '../components/BackgroundVideo/BackgroundVideo'
+import BackgroundVideo from '../BackgroundVideo/BackgroundVideo'
 
 const Home = () => {
     return (

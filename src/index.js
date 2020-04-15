@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import './main.scss'
 
 import Header from './components/header-footer/Header'
-import Home from './home/Home'
+import Home from './components/home/Home'
 import Footer from './components/header-footer/Footer'
 
 const Routes = () => (
