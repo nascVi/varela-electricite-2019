@@ -14,7 +14,6 @@ const Home = () => {
                         <div className="home__caption">NOS REALISATIONS</div>
                         <div className="home__scroll-down"></div>
                     </div>
-
                 </div>
             </div>
         </>

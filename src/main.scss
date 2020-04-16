@@ -216,6 +216,7 @@ a {
   background: $varela-grey;
   padding: 45px 0 40px;
   box-sizing: border-box;
+  background-position: top;
 
   @media #{$medium} {
     background: $header-back;
@@ -239,4 +240,241 @@ a {
     font-family: $arial;
     color: $footer-font-col;
   }
+
+  &__contact {
+    width: 40%;
+    min-width: 340px;
+
+    @media #{$large} {
+      margin-bottom: 40px;
+      order: 1;
+    }
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .pro-ref-logo {
+    width: 279px;
+    height: 65px;
+    background: url("/img/logo_enedis_header.png") center center no-repeat;
+    margin-top: 45px;
+    margin-bottom: 42px;
+  }
+
+  h3 {
+    color: $footer-caption-col;
+    margin-bottom: 18px;
+    line-height: 24px;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: colulmn;
+
+  @media #{$medium} {
+    align-items: center;
+  }
+
+  input[type="text"],
+  select {
+    width: 400px;
+    margin-bottom: 15px;
+
+    @media #{$large} {
+      width: 100%;
+    }
+  }
+
+  input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    margin-left: 0;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 22px;
+      height: 22px;
+      background: $main-font-col;
+      border: 1px solid;
+    }
+  }
+
+  &__contact__purpose {
+    display: flex;
+    font-size: 12px;
+    color: $footer-font-col;
+    font-family: $arial;
+    width: 400px;
+    line-height: 17px;
+    margin-bottom: 30px;
+
+    @media #{$large} {
+      width: 100%;
+    }
+  }
+}
+
+.prim-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $button-col;
+  border: none;
+  font-family: $oswald;
+  text-transform: uppercase;
+  font-size: 21px;
+  width: 195px;
+  height: 45px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: lighten($color: $button-col, $amount: 4);
+  }
+}
+
+.social-icon {
+  width: 33px;
+  height: 33px;
+  margin-right: 20px;
+}
+
+.socials {
+  display: flex;
+
+  &__facebook {
+    @extend .social-icon;
+    background: url("/img/facebook.svg") center no-repeat;
+  }
+  &__instagram {
+    @extend .social-icon;
+    background: url("/img/instagram.svg") center no-repeat;
+  }
+  &__twitter {
+    @extend .social-icon;
+    background: url("/img/twitter/svg") center no-repeat;
+  }
+  &__youtube {
+    @extend .social-icon;
+    width: 47px;
+    background: url("/img/youtube.svg") center no-repeat;
+  }
+
+  &--realisation {
+    > div {
+      filter: brightness(5);
+    }
+  }
+}
+
+.realisation {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+
+  @media #{$medium} {
+    justify-content: center;
+  }
+
+  &__caption {
+    flex-grow: 1;
+    flex-basis: 100%;
+    display: flex;
+
+    h1 {
+      width: 400px;
+      white-space: nowrap;
+
+      @media #{$medium} {
+        white-space: normal;
+        width: auto;
+        font-size: $second-header-size;
+      }
+    }
+  }
+
+  &__year {
+    font-size: $caption-size;
+    opacity: 0.8;
+    width: 100px;
+    text-align: right;
+
+    @media #{$medium} {
+      font-size: $second-header-size;
+    }
+  }
+
+  &__board {
+    width: 100%;
+    max-width: 500px;
+    background-position: center;
+    box-sizing: border-box;
+    border: 10px solid $main-font-col;
+    margin-right: 50px;
+    align-self: flex-start;
+
+    @media #{$medium} {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__budjet {
+    display: flex;
+    font-size: 27px;
+    margin-bottom: 20px;
+  }
+
+  &__budjet-item {
+    border-right: 1px solid $main-font-col;
+    padding: 0 20px;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    &:last-of-type {
+      padding-right: 0;
+      border-right: none;
+    }
+
+    span {
+      opacity: 0.8;
+    }
+
+    &__favoris {
+      font-size: 27px;
+    }
+
+    &__selection {
+      background: $main-font-col;
+      max-height: 260px;
+      overflow: auto;
+    }
+
+    &__detail {
+      font-size: 13px;
+      border-bottom: 1px solid $varela-grey;
+      font-family: $arial;
+      color: $main-back;
+      list-style-type: none;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    i {
+      display: inline-block;
+      background: url("/img/play.svg") center bottom no-repeat;
+      width: 13px;
+      height: 13px;
+      margin-right: 15px;
+    }
+  }
+
+  // PLAYING THE PROJECT SHORT MOVIE
 }
