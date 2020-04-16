@@ -157,13 +157,6 @@ a {
   }
 }
 
-.logo {
-  width: 280px;
-  height: 150px;
-  background: url("/img/HeroTitle.png") no-repeat;
-  z-index: 1;
-}
-
 .wrapper {
   margin: 0 auto;
   max-width: 1364px;
@@ -178,6 +171,38 @@ a {
   @media #{$large} {
     padding: 60px 20px;
   }
+
+  &--header,
+  &--footer {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+
+    @media #{$large} {
+      padding: 0 20px;
+    }
+  }
+
+  &--footer {
+    @media #{$large} {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.logo {
+  width: 280px;
+  height: 150px;
+  background: url("/img/HeroTitle.png") no-repeat;
+  z-index: 1;
+}
+
+.flogo {
+  width: 130px;
+  height: 130px;
+  background: url("/img/logo-black.png") repeat no-repeat;
+  z-index: 1;
 }
 
 .main-nav {
@@ -214,7 +239,7 @@ a {
   width: 100%;
   min-height: 356px;
   background: $varela-grey;
-  padding: 45px 0 40px;
+  padding: 200px 0 40px;
   box-sizing: border-box;
   background-position: top;
 
@@ -248,6 +273,15 @@ a {
     @media #{$large} {
       margin-bottom: 40px;
       order: 1;
+    }
+  }
+
+  &__social {
+    width: 22%;
+    min-width: 230px;
+
+    @media #{$large} {
+      order: 3;
     }
   }
 
@@ -300,11 +334,39 @@ a {
       width: 22px;
       height: 22px;
       background: $main-font-col;
-      border: 1px solid;
+      border: 1px solid $footer-font-col;
     }
   }
 
-  &__contact__purpose {
+  &__purposes__title {
+    display: flex;
+    font-size: 12px;
+    color: $footer-font-col;
+    font-family: $arial;
+    width: 400px;
+    line-height: 17px;
+    margin-bottom: 30px;
+
+    @media #{$large} {
+      width: 100%;
+    }
+  }
+
+  &__devis {
+    display: flex;
+    font-size: 12px;
+    color: $footer-font-col;
+    font-family: $arial;
+    width: 400px;
+    line-height: 17px;
+    margin-bottom: 30px;
+
+    @media #{$large} {
+      width: 100%;
+    }
+  }
+
+  &__entrepreneur {
     display: flex;
     font-size: 12px;
     color: $footer-font-col;
@@ -357,12 +419,15 @@ a {
   }
   &__twitter {
     @extend .social-icon;
-    background: url("/img/twitter/svg") center no-repeat;
+    background: url("/img/twitter.svg") center no-repeat;
   }
   &__youtube {
     @extend .social-icon;
-    width: 47px;
     background: url("/img/youtube.svg") center no-repeat;
+
+    // &::hover {
+    //   background: url("");
+    // }
   }
 
   &--realisation {
