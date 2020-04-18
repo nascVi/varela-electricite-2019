@@ -1,11 +1,13 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
+import Socials from '../components/ui/Socials'
 
-const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, picFolio }) {
+
+const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, picFolio }) => {
 
     const renderPics = () => {
-        return picFolio.map((projet, i) => {
-            return <li key={i} className="realistion__pic"> <i></i> <span>{track}</span></li>
+        return picFolio.map((pic, i) => {
+            return <li key={i} className="realistion__pic"> <i></i> <span>{pic}</span></li>
         })
     }
 
@@ -43,7 +45,7 @@ const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, picFolio }) 
                 </div>
             </div>
         </Fade>
-    )
-}
+    );
+};
 
 export default Realisation
