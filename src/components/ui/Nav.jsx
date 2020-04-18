@@ -7,9 +7,9 @@ const Nav = props => {
     return (
         <div className={`main-nav main-nav--${context}`}>
             <Link className="main-nav__item" exact to="/varela">Varela</Link>
-            <Link className="main-nav__item" exact to="/actif">Actif</Link>
-            <Link className="main-nav__item" exact to="/gallery">Projet</Link>
-            <Link className="main-nav__item" exact to="/contact">Contact</Link>
+            <Link className="main-nav__item" exact to="/activité">Activité</Link>
+            <Link className="main-nav__item" exact to="/folio">Folio</Link>
+            <Link className="main-nav__item" exact to="/info">Info</Link>
         </div>
     )
 }

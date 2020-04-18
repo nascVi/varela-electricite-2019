@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../ui/Button';
 
-const Contact = () => {
+const Info = () => {
     return (
         <div className="contact">
             <input type='text' name="" id="" placeholder="Your email" />
@@ -31,4 +31,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Info

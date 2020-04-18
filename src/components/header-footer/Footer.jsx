@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact from './Contact'
+import Info from './Info'
 import Socials from '../ui/Socials'
 
 const Footer = () => {
@@ -15,7 +15,7 @@ const Footer = () => {
                 </div>
                 <div className="footer__contact">
                     <h3>NOUS RENCONTRER</h3>
-                    <Contact />
+                    <Info />
                 </div>
                 <div className="footer__social">
                     <h3>RESEAUX SOCIAUX</h3>

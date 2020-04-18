@@ -1,11 +1,34 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import Nav from '../ui/Nav'
+import SideBar from './SideBar'
 
-const Header = () => {
-    return (
-        <div>
-            Header
-        </div>
-    )
+class Header extends Component {
+
+    state = {
+        showSideBar: false
+    }
+
+    showSideBar = () => {
+        const { showSideBar } = this.state;
+        this.setState({ showSideBar: !showSideBar });
+    }
+
+    render() {
+        const { showSideBar } = this.state;
+        return (
+            <header className="header">
+                <div className="wrapper wrapper--header">
+                    <Link to="/" className="header__logo-link">
+                        <div className="logo"></div>
+                    </Link>
+                    <Nav context="header" />
+                    <div className="header__menu" onClick={this.showSideBar}></div>
+                    <SideBar showSideBar={showSideBar} />
+                </div>
+            </header>
+        )
+    }
 }
 
 export default Header

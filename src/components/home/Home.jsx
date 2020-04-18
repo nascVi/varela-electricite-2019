@@ -24,10 +24,13 @@ const Home = () => {
                         <div className="logo"></div>
                         <Nav context="home" />
                         <div className="home__caption" onClick={() => scrollToLanding('landing')}>NOS REALISATIONS</div>
-                        <div className="home__scroll-down"></div>
+                        <h6>Ou tapotez/cliquez la souris pour la fiche contacte imédiate</h6>
+                        <div className="home__scroll-down" onClick={() => scrollToLanding('footer')} ></div>
                     </div>
                 </div>
-                <Landing />
+                <Element name="landing">
+                    <Landing />
+                </Element>
             </div>
         </>
     )
