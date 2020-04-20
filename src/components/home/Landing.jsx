@@ -11,7 +11,7 @@ const Landing = () => {
                 <Realisation {...notYetRea} />
                 <div className="landing__video-container">
                     <h1>Produit souvent recommandé</h1>
-                    <img src="/img/Player.jpg" alt="vidéo produit de gamme" className="landing__video" />
+                    <img src="/img/linky-vieux-compteur.jpg" alt="vidéo produit de gamme" className="landing__video" />
                 </div>
                 <Fade></Fade>
             </div>

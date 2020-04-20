@@ -1,6 +1,6 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
-import Socials from '../components/ui/Socials'
+// import Socials from '../components/ui/Socials'
 
 
 const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, picFolio }) => {
@@ -23,9 +23,9 @@ const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, picFolio }) 
                 <div className="realisation__info">
                     {favoris ? <div className="realisation__en-favoris">Favoris</div> : null}
                     <div className="realisation__budjet">
-                        <div className="realisation__budjet-item"><span>Installation Häger</span> ${budjet.häger}</div>
-                        <div className="realisation__budjet-item"><span>Linky</span> ${budjet.enedis}</div>
-                        <div className="realisation__budjet-item"><span>Domotiquie Legrand</span> ${budjet.legrand}</div>
+                        <div className="realisation__budjet-item"><span>Installation Häger</span> €{budjet.häger}</div>
+                        <div className="realisation__budjet-item"><span>Linky</span> €{budjet.enedis}</div>
+                        <div className="realisation__budjet-item"><span>Domotiquie Legrand</span> €{budjet.legrand}</div>
                     </div>
                     <div className="realisation__selection">
                         {renderPics()}
@@ -41,7 +41,6 @@ const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, picFolio }) 
                             <div className="realisation__next"></div>
                         </div>
                     </div>
-                    <Socials context="album" />
                 </div>
             </div>
         </Fade>

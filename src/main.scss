@@ -127,7 +127,7 @@ a {
   &__caption {
     font-size: $caption-size;
     color: rgba(240, 242, 242, 0.8);
-    margin-top: 50px;
+    margin-top: 60px;
     transition: all 0.3s ease;
     z-index: 1;
     cursor: pointer;
@@ -146,7 +146,7 @@ a {
     width: 50px;
     height: 120px;
     background: url("/img/scroll.png") no-repeat;
-    margin-top: 65px;
+    margin-top: 10px;
     animation: hovering 1s ease-in-out infinite;
     color: white;
     cursor: pointer;
@@ -236,10 +236,11 @@ a {
 }
 
 .footer {
+  display: inline-flexbox;
   width: 100%;
   min-height: 356px;
-  background: $varela-grey;
-  padding: 200px 0 40px;
+  background: $header-back;
+  padding: 100px 0 40px;
   box-sizing: border-box;
   background-position: top;
 
@@ -304,7 +305,8 @@ a {
   }
 }
 
-.contact {
+.contactForm {
+  max-width: 600px;
   display: flex;
   flex-direction: colulmn;
 
@@ -547,4 +549,67 @@ a {
   }
 
   // PLAYING THE PROJECT SHORT MOVIE
+}
+
+.landing {
+  &__video-container {
+    align-self: flex-start;
+  }
+
+  &__video {
+    width: 100%;
+  }
+}
+
+.varela {
+  max-width: 1088;
+
+  &__year {
+    text-align: center;
+    font-size: $caption-size;
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+    &::before, &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 50px;
+      width: 1px;
+      left: 50%;
+      border-left: 1px dotted $main-font-col;
+    }
+
+    &::before{
+      top: -70px;
+    }
+    &::after {
+      bottom: -70px;
+    }
+  }
+
+  &__item:first-of-type {
+    .varela__year {
+       margin-top: 0;
+       &::before {
+         display: none;
+       }
+    }
+  }
+
+  &__img {
+    margin-bottom: 20px;
+      width: 100%;
+  }
+
+  &__title {
+    font-size: $second-header-size;
+    margin-bottom: 13px;
+  }
+
+  &__text {
+    font-family: $arial;
+    font-size: 17px;
+  }
 }

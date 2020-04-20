@@ -3,7 +3,7 @@ import Nav from '../ui/Nav'
 import BackgroundVideo from '../BackgroundVideo/BackgroundVideo'
 import Landing from './Landing'
 import { Element, scroller } from 'react-scroll'
-
+import { Fade } from 'react-reveal'
 
 const Home = () => {
 
@@ -16,8 +16,8 @@ const Home = () => {
     }
 
     return (
-        <>
-            <div className="home">
+        <div className="home">
+            <Fade>
                 <div className="home__header">
                     <BackgroundVideo className="backgroundVid" />
                     <div className="wrapper">
@@ -31,8 +31,8 @@ const Home = () => {
                 <Element name="landing">
                     <Landing />
                 </Element>
-            </div>
-        </>
+            </Fade>
+        </div>
     )
 }
 

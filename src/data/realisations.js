@@ -1,7 +1,7 @@
 export const realisations = [
     {
         id: 1,
-        title: 'NEW ALBUM \\ SILENCE',
+        title: 'PROJET EN COURS',
         year: null,
         lifletUrl: '/img/cover.jpg',
         favoris: true,

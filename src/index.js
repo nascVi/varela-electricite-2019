@@ -7,11 +7,14 @@ import Header from './components/header-footer/Header'
 import Home from './components/home/Home'
 import Footer from './components/header-footer/Footer'
 
+import Varela from './components/Varela'
+
 const Routes = () => (
     <BrowserRouter>
         <div>
             <Route path="/" render={props => (props.location.pathname !== '/') && <Header />} />
             <Route exact path="/" component={Home} />
+            <Route exact path="/varela" component={Varela} />
             <Footer />
         </div>
     </BrowserRouter>
