@@ -1,6 +1,5 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
-// import Socials from '../components/ui/Socials'
 
 
 const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, picFolio }) => {

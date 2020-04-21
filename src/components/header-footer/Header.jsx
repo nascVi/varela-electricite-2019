@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Nav from '../ui/Nav'
 import SideBar from './SideBar'
+import {Fade} from 'react-reveal'
 
 class Header extends Component {
 
@@ -17,6 +18,7 @@ class Header extends Component {
     render() {
         const { showSideBar } = this.state;
         return (
+        <Fade top delay={700}>
             <header className="header">
                 <div className="wrapper wrapper--header">
                     <Link to="/" className="header__logo-link">
@@ -27,6 +29,7 @@ class Header extends Component {
                     <SideBar showSideBar={showSideBar} />
                 </div>
             </header>
+        </Fade>
         )
     }
 }

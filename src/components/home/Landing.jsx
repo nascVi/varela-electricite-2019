@@ -9,11 +9,12 @@ const Landing = () => {
         <div className="landing">
             <div className="wrapper">
                 <Realisation {...notYetRea} />
-                <div className="landing__video-container">
-                    <h1>Produit souvent recommandé</h1>
-                    <img src="/img/linky-vieux-compteur.jpg" alt="vidéo produit de gamme" className="landing__video" />
-                </div>
-                <Fade></Fade>
+                <Fade bottom duration={800}>
+                    <div className="landing__video-container">
+                        <h1>Produit souvent recommandé</h1>
+                        <img className="landing__video" src="/img/linky-vieux-compteur.jpg" alt="vidéo produit de gamme" />
+                    </div>
+                </Fade>
             </div>
         </div>
     )

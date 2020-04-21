@@ -5,7 +5,7 @@ import { realisations } from '../data/realisations'
 const Activite = () => {
     return (
         <div className="wrapper">
-            {realisations.map(realisation => <Realisation key={realisations.id} {...realisation} />)}
+            {realisations.map(realisation => <Realisation key={realisation.id} {...realisation} />)}
         </div>
     )
 }
