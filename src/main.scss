@@ -614,6 +614,153 @@ a {
   }
 }
 
-.tour {
+.folio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item {
+   display: flex;
+   flex-basis: calc(33,3% - 30px);
+   margin-bottom: 60px;
+   border-right: 1px dotted #fff;
+   box-sizing: border-box;
+   padding: 20px 30px 20px 0;
+   
+   @media #{$small} {
+     border: none;
+   }
+
+   &:nth-of-type {
+     border-right: 100px;
+   }
+  }
+
+  &__day {
+   font-size: 95px;
+   line-height: 100px;    
+  }
   
+  &__month {
+    font-size: 23px;
+    text-transform: uppercase;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  &__location {
+    flex-grow: 1;
+    font-size: 20px;
+  }
+    
+}
+
+.info {
+  width: 100%;
+
+  h2 {
+    margin-bottom: 28px;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__item {
+    margin-bottom: 60px;
+
+    &--consulted {
+      opacity: .6;
+
+      .prim-button {
+        background: #c11111;
+      }
+
+      .info__details {
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__name {
+    font-size: $third-header-size;
+    text-transform: uppercase;
+    opacity: .8;
+  }
+
+  &__price {
+    font-size: $third-header-size;
+    margin-bottom: 18px;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__size-error {
+    position: absolute;
+    top: -50px;
+    background: $main-font-col;
+    color: $main-back;
+    font-family: $arial;
+    padding: 10px 20px;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      border-style: solid;
+      border-width: 8px;
+      border-color: $main-font-col transparent transparent transparent;
+      bottom: -16px;
+      left: 45%;
+    }
+  }
+
+  &__img {
+    max-width: 367px;
+    width: 100%;
+  }
+}
+
+.sizes, .amount {
+  font-family: $arial;
+  margin-bottom: 30px;
+
+  span {
+    display: inline-block;
+    border: 1px solid $main-font-col;
+    padding: 5px;
+    min-width: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  &__change {
+    cursor: pointer;
+  }
+}
+
+.sizes span {
+  cursor: pointer;
+
+  &.selected{
+    background: $main-font-col;
+    color: $main-back;
+  }
 }

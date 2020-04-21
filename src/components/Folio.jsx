@@ -24,7 +24,7 @@ const Folio = () => {
                                     <div className="folio__location">
                                         {location}
                                     </div>
-                                    <Button text="Tour du propriétaire"/>
+                                    <Button text="CONSULTER"/>
                                 </div>
                             </div>
                         </Flip>
