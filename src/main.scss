@@ -6,20 +6,19 @@ $main-nav-col: rgb(46, 46, 46);
 $varela-grey: rgb(169, 169, 169);
 $varela-blue: rgb(32, 141, 167);
 $link-hover-col: rgb(144, 242, 252);
-$caption-size: 40px;
+$caption-size: 45px;
 $header-back: rgb(216, 216, 216);
-$main-pic: $header-back url("/video/Pexels Videos 2675511.mp4") 0 bottom
-  no-repeat;
+$main-pic: $header-back url("/video/Pexels Videos 2675511.mp4") 0 bottom no-repeat;
 $footer-font-col: hsl(0, 0%, 35%);
 $footer-caption-col: hsl(0, 0%, 19%);
 $arial: Arial, Helvetica, sans-serif;
-$oswald: "Oswald", $arial;
+$oswald: "Oswald", Arial, Helvetica, sans-serif;
 $button-col: hsl(0, 0%, 56%);
 
 // BREAKPOINTS
 
 $large: "only screen and (max-width: 1370px)";
-$medium: "only screen and (max-width: 720px)";
+$medium: "only screen and (max-width: 768px)";
 $small: "only screen and (max-width: 430px)";
 
 @keyframes hovering {
@@ -47,21 +46,45 @@ body,
   margin: 0;
   border: none;
   font-family: $oswald;
-  color: $main-font-col;
+  color: $varela-blue;
 }
 
-html,
-body {
+a {
+  color: $main-font-col !important;
+  text-decoration: none;
+  transition: all .2s ease;
+  display: inline-block;
+  position: relative;
+
+  &::after {
+      content: '';
+      background: transparent;
+      position: absolute;
+      height: 3px;
+      bottom: -3px;
+      left: 0;
+      right: 0;
+      transition: all .2s ease;
+  }
+
+  &:hover {
+      color:$varela-blue;
+
+      &::after {
+          background: $varela-grey;
+      }
+  }
+}
+
+html, body {
   height: 100%;
 }
 
 .backgroundVid {
-  z-index: -99;
+  max-height: 80vh;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   margin: 0;
   padding: 0;
   font-weight: normal;
@@ -72,7 +95,7 @@ h1 {
   margin-bottom: 20px;
 
   @media #{$small} {
-    font-size: $second-header-size;
+      font-size: $second-header-size; 
   }
 }
 
@@ -84,47 +107,32 @@ h3 {
   font-size: $third-header-size;
 }
 
-a {
-  text-decoration: none;
-  transition: all 0.2s ease;
-  display: inline-block;
-  position: relative;
-  color: $main-font-col !important;
-
-  &::after {
-    content: "";
-    background: transparent;
-    position: absolute;
-    height: 3px;
-    bottom: -3px;
-    left: 0;
-    right: 0;
-    transition: all 0.3s ease;
-  }
-
-  &:hover {
-    color: $link-hover-col !important;
-    font-weight: lighter;
-  }
+input[type=text], select {    
+  border: none;
+  height: 45px;
+  padding: 0 15px;
+  line-height: 45px;
+  font-size: 15px;
+  box-sizing: border-box;
 }
 
 #root {
   background: $main-back;
+  min-height: 100%;
 }
 
 .home {
   &__header {
     height: 100vh;
-    background: $main-pic;
-    background-color: $main-back;
-    z-index: 1;
+    background: $main-nav-col;
 
     @media #{$small} {
-      background-color: 0 0;
+      background-position: 0 0;
     }
   }
 
   &__caption {
+    height: 8vh;
     font-size: $caption-size;
     color: rgba(240, 242, 242, 0.8);
     margin-top: 60px;
@@ -148,7 +156,6 @@ a {
     background: url("/img/scroll.png") no-repeat;
     margin-top: 10px;
     animation: hovering 1s ease-in-out infinite;
-    color: white;
     cursor: pointer;
 
     &:hover {
@@ -185,6 +192,10 @@ a {
 
   &--footer {
     @media #{$large} {
+      justify-content: center;
+    }
+
+    @media #{$medium} {
       flex-direction: column;
       align-items: center;
     }
@@ -193,7 +204,7 @@ a {
 
 .logo {
   width: 280px;
-  height: 150px;
+  height: 140px;
   background: url("/img/HeroTitle.png") no-repeat;
   z-index: 1;
 }
@@ -220,10 +231,32 @@ a {
     justify-content: flex-start;
   }
 
+  &--header{
+    font-size: 21px;
+    margin-top: 26px;
+    justify-content: flex-start;
+
+    @media#{$medium} {
+      display: none;
+    }
+
+    >a {
+      margin-right: 85px;
+    }
+  }
+
+  &--sidebar {
+    width: 100%;
+  }
+
   &__item {
     text-transform: uppercase;
     display: inline-block;
     color: $main-nav-col;
+
+    @media#{$medium} {
+      margin: 0 0 20px 0;
+    }
 
     &.active {
       color: $varela-blue;
@@ -236,7 +269,6 @@ a {
 }
 
 .footer {
-  display: inline-flexbox;
   width: 100%;
   min-height: 356px;
   background: $header-back;
@@ -278,7 +310,7 @@ a {
   }
 
   &__social {
-    width: 22%;
+    width: 20%;
     min-width: 230px;
 
     @media #{$large} {
@@ -306,7 +338,6 @@ a {
 }
 
 .contactForm {
-  max-width: 600px;
   display: flex;
   flex-direction: colulmn;
 
@@ -324,7 +355,7 @@ a {
     }
   }
 
-  input[type="checkbox"] {
+  input[type=checkbox] {
     width: 22px;
     height: 22px;
     margin-right: 10px;
@@ -389,6 +420,7 @@ a {
   align-items: center;
   background: $button-col;
   border: none;
+  color: $main-font-col;
   font-family: $oswald;
   text-transform: uppercase;
   font-size: 21px;
@@ -425,6 +457,7 @@ a {
   }
   &__youtube {
     @extend .social-icon;
+    width: 47px;
     background: url("/img/youtube.svg") center no-repeat;
 
     // &::hover {
@@ -492,7 +525,6 @@ a {
   }
 
   &__budjet {
-    /*pricing*/
     display: flex;
     font-size: 27px;
     margin-bottom: 20px;
@@ -513,17 +545,16 @@ a {
     }
 
     span {
-      opacity: 0.8;
+      opacity: .8;
     }
+  }
 
-    &__en-favoris {
+  &__en-favoris {
       /*pre-order*/
       font-size: 27px;
-    }
+  }
 
     &__selection {
-      /*playlist*/
-
       background: $main-font-col;
       max-height: 260px;
       overflow: auto;
@@ -537,7 +568,6 @@ a {
       list-style-type: none;
       padding: 20px;
       box-sizing: border-box;
-    }
 
     i {
       display: inline-block;
@@ -548,7 +578,89 @@ a {
     }
   }
 
-  // PLAYING THE PROJECT SHORT MOVIE
+  &__carroussel {
+    background: $header-back;
+    margin-bottom: 20px;
+    color: $footer-font-col;
+  }
+
+  &__trackline-container {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  &__trackline {
+    flex-grow: 1;
+    background: $button-col;
+    height: 4px;
+    border-radius: 50%;
+    margin: 10px 10px 0;
+  }
+
+  &__play-buttons {
+    display: flex;
+  }
+
+  &__prev, &__next {
+    width: 21px;
+    height: 13px;
+    margin-right: 15px;
+  }
+
+  &__prev {
+    background: url('/img/prev-track.png');
+  }
+
+  &__next {
+    background: url('/img/next-track.png');
+  }
+}
+
+.header {
+  background: $header-back;
+  height: 83px;
+  position: relative;
+  z-index: 10;
+
+  .logo {
+    margin-top: 15px;
+    width: 138px;
+    background-size: 100%;
+    margin-right: 85px;
+  }
+
+  &__logo-link {
+     @media #{$medium} {
+       flex-grow: 1;
+     }
+     &::after {
+       display: none;
+     }
+  }
+
+  &__menu {
+    width: 23px;
+    height: 23px;
+    background: url('/img/menu.png') no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+
+    @media #{$medium} {
+      display: block;
+    }
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 83px;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  background: $header-back;
+  z-index: 10;
 }
 
 .landing {

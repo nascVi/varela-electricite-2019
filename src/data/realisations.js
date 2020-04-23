@@ -1,7 +1,7 @@
 export const realisations = [
     {
         id: 1,
-        title: 'PROJET EN COURS',
+        title: 'PROJET RÉFÉRENCE',
         year: null,
         lifletUrl: '/img/cover.jpg',
         favoris: true,
