@@ -1,12 +1,13 @@
 $main-back: rgb(16, 16, 16);
 $main-font-col: rgb(246, 246, 246);
+$headerNav-back: rgba(169, 169, 169, 0.1);
 $third-header-size: 27px;
 $second-header-size: 34px;
 $main-nav-col: rgb(46, 46, 46);
 $varela-grey: rgb(169, 169, 169);
 $varela-blue: rgb(32, 141, 167);
 $link-hover-col: rgb(144, 242, 252);
-$caption-size: 45px;
+$caption-size: 34px;
 $header-back: rgb(216, 216, 216);
 $main-pic: $header-back url("/video/Pexels Videos 2675511.mp4") 0 bottom no-repeat;
 $footer-font-col: hsl(0, 0%, 35%);
@@ -133,7 +134,7 @@ input[type=text], select {
 
   &__caption {
     height: 8vh;
-    font-size: $caption-size;
+    font-size: $second-header-size;
     color: rgba(240, 242, 242, 0.8);
     margin-top: 60px;
     transition: all 0.3s ease;
@@ -482,12 +483,13 @@ input[type=text], select {
   }
 
   &__caption {
+    font-size: 20px !important;
     flex-grow: 1;
     flex-basis: 100%;
     display: flex;
 
     h1 {
-      width: 400px;
+      width: 200px;
       white-space: nowrap;
 
       @media #{$medium} {
@@ -617,7 +619,7 @@ input[type=text], select {
 }
 
 .header {
-  background: $header-back;
+  background: $headerNav-back;
   height: 83px;
   position: relative;
   z-index: 10;
@@ -733,7 +735,7 @@ input[type=text], select {
 
   &__item {
    display: flex;
-   flex-basis: calc(33,3% - 30px);
+   flex-basis: calc(33.3% - 30px);
    margin-bottom: 60px;
    border-right: 1px dotted #fff;
    box-sizing: border-box;
