@@ -10,7 +10,7 @@ export const realisations = [
             enedis: 11.99,
             legrand: 23.99
         },
-        picFolio: [
+        piclist: [
             'The Truth Beneath - Silence',
             'The Truth Beneath - Floating',
             'The Truth Beneath - Daydreamer',
@@ -32,7 +32,7 @@ export const realisations = [
             enedis: 11.99,
             legrand: 23.99
         },
-        picFolio: [
+        piclist: [
             'The Truth Beneath - Silence',
             'The Truth Beneath - Floating',
             'The Truth Beneath - Daydreamer',
@@ -50,7 +50,7 @@ export const realisations = [
             enedis: 11.99,
             legrand: 23.99
         },
-        tracklist: [
+        piclist: [
             'The Truth Beneath - Silence',
             'The Truth Beneath - Floating',
             'The Truth Beneath - Daydreamer',

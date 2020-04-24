@@ -1,20 +1,26 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route } from 'react-router-dom'
-import './main.scss'
-
-import Header from './components/header-footer/Header'
 import Home from './components/home/Home'
-import Footer from './components/header-footer/Footer'
-
 import Varela from './components/Varela'
+import './main.scss'
+import Activite from './components/Activite'
+import Folio from './components/Folio'
+// import Info from './components/Info'
+
+import Footer from './components/header-footer/Footer'
+import Header from './components/header-footer/Header'
+
 
 const Routes = () => (
     <BrowserRouter>
         <div>
-            <Route path="/" render={props => (props.location.pathname !== '/') && <Header />} />
+            <Route path="/" render={props => (props.location.pathname !== '/') && <Header/> }/>
             <Route exact path="/" component={Home} />
             <Route exact path="/varela" component={Varela} />
+            <Route exact path="/activité" component={Activite} />
+            <Route exact path="/folio" component={Folio} />
+            {/* <Route exact path="/info" component={Info} /> */}
             <Footer />
         </div>
     </BrowserRouter>

@@ -2,10 +2,10 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 
 
-const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, picFolio }) => {
+const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, piclist }) => {
 
     const renderPics = () => {
-        return picFolio.map((pic, i) => {
+        return piclist.map((pic, i) => {
             return <li key={i} className="realistion__pic"> <i></i> <span>{pic}</span></li>
         })
     }
