@@ -42,25 +42,33 @@ export const boutique = [
         quants: ['1', '2', '3', '4', '5']
     },
     {
-        type: 'kitsDomotique',
+        type: 'kitsDomotiques',
         nom: 'matériel',
         prix: 6.99,
         url: './img/bwt.jpg',
         quants: ['1', '2', '3', '4','5']
     },
     {
-        type: 'kitsDomotique',
+        type: 'kitsDomotiques',
         nom: 'matériel',
         prix: 6.99,
         url: './img/sb.jpg',
         quants: ['1', '2', '3', '4','5']
     },
     {
-        type: 'kitsDomotique',
+        type: 'kitsDomotiques',
         nom: 'matériel',
         prix: 5.99,
         url: './img/kbh.jpg',
-        quants: ['s', 'm']
+        quants: ['1', '2']
+    },
+    {
+        type: 'coffrets',
+        nom: 'matériel',
+        prix: 39.43,
+        url: './img/Coffret-Distributeur.png',
+        quants: ['1', '2']
     },
 ]
+
     
