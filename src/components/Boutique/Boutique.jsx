@@ -17,14 +17,14 @@ const Boutique = () => {
             <div className="boutique">
                 <h1>MATERIEL QUE NOUS RECOMMANDONS</h1>
                 <Fade>
-                    <h3>COMPTAGES ET GESTION</h3>
+                    <h3>COMPTAGES & GESTION</h3>
                     <div className="boutique__range">
                         {renderUnites(compteursBoutique)}
                     </div>
                 </Fade>
                 <Fade>
                     <br />
-                    <h3>APPAREILLAGE MURAL & MICRO MODULES</h3>
+                    <h3>APPAREILLAGE & MODULES</h3>
                     <div className="boutique__range">
                         {renderUnites(cablesBoutique)}
                     </div>
