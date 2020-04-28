@@ -15,16 +15,16 @@ const Boutique = () => {
     return (
         <div className="wrapper">
             <div className="boutique">
-                <h1>MATERIEL RECOMMANDE</h1>
+                <h1>MATERIEL QUE NOUS RECOMMANDONS</h1>
                 <Fade>
-                    <h3>COMPTEURS</h3>
+                    <h3>COMPTAGES ET GESTION</h3>
                     <div className="boutique__range">
                         {renderUnites(compteursBoutique)}
                     </div>
                 </Fade>
                 <Fade>
                     <br />
-                    <h3>CABLES</h3>
+                    <h3>APPAREILLAGE MURAL & MICRO MODULES</h3>
                     <div className="boutique__range">
                         {renderUnites(cablesBoutique)}
                     </div>
@@ -38,7 +38,7 @@ const Boutique = () => {
                 </Fade>
                 <Fade>
                     <br />
-                    <h3>COFFRETS</h3>
+                    <h3>DISTRIBUTION D'ENERGIE</h3>
                     <div className="boutique_range">
                         {renderUnites(coffretsBoutique)}
                     </div>

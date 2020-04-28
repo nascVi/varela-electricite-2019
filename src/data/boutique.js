@@ -65,8 +65,22 @@ export const boutique = [
     {
         type: 'coffrets',
         nom: 'matériel',
+        prix: 271.76,
+        url: './img/EC453.png',
+        quants: ['1', '2']
+    },
+    {
+        type: 'coffrets',
+        nom: 'matériel',
         prix: 39.43,
         url: './img/Coffret-Distributeur.png',
+        quants: ['1', '2']
+    },
+    {
+        type: 'coffrets',
+        nom: 'matériel',
+        prix: 131.11,
+        url: './img/SPN015R.png',
         quants: ['1', '2']
     },
 ]
