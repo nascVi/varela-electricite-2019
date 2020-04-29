@@ -1,8 +1,8 @@
 $main-back: rgb(16, 16, 16);
 $main-font-col: rgb(246, 246, 246);
 $headerNav-back: rgba(169, 169, 169, 0.1);
-$third-header-size: 27px;
-$second-header-size: 34px;
+$third-header-size: 25px;
+$second-header-size: 15px;
 $main-nav-col: rgb(46, 46, 46);
 $varela-grey: rgb(169, 169, 169);
 $varela-blue: rgb(32, 141, 167);
@@ -93,7 +93,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: $caption-size;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   @media #{$small} {
       font-size: $second-header-size; 
@@ -133,16 +133,17 @@ input[type=text], select {
   }
 
   &__caption {
-    height: 8vh;
-    font-size: $second-header-size;
+    margin-bottom: 120px;
+    font-size: $third-header-size;
     color: rgba(240, 242, 242, 0.8);
     margin-top: 60px;
     transition: all 0.3s ease;
-    z-index: 1;
+    z-index: 99;
     cursor: pointer;
 
     @media #{$small} {
       font-size: $second-header-size;
+      margin-top: -20vh;
     }
 
     &:hover {
@@ -151,13 +152,28 @@ input[type=text], select {
     }
   }
 
+  &__caption-hint {
+    text-align: right;
+    font-size: 10px;
+    color: rgba(240, 242, 242, 0.8);
+    // z-index: 99;
+  }
+
   &__scroll-down {
     width: 50px;
-    height: 120px;
+    height: 50px;
     background: url("/img/scroll.png") no-repeat;
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: -120px;
+    padding-bottom: 50px;
     animation: hovering 1s ease-in-out infinite;
     cursor: pointer;
+    z-index: 99;
+
+    @media #{$small} {
+      font-size: $third-header-size;
+      margin-top: -20vh;
+    }
 
     &:hover {
       background: url("/img/scrollHover.png") no-repeat !important;

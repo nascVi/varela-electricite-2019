@@ -23,8 +23,10 @@ const Home = () => {
                     <div className="wrapper">
                         <div className="logo"></div>
                         <Nav context="home" />
-                        <div className="home__caption" onClick={() => scrollToLanding('landing')}>NOS REALISATIONS</div>
-                        <h6>Ou tapotez/cliquez la souris pour la fiche contacte imédiate</h6>
+                        <div className="home__caption" onClick={() => scrollToLanding('landing')}>
+                            JE CONSULTE?
+                        </div>
+                        <h6 className="home__caption-hint">Ou tick-tap/clickerais-je <span className="home__coffee" role="img" aria-label="coffee">☕</span>!?</h6>
                         <div className="home__scroll-down" onClick={() => scrollToLanding('footer')} ></div>
                     </div>
                 </div>

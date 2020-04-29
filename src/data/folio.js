@@ -1,28 +1,28 @@
 export const folio = [
     {
-        day: '03',
-        month: 'june',
-        location: 'BUDWEISER GARDENS LONDON, ON, CANADA'
+        day: '6j',
+        month: 'Avril',
+        location: 'CHAMPS-SUR-MARNE'
     },
     {
-        day: '05',
-        month: 'june',
-        location: 'SCOTIABANK ARENA TORONTO, ON, CANADA'
+        day: '15j',
+        month: 'Avril',
+        location: 'UC PARIS-EST'
     },
     {
-        day: '08',
-        month: 'june',
-        location: 'VAN ANDEL ARENA GRAND RAPIDS, MI, US'
+        day: '40j',
+        month: 'Janvier',
+        location: 'AERODROME LOGNE'
     },
     {
-        day: '09',
-        month: 'june',
-        location: 'KEYBANK CENTER BUFFALO, NY, US'
+        day: '40j',
+        month: 'Décembre 2019',
+        location: 'CTRE COMMERCIAL - COLLEGIEN'
     },
     {
-        day: '11',
-        month: 'june',
-        location: 'BARCLAYS CENTER BROOKLYN, NY, US'
+        day: 'Aj',
+        month: 'Décembre 2019',
+        location: 'SOUS-PREF - TORCY'
     },
     {
         day: '12',

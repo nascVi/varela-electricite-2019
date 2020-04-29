@@ -63,8 +63,8 @@ export const boutique = [
         quants: ['1', '2']
     },
     {
-        type: 'coffrets',
-        nom: 'matériel',
+        type: 'compteurs',
+        nom: 'EC453',
         prix: 271.76,
         url: './img/EC453.png',
         quants: ['1', '2']
@@ -83,6 +83,11 @@ export const boutique = [
         url: './img/SPN015R.png',
         quants: ['1', '2']
     },
+    {
+        type: 'modules',
+        nom: 'TRM691E',
+        prix: 95.17,
+        url: './img/TRM691E.png',
+        quants: ['1', '2']
+    }
 ]
-
-    
