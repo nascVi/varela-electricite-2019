@@ -1,6 +1,6 @@
 $main-back: rgb(16, 16, 16);
 $main-font-col: rgb(246, 246, 246);
-$headerNav-back: rgba(169, 169, 169, 0.1);
+$headerNav-back: rgba(169, 169, 169, 0.98);
 $third-header-size: 25px;
 $second-header-size: 15px;
 $main-nav-col: rgb(46, 46, 46);
@@ -263,6 +263,7 @@ input[type=text], select {
   }
 
   &--sidebar {
+    background-color: $headerNav-back;
     width: 100%;
   }
 
@@ -664,6 +665,7 @@ input[type=text], select {
     margin-top: 30px;
     cursor: pointer;
     display: none;
+    z-index: 11;
 
     @media #{$medium} {
       display: block;
@@ -673,11 +675,10 @@ input[type=text], select {
 
 .sidebar {
   position: fixed;
-  top: 83px;
+  top: 33px;
   bottom: 0;
   right: 0;
-  width: 80%;
-  background: $header-back;
+  width: 60%;
   z-index: 10;
 }
 
