@@ -21,7 +21,7 @@ class Header extends Component {
         <Fade top delay={700}>
             <header className="header">
                 <div className="wrapper wrapper--header">
-                    <Link to="/" className="header__logo-link">
+                    <Link className="header__logo-link" to="/">
                         <div className="logo"></div>
                     </Link>
                     <Nav context="header" />

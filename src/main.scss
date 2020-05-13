@@ -72,7 +72,7 @@ a {
       color:$varela-blue;
 
       &::after {
-          background: $varela-grey;
+          background: $main-font-col;
       }
   }
 }
@@ -123,12 +123,13 @@ input[type=text], select {
 }
 
 .home {
-  &__header {
+  &__hero {
     height: 100vh;
     background: $main-nav-col;
 
     @media #{$small} {
       background-position: 0 0;
+      text-decoration: none;
     }
   }
 
@@ -198,6 +199,7 @@ input[type=text], select {
 
   &--header,
   &--footer {
+    
     flex-direction: row;
     align-items: flex-start;
     padding: 0;
@@ -263,6 +265,7 @@ input[type=text], select {
   }
 
   &--sidebar {
+    border-radius: 0 0 0 3px;
     background-color: $headerNav-back;
     width: 100%;
   }
@@ -270,19 +273,23 @@ input[type=text], select {
   &__item {
     text-transform: uppercase;
     display: inline-block;
-    color: $main-nav-col;
+    color: $main-font-col;
 
     @media#{$medium} {
       margin: 0 0 20px 0;
     }
 
-    &.active {
-      color: $varela-blue;
+    @media#{$small} {
+      font-size: 18px;
+    }
 
+    &.active {
+      
       &::after {
         background: $link-hover-col;
       }
     }
+    
   }
 }
 
@@ -646,29 +653,37 @@ input[type=text], select {
     width: 138px;
     background-size: 100%;
     margin-right: 85px;
+    
   }
 
-  &__logo-link {
-     @media #{$medium} {
-       flex-grow: 1;
-     }
-     &::after {
-       display: none;
-     }
-  }
+  &__logo-link {
+
+    @media #{$medium} {
+        flex-grow: 1;
+    }
+    &::after {
+        display: none;
+    }
+}
 
   &__menu {
     width: 23px;
     height: 23px;
     background: url('/img/menu.png') no-repeat;
     background-size: cover;
+    text-align: right;
+    margin-left: 60%;
     margin-top: 30px;
     cursor: pointer;
-    display: none;
     z-index: 11;
 
     @media #{$medium} {
       display: block;
+    }
+
+    @media #{$small} {
+      display: block;
+      margin-left: 20%;
     }
   }
 }
@@ -683,6 +698,7 @@ input[type=text], select {
 }
 
 .landing {
+
   &__video-container {
     align-self: flex-start;
   }

@@ -18,7 +18,7 @@ const Home = () => {
     return (
         <div className="home">
             <Fade>
-                <div className="home__header">
+                <div className="home__hero">
                     <BackgroundVideo className="backgroundVid" />
                     <div className="wrapper">
                         <div className="logo"></div>
