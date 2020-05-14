@@ -15,7 +15,7 @@ const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, piclist }) =
             <div className="realisation">
                 <div className="realisation__caption">
                     <h1>{title}</h1>
-                    {favoris ? null : <div className="album__year">{year}</div>}
+                    {favoris ? null : <div className="realisation__year">{year}</div>}
                 </div>
                 <img src={lifletUrl} className="realisation__liflet" alt="Realisation livret" />
 

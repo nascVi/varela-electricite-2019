@@ -498,39 +498,46 @@ input[type=text], select {
 }
 
 .realisation {
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 60px;
+  justify-content: center;
+  text-align: left;
 
   @media #{$medium} {
+    max-width: 350px;
     justify-content: center;
   }
+
+
 
   &__caption {
     font-size: 20px !important;
     flex-grow: 1;
     flex-basis: 100%;
     display: flex;
+    margin-left: 20%;
 
     h1 {
-      width: 200px;
       white-space: nowrap;
 
       @media #{$medium} {
         white-space: normal;
         width: auto;
-        font-size: $second-header-size;
+        font-size: $third-header-size;
       }
     }
   }
 
   &__year {
-    font-size: $caption-size;
-    opacity: 0.8;
-    width: 100px;
-    text-align: right;
+    padding-left: 350px;
+    padding-bottom: 20px;
+    font-size: $third-header-size;
 
     @media #{$medium} {
+      padding-left: 350px;
+      padding-bottom: 20px;
       font-size: $second-header-size;
     }
   }
@@ -677,6 +684,10 @@ input[type=text], select {
     cursor: pointer;
     z-index: 11;
 
+    @media #{$large} {
+      display: none;
+    }
+
     @media #{$medium} {
       display: block;
     }
@@ -695,6 +706,10 @@ input[type=text], select {
   right: 0;
   width: 60%;
   z-index: 10;
+
+  @media #{$large} {
+    display: none;
+  }
 }
 
 .landing {
