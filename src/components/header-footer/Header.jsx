@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Nav from '../ui/Nav'
+import { HamburgerArrow } from 'react-animated-burgers'
 import SideBar from './SideBar'
 import {Fade} from 'react-reveal'
-
 class Header extends Component {
-
     state = {
-        showSideBar: false
+        showSideBar: false,
     }
 
     showSideBar = () => {
@@ -15,7 +14,7 @@ class Header extends Component {
         this.setState({ showSideBar: !showSideBar });
     }
 
-    render() {
+    render(isActive) {
         const { showSideBar } = this.state;
         return (
         <Fade top delay={700}>
@@ -25,7 +24,7 @@ class Header extends Component {
                         <div className="logo"></div>
                     </Link>
                     <Nav context="header" />
-                    <div className="header__menu" onClick={this.showSideBar}></div>
+                    <HamburgerArrow isActive={this.state.isActive} barColor="white" buttonWidth={16} toggleButton={this.toggleButton} className="header__menu" onClick={this.showSideBar}  />
                     <SideBar showSideBar={showSideBar} />
                 </div>
             </header>

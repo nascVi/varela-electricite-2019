@@ -265,7 +265,7 @@ input[type=text], select {
   }
 
   &--sidebar {
-    border-radius: 0 0 0 3px;
+    padding-top: 22px;
     background-color: $headerNav-back;
     width: 100%;
   }
@@ -674,27 +674,18 @@ input[type=text], select {
 }
 
   &__menu {
-    width: 23px;
-    height: 23px;
-    background: url('/img/menu.png') no-repeat;
-    background-size: cover;
+    padding-top: 30px !important;
+    color: $link-hover-col;
     text-align: right;
-    margin-left: 60%;
-    margin-top: 30px;
-    cursor: pointer;
     z-index: 11;
-    display: none;
-
-    @media #{$large} {
-      display: none;
-    }
+    display: none !important;
 
     @media #{$medium} {
-      display: block;
+      display: block !important;
     }
 
     @media #{$small} {
-      display: block;
+      display: block !important;
       margin-left: 20%;
     }
   }
