@@ -1,7 +1,6 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 
-
 const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, piclist }) => {
 
     const renderPics = () => {
