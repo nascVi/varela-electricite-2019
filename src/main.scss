@@ -664,7 +664,6 @@ input[type=text], select {
   }
 
   &__logo-link {
-
     @media #{$medium} {
         flex-grow: 1;
     }
