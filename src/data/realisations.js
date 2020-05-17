@@ -4,7 +4,7 @@ export const realisations = [
         title: 'PROJET RÉFÉRENCE',
         year: 2018,
         lifletUrl: '/img/cover.jpg',
-        favoris: true,
+        favoris: false,
         budjet: {
             häger: 7.99,
             enedis: 11.99,
@@ -44,7 +44,7 @@ export const realisations = [
         title: 'TRAVAUX CHAMPS SUR MARNE',
         year: 2018,
         lifletUrl: 'https://res.cloudinary.com/nascvi/image/upload/v1588691793/WhatsApp_Image_2020-05-04_at_14.42.48_kjzpfk.jpg',
-        favoris: true,
+        favoris: false,
         budjet: {
             häger: 7.99,
             enedis: 11.99,

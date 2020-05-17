@@ -178,6 +178,11 @@ input[type=text], select {
 
     &:hover {
       background: url("/img/scrollHover.png") no-repeat !important;
+
+      @media #{$medium} {
+        background: url("/img/scrollHover.png") no-repeat !important;
+  
+      }
     }
   }
 }
@@ -492,7 +497,6 @@ input[type=text], select {
 
   &--realisation {
     > div {
-      top: 400px;;
       filter: brightness(5);
     }
   }
@@ -507,7 +511,7 @@ input[type=text], select {
   text-align: left;
 
   @media #{$medium} {
-    max-width: 350px;
+    max-width: 550px;
     justify-content: center;
   }
 
@@ -563,7 +567,7 @@ input[type=text], select {
     box-sizing: border-box;
     border: 10px solid $main-font-col;
     align-self: flex-start;
-
+      
     @media #{$medium} {
       margin-right: 0;
       margin-bottom: 20px;
@@ -598,9 +602,9 @@ input[type=text], select {
     }
 
     span {
-      opacity: .8;
+      opacity: 0.8;
     }
-
+    
     @media #{$small} {
       font-size: $second-header-size;
     }
@@ -617,11 +621,17 @@ input[type=text], select {
   }
 
   &__info {
-    
+    padding-left: 1%;
+
+    @media #{$large} {
+      padding-top: 3%;
+    }
+
     @media #{$small} {
       padding-right: 3%;
       max-width: 100%;
     }
+
   }
 
     &__selection {
@@ -741,6 +751,15 @@ input[type=text], select {
 }
 
 .landing {
+  margin-top: 40%;
+
+  @media #{$large}{
+    margin-top: 50%;
+  }
+
+  @media #{$small} {
+    margin-top: 5%;  
+  }
 
   &__video-container {
     align-self: flex-start;
@@ -748,11 +767,6 @@ input[type=text], select {
 
   &__video {
     width: 100%;
-  
-    @media #{$small}{
-
-    }
-  
   }
 }
 
