@@ -492,6 +492,7 @@ input[type=text], select {
 
   &--realisation {
     > div {
+      top: 400px;;
       filter: brightness(5);
     }
   }
@@ -510,6 +511,10 @@ input[type=text], select {
     justify-content: center;
   }
 
+  @media #{$small} {
+    max-width: 350px;
+  }
+
 
 
   &__caption {
@@ -526,6 +531,10 @@ input[type=text], select {
         white-space: normal;
         width: auto;
         font-size: $third-header-size;
+      }
+
+      @media #{$small} {
+        font-size: $second-header-size;
       }
     }
   }
@@ -568,6 +577,10 @@ input[type=text], select {
     display: flex;
     font-size: 27px;
     margin-bottom: 20px;
+
+    @media #{$small} {
+      font-size: $second-header-size;
+    }
   }
 
   &__budjet-item {
@@ -587,11 +600,28 @@ input[type=text], select {
     span {
       opacity: .8;
     }
+
+    @media #{$small} {
+      font-size: $second-header-size;
+    }
   }
 
+  
   &__en-favoris {
       /*pre-order*/
       font-size: 27px;
+  
+      @media #{$small} {
+        font-size: $second-header-size;
+      }
+  }
+
+  &__info {
+    
+    @media #{$small} {
+      padding-right: 3%;
+      max-width: 100%;
+    }
   }
 
     &__selection {
@@ -718,6 +748,11 @@ input[type=text], select {
 
   &__video {
     width: 100%;
+  
+    @media #{$small}{
+
+    }
+  
   }
 }
 
