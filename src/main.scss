@@ -383,6 +383,10 @@ input[type=text], select {
     @media #{$large} {
       width: 100%;
     }
+
+    @media #{$small} {
+      width: 48%;
+    }
   }
 
   input[type=checkbox] {
@@ -462,6 +466,9 @@ input[type=text], select {
   &:hover {
     background: lighten($color: $button-col, $amount: 4);
   }
+
+
+  margin-left: 2%;
 }
 
 .social-icon {
