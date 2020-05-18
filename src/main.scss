@@ -273,6 +273,7 @@ input[type=text], select {
     padding-top: 22px;
     background-color: $headerNav-back;
     width: 100%;
+    
   }
 
   &__item {
@@ -294,7 +295,6 @@ input[type=text], select {
         background: $link-hover-col;
       }
     }
-    
   }
 }
 
@@ -752,7 +752,7 @@ input[type=text], select {
   width: 60%;
   z-index: 10;
 
-  @media #{$large} {
+  @media #{$medium} {
     display: none;
   }
 }
@@ -765,6 +765,7 @@ input[type=text], select {
   }
 
   @media #{$small} {
+    margin-inline-start: 5%; 
     margin-top: 5%;  
   }
 

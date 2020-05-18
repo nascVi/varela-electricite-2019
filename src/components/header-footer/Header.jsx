@@ -17,7 +17,7 @@ class Header extends Component {
     render() {
         const { showSideBar } = this.state;
         return (
-        <Fade top delay={700}>
+        <Fade top delay={500}>
             <header className="header">
                 <div className="wrapper wrapper--header">
                     <Link className="header__logo-link" to="/">
