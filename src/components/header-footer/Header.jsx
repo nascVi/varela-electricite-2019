@@ -20,9 +20,9 @@ class Header extends Component {
         <Fade top delay={500}>
             <header className="header">
                 <div className="wrapper wrapper--header">
-                    <Link className="header__logo-link" to="/">
-                        <div className="logo"></div>
-                    </Link>
+                    <div className="header__logo-link">
+                        <Link to="/" className="logo"></Link>
+                    </div>
                     <Nav context="header" />
                     <HamburgerElastic onClick={this.showSideBar} isActive={this.state.showSideBar} barColor="white" buttonWidth={16} toggleButton={this.isActive} className="header__menu" />
                     <SideBar showSideBar={showSideBar} />
