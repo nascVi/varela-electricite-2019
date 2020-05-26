@@ -4,7 +4,7 @@ import Socials from '../ui/Socials'
 
 const Footer = () => {
     return (
-            <footer className="footer">
+        <footer className="footer">
             <div className="wrapper wrapper--footer">
                 <div className="footer__logos">
                 </div>
