@@ -13,7 +13,7 @@ const Particles = ({ children }) => {
           params={{
         particles: {
               number: {
-                value: 85
+                value: 81
               },
               size: {
                 value: 3
