@@ -22,14 +22,14 @@ const Info = () => {
                         <li>
                         <input type="checkbox" name="" id="rdv" />
                         <label htmlFor="rdv téléphonique" className="">
-                            Pour un pemier contacte
+                            Pour un pemier contact
                         </label>
                         </li>
                         <li>
         
                         <input type="checkbox" name="" id="devis" />
                         <label htmlFor="devis" className="">
-                            Une Urgence ou un dégas
+                            Une urgence ou un dégat
                             </label>
                         </li>
                         <li>                    
