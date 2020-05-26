@@ -3,7 +3,7 @@ export const varela = [
         year: 2020,
         url: '/img/personal-kitchen-light.png',
         title: 'Installation Romainville',
-        text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'
+        text: 'Notre entreprise effectue tout traveaux dans le domaine que ce soit du neuf ou dans la rénovation. Nous évoluons en respectant les règles éthiques, de l\'éco-consommation, et de sécurité.'
     },
     {
         year: 2018,
