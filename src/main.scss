@@ -515,15 +515,28 @@ input[type=text], select {
   &__instagram {
     @extend .social-icon;
     background: url("/img/instagram.svg") center no-repeat;
+    
+    &:hover {
+      background: url("/img/roinstagram.svg") center no-repeat;
+    }
   }
   &__twitter {
     @extend .social-icon;
     background: url("/img/twitter.svg") center no-repeat;
+    
+    &:hover {
+      background: url("/img/btwitter.svg") center no-repeat;
+    }
   }
   &__youtube {
     @extend .social-icon;
-    width: 47px;
-    background: url("/img/youtube.svg") center no-repeat;
+    margin-left: -5px;
+    width: 42.2px;
+    background: url("/img/cloudinary.svg") center no-repeat;
+    
+    &:hover {
+      background: url("/img/ccloudinary.svg") center no-repeat;
+    }
 
     // &::hover {
     //   background: url("");
