@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="wrapper wrapper--footer">
                 <div className="footer__logos">
                 </div>
-                     <div className="logo"></div>
+                     <div className="flogo"></div>
                     {/*<div className="pro-ref-logo"></div> */}
                 <div className="footer__contactForm">
                     <h3>PRISE DE CONTACT</h3>
