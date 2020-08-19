@@ -1,77 +1,77 @@
 export const folio = [
     {
-        day: '6j',
-        month: 'Avril',
-        location: 'CHAMPS-SUR-MARNE'
+        day: '⛳',
+        month: 'programme achevé',
+        location: 'Maison Individuelle'
     },
     {
-        day: '15j',
-        month: 'Avril',
-        location: 'UC PARIS-EST'
+        day: '🏌',
+        month: 'programme en cours',
+        location: 'Immeuble'
     },
     {
-        day: '40j',
-        month: 'Janvier',
-        location: 'AERODROME LOGNE'
+        day: '🍽',
+        month: 'programme à venir',
+        location: 'Maison Individuelle'
     },
     {
-        day: '40j',
-        month: 'Décembre 2019',
-        location: 'CTRE COMMERCIAL - COLLEGIEN'
+        day: '🏌',
+        month: 'Programme cours',
+        location: 'Immeuble'
     },
     {
-        day: 'Aj',
-        month: 'Décembre 2019',
-        location: 'SOUS-PREF - TORCY'
+        day: '🍽',
+        month: 'Programme à venir',
+        location: 'Maison individuelle'
     },
     {
-        day: '12',
-        month: 'june',
-        location: 'PRUDENTIAL CENTER NEWARK, NJ, US'
+        day: '🏌',
+        month: 'Programme en cours',
+        location: 'Immeuble'
     },
     {
-        day: '16',
-        month: 'june',
-        location: 'PPG PAINTS ARENA PITTSBURGH, PA, US'
+        day: '⛳',
+        month: 'Programme achevé',
+        location: 'Maison individuelle'
     },
     {
-        day: '20',
-        month: 'june',
-        location: 'BOARDWALK HALL ATLANTIC CITY, NJ, US'
+        day: '🏌',
+        month: 'Programme en cours',
+        location: 'Maison individuelle'
     },
     {
-        day: '21',
-        month: 'june',
-        location: 'JOHN PAUL JONES ARENA CHARLOTTESVILLE, VA, US'
+        day: '🏌',
+        month: 'Programme en cours',
+        location: 'Immeuble'
     },
     {
-        day: '23',
-        month: 'june',
-        location: 'PNC ARENA RALEIGH, NC, US'
+        day: '🍽',
+        month: 'Programme à venir',
+        location: 'Immeuble'
     },
     {
-        day: '27',
-        month: 'june',
-        location: 'SPECTRUM CENTER CHARLOTTE, NC, US'
+        day: '⛳',
+        month: 'Programme achevé',
+        location: 'Immeuble'
     },
     {
-        day: '30',
-        month: 'june',
-        location: 'JACKSONVILLE VETERANS MEMORIAL ARENA JACKSONVILLE, FL, US'
+        day: '🍽',
+        month: 'Programme à venir',
+        location: 'Immeuble'
     },
     {
-        day: '03',
-        month: 'july',
-        location: 'AMERICANAIRLINES ARENA MIAMI, FL, US'
+        day: '⛳',
+        month: 'Programme achevé',
+        location: 'Font de commerce'
     },
     {
-        day: '05',
-        month: 'july',
-        location: 'AMWAY CENTER ORLANDO, FL, US'
+        day: '⛳',
+        month: 'Programme achevé',
+        location: 'Maison individuelle'
     },
     {
-        day: '07',
-        month: 'july',
-        location: 'LEGACY ARENA AT THE BJCC BIRMINGHAM, AL, US'
+        day: '⛳',
+        month: 'Programme achevé',
+        location: 'Immeuble'
     },
 ]

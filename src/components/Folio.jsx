@@ -2,6 +2,7 @@ import React from 'react'
 import { folio } from '../data/folio'
 import Button from './ui/Button'
 import { Flip } from 'react-reveal'
+import { Link } from 'react-router-dom'
 
 const Folio = () => {
     return (
@@ -24,7 +25,10 @@ const Folio = () => {
                                     <div className="folio__location">
                                         {location}
                                     </div>
-                                    <Button text="CONSULTER"/>
+                                    <Link to="/consultation">
+                                        <Button className="btn" text="CONSULTER" />
+                                        
+                                    </Link>
                                 </div>
                             </div>
                         </Flip>

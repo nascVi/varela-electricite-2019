@@ -897,7 +897,7 @@ input[type=text], select {
    margin-bottom: 60px;
    border-right: 1px dotted #fff;
    box-sizing: border-box;
-   padding: 20px 30px 20px 0;
+   padding: 20px 30px 10px 0;
    
    @media #{$small} {
      border: none;
@@ -909,13 +909,15 @@ input[type=text], select {
   }
 
   &__day {
-   font-size: 95px;
+   font-size: 45px;
    line-height: 100px;
+   color: #fafafa;
   }
   
   &__month {
-    font-size: 23px;
+    font-size: 20px;
     text-transform: uppercase;
+    color: $link-hover-col;
   }
 
   &__details {
@@ -926,7 +928,8 @@ input[type=text], select {
 
   &__location {
     flex-grow: 1;
-    font-size: 20px;
+    font-size: 32px;
+    color: cornflowerblue;
   }
     
 }
