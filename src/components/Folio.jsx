@@ -25,9 +25,8 @@ const Folio = () => {
                                     <div className="folio__location">
                                         {location}
                                     </div>
-                                    <Link to="/consultation">
-                                        <Button className="btn" text="CONSULTER" />
-                                        
+                                    <Link className="prim-button" to="/consultation">
+                                        <Button text="CONSULTER" />                                        
                                     </Link>
                                 </div>
                             </div>

@@ -1,77 +1,77 @@
 export const folio = [
     {
         day: '⛳',
-        month: 'programme achevé',
+        month: 'Est achevé',
         location: 'Maison Individuelle'
     },
     {
         day: '🏌',
-        month: 'programme en cours',
+        month: 'Est en cours',
         location: 'Immeuble'
     },
     {
         day: '🍽',
-        month: 'programme à venir',
+        month: 'Est à venir',
         location: 'Maison Individuelle'
     },
     {
         day: '🏌',
-        month: 'Programme cours',
+        month: 'Est cours',
         location: 'Immeuble'
     },
     {
         day: '🍽',
-        month: 'Programme à venir',
+        month: 'Est à venir',
         location: 'Maison individuelle'
     },
     {
         day: '🏌',
-        month: 'Programme en cours',
+        month: 'Est en cours',
         location: 'Immeuble'
     },
     {
         day: '⛳',
-        month: 'Programme achevé',
+        month: 'Est achevé',
         location: 'Maison individuelle'
     },
     {
         day: '🏌',
-        month: 'Programme en cours',
+        month: 'Est en cours',
         location: 'Maison individuelle'
     },
     {
         day: '🏌',
-        month: 'Programme en cours',
+        month: 'Est en cours',
         location: 'Immeuble'
     },
     {
         day: '🍽',
-        month: 'Programme à venir',
+        month: 'Est à venir',
         location: 'Immeuble'
     },
     {
         day: '⛳',
-        month: 'Programme achevé',
+        month: 'Est achevé',
         location: 'Immeuble'
     },
     {
         day: '🍽',
-        month: 'Programme à venir',
+        month: 'Est à venir',
         location: 'Immeuble'
     },
     {
         day: '⛳',
-        month: 'Programme achevé',
+        month: 'Est achevé',
         location: 'Font de commerce'
     },
     {
         day: '⛳',
-        month: 'Programme achevé',
+        month: 'Est achevé',
         location: 'Maison individuelle'
     },
     {
         day: '⛳',
-        month: 'Programme achevé',
+        month: 'Est achevé',
         location: 'Immeuble'
     },
 ]
