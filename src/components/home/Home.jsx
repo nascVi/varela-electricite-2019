@@ -6,6 +6,8 @@ import { Element, scroller } from 'react-scroll'
 import { Fade } from 'react-reveal'
 import ReactParticles from 'react-particles-js'
 
+import { Video/*, Image, Transformation, CloudinaryContext*/} from 'cloudinary-react';
+
 const Particles = ({ children }) => {
     return (
       <div style={{ position: 'relative' }}>
@@ -86,6 +88,10 @@ const Home = () => {
                         <div className="home__scroll-down" onClick={() => scrollToLanding('footer')} ></div>
                     </div>
                 </div>
+                <Video cloudName="nascvi" publicId="demoFoot" controls="true">
+                  <Transformation width="0.4" angle="20" />
+                  <Transformation overlay="cloudinary_icon" opacity="50" width="60" gravity="south_east" y="15" x="60" />
+                </Video>
                   <InaSpace>
                     <Element name="landing">
                         <Landing />
