@@ -6,7 +6,7 @@ import { Element, scroller } from 'react-scroll'
 import { Fade } from 'react-reveal'
 import ReactParticles from 'react-particles-js'
 
-import { Video/*, Image, Transformation, CloudinaryContext*/} from 'cloudinary-react';
+import { Video/*, CloudinaryContext, Transformation, Image*/} from 'cloudinary-react';
 
 const Particles = ({ children }) => {
     return (
@@ -81,17 +81,19 @@ const Home = () => {
                     <div className="wrapper">
                         <div className="logo"></div>
                         <Nav context="home" />
-                        <div className="home__caption" onClick={() => scrollToLanding('landing')}>
+                        <div className="home__caption" onClick={() => scrollToLanding('storyVid')}>
                             JE CONSULTE?
                         </div>
                         <h6 className="home__caption-hint">Ou tick-tap/clickerais-je <span className="home__coffee" role="img" aria-label="coffee">☕</span>!?</h6>
                         <div className="home__scroll-down" onClick={() => scrollToLanding('footer')} ></div>
                     </div>
                 </div>
-                <Video cloudName="nascvi" publicId="demoFoot" controls="true">
-                  <Transformation width="0.4" angle="20" />
-                  <Transformation overlay="cloudinary_icon" opacity="50" width="60" gravity="south_east" y="15" x="60" />
+                {/* <CloudinaryContext cloudName="nascvi"> */}
+                <Video className="storyVid" cloudName="nascvi" publicId="demoFoot" width="80%" height="80%" loop={true} autoPlay={true} controls={true}>
+                  {/* <Transformation width="0.4" angle="20" />
+                  <Transformation overlay="cloudinary_icon" opacity="50" width="60" gravity="south_east" y="15" x="60" /> */}
                 </Video>
+                {/* </CloudinaryContext> */}
                   <InaSpace>
                     <Element name="landing">
                         <Landing />
