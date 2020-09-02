@@ -1,6 +1,6 @@
 import React from 'react'
 import { folio } from '../data/folio'
-import Button from './ui/Button'
+import Button from '@material-ui/core/Button'
 import { Flip } from 'react-reveal'
 import { Link } from 'react-router-dom'
 
@@ -26,7 +26,7 @@ const Folio = () => {
                                         {location}
                                     </div>
                                     <Link className="prim-button" to="/consultation">
-                                        <Button text="CONSULTER" />                                        
+                                        <Button variant="contained" color="primary" >Consulter</Button>                                        
                                     </Link>
                                 </div>
                             </div>
