@@ -6,6 +6,7 @@ import { Element, scroller } from 'react-scroll'
 import { Fade } from 'react-reveal'
 import ReactParticles from 'react-particles-js'
 
+import Gallery from './Gallery'
 import { Video/*, CloudinaryContext, Transformation, Image*/} from 'cloudinary-react';
 
 const Particles = ({ children }) => {
@@ -89,6 +90,7 @@ const Home = () => {
                     </div>
                 </div>
                 {/* <CloudinaryContext cloudName="nascvi"> */}
+                <Gallery />
                 <Video className="storyVid" cloudName="nascvi" publicId="demoFoot" width="80%" height="80%" loop={true} autoPlay={true} controls={true}>
                   {/* <Transformation width="0.4" angle="20" />
                   <Transformation overlay="cloudinary_icon" opacity="50" width="60" gravity="south_east" y="15" x="60" /> */}
