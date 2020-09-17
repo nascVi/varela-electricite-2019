@@ -7,7 +7,7 @@ import { Fade } from 'react-reveal'
 import ReactParticles from 'react-particles-js'
 
 import Gallery from './Gallery'
-import { Video/*, CloudinaryContext, Transformation, Image*/} from 'cloudinary-react';
+import { Video/*, CloudinaryContext, Transformation, Image*/} from 'cloudinary-react'
 
 const Particles = ({ children }) => {
     return (
