@@ -27,3 +27,4 @@ const thumbnailGalleryStyles = {
   display: "flex",
   opacity: "0.9",
 };
+// ☸

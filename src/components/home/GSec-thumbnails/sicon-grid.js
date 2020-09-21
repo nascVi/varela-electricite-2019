@@ -15,7 +15,7 @@ const styles = {
   background: "#333",
   opacity: "0.8",
   display: "flex",
-  flex: "wrap     ",
+  flex: "wrap",
 };
 
 export default SIconGrid;
