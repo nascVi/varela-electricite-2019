@@ -10,6 +10,7 @@ const Nav = props => {
     return (
         <div className={`main-nav main-nav--${context}`}>
             <NavLink className={getClassName('/')} exact to="/">Accueil</NavLink>
+            {/* <NavLink className={getClassName('/')} exact to="/ics" /> */}
             <NavLink className={getClassName('/varela')} to="/varela">Varela</NavLink>
             <NavLink className={getClassName('/activité')} exact to="/activité">Activité</NavLink>
             <NavLink className={getClassName('/folio')} exact to="/folio">Folio</NavLink>

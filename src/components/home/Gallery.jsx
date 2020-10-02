@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import ThumbnailGallery from './GSec-thumbnails'
+import SIconsGallery from './GSec-SIcons'
 
 export default class Gallery extends Component {
     render() {
         return (
-            <div>
-                <ThumbnailGallery />           
+            <div className="SDisplay">
+                <SIconsGallery />     
             </div>
         )
     }

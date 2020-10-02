@@ -1,5 +1,5 @@
 import React from "react";
-import SIcon from "./sicon";
+import SIcon from "./SIcon";
 
 const SIconGrid = () => {
   return (

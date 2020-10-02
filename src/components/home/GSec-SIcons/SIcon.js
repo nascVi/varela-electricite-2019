@@ -8,34 +8,34 @@ const SIcon = () => {
         loading="lazy"
         className="ser1"
         cloudName="nascvi"
-        publicId="icons/depannage.png"
+        publicId="icons/depan.png"
         width="110"
         crop="scale"
       />
       {/* A votre service 5/7 heures ouvrés */}
       <Image
         loading="lazy"
-        className="ser1"
+        className="ser2"
         cloudName="nascvi"
-        publicId="icons/renovation.png"
+        publicId="icons/reno.png"
         width="110"
         crop="scale"
       />
       {/* Etre à l'écoute de nos clients est primordiale. */}
       <Image
         loading="lazy"
-        className="ser1"
+        className="ser3"
         cloudName="nascvi"
-        publicId="icons/borne.png"
+        publicId="icons/bor.png"
         width="110"
         crop="scale"
       />
       {/* Un projet de recharge électrique? */}
       <Image
         loading="lazy"
-        className="ser1"
+        className="ser4"
         cloudName="nascvi"
-        publicId="icons/domotique.png"
+        publicId="icons/domo.png"
         width="110"
         crop="scale"
       />

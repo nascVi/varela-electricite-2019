@@ -1,9 +1,10 @@
 import React from 'react'
+import Sicon from './SIcon'
 
-const ActiveThumbnailWindow = () => {
+const ActiveSIconWindow = () => {
     return (
         <div style={styles}>
-            Active Thumbnail
+            <Sicon />
         </div>
     )
 }
@@ -15,4 +16,4 @@ const styles = {
     opacity: '0.8'
 }
 
-export default ActiveThumbnailWindow
+export default ActiveSIconWindow

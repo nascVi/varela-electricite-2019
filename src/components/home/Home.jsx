@@ -82,14 +82,14 @@ const Home = () => {
                     <div className="wrapper">
                         <div className="logo"></div>
                         <Nav context="home" />
-                        <div className="home__caption" onClick={() => scrollToLanding('storyVid')}>
+                        <div className="home__caption" onClick={() => scrollToLanding('SDisplay')}>
                             JE CONSULTE?
                         </div>
                         <h6 className="home__caption-hint">Ou tick-tap/clickerais-je <span className="home__coffee" role="img" aria-label="coffee">☕</span>!?</h6>
                         <div className="home__scroll-down" onClick={() => scrollToLanding('footer')} ></div>
                     </div>
                 </div>
-                {/* <CloudinaryContext cloudName="nascvi"> */}
+                {/* <CloudinaryContext cloudName="nascvi"> like SDisplay section! */}
                 <Gallery />
                 <Video className="storyVid" cloudName="nascvi" publicId="demoFoot" width="80%" height="80%" loop={true} autoPlay={true} controls={true}>
                   {/* <Transformation width="0.4" angle="20" />

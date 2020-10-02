@@ -1,15 +1,17 @@
 import React, { Component } from "react";
-import ActiveThumbnailWindow from "./active-thumbnail-window";
-import ThumbnailGrid from "./sicon-grid";
+import ActiveSIconWindow from "./ActiveSIconWindow";
+import SIconGrid from "./SIconGrid";
 
-export default class ThumbnailGallery extends Component {
+import Axios from "axios";
+
+export default class SIconsGallery extends Component {
   render() {
     return (
-      <div style={thumbnailGalleryStyles}>
+      <div style={sIconGalleryStyles}>
         {/* Left Side */}
         <div style={{ flex: 1 }}>
-          <ActiveThumbnailWindow />
-          <ThumbnailGrid />
+          <ActiveSIconWindow />
+          <SIconGrid />
         </div>
 
         {/* Right Side */}
@@ -19,7 +21,7 @@ export default class ThumbnailGallery extends Component {
   }
 }
 
-const thumbnailGalleryStyles = {
+const sIconGalleryStyles = {
   background: "#ddd",
   height: "500px",
   width: "100%",
