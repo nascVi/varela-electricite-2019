@@ -9,7 +9,8 @@ const SIcon = () => {
         className="ser1"
         cloudName="nascvi"
         publicId="icons/depan.png"
-        width="110"
+        background="black"
+        width="183"
         crop="scale"
       />
       {/* A votre service 5/7 heures ouvrés */}
@@ -18,7 +19,8 @@ const SIcon = () => {
         className="ser2"
         cloudName="nascvi"
         publicId="icons/reno.png"
-        width="110"
+        background="black"
+        width="183"
         crop="scale"
       />
       {/* Etre à l'écoute de nos clients est primordiale. */}
@@ -27,7 +29,8 @@ const SIcon = () => {
         className="ser3"
         cloudName="nascvi"
         publicId="icons/bor.png"
-        width="110"
+        background="black"
+        width="183"
         crop="scale"
       />
       {/* Un projet de recharge électrique? */}
@@ -36,7 +39,8 @@ const SIcon = () => {
         className="ser4"
         cloudName="nascvi"
         publicId="icons/domo.png"
-        width="110"
+        background="black"
+        width="183"
         crop="scale"
       />
       {/* Notre développement domotique est eco impliqué depuis 2013. */}

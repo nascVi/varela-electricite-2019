@@ -1,10 +1,10 @@
 import React from 'react'
-import Sicon from './SIcon'
+// import Sicon from './SIcon'
 
 const ActiveSIconWindow = () => {
     return (
         <div style={styles}>
-            <Sicon />
+            Res.⛑
         </div>
     )
 }

@@ -2,20 +2,20 @@ import React, { Component } from "react";
 import ActiveSIconWindow from "./ActiveSIconWindow";
 import SIconGrid from "./SIconGrid";
 
-import Axios from "axios";
+// import Axios from "axios";
 
 export default class SIconsGallery extends Component {
   render() {
     return (
       <div style={sIconGalleryStyles}>
         {/* Left Side */}
-        <div style={{ flex: 1 }}>
+        <div style={{ flex: 3 }}>
           <ActiveSIconWindow />
           <SIconGrid />
         </div>
 
         {/* Right Side */}
-        <div style={{ flex: 1 }}>Right</div>
+        <div style={{ flex: 2 }}>Right</div>
       </div>
     );
   }
