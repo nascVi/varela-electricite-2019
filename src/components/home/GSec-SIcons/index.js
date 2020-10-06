@@ -1,10 +1,28 @@
 import React, { Component } from "react";
+import { CloudinaryContext, Transformation, Image } from 'cloudinary-react';
+
 import ActiveSIconWindow from "./ActiveSIconWindow";
 import SIconGrid from "./SIconGrid";
 
-// import Axios from "axios";
+import axios from "axios";
 
 export default class SIconsGallery extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      gallery: []
+    }
+  }
+
+  componentDidMount() {
+  axios.get('http://res.cloudinary.com/nascvi/Sicons/borne.gif')
+    .then(res => { 
+      console.log(res.data.resources);
+      this.setState({gallery: res.data.resouces})      
+    })
+  }
+
   render() {
     return (
       <div style={sIconGalleryStyles}>
