@@ -1,3 +1,9 @@
+/* Inspired by the fabulous'
+  https://github.com/DZuz14/react-hooks-gallery
+  ıı &&
+  https://www.codementor.io/@christiannwamba/build-a-react-image-gallery-with-cloudinary-xh1cekno3#comments-xh1cekno3
+*/
+
 import React, { Component } from "react";
 import { CloudinaryContext, Transformation, Image } from 'cloudinary-react';
 
