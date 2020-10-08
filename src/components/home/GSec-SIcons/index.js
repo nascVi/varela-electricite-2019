@@ -4,7 +4,7 @@
   https://www.codementor.io/@christiannwamba/build-a-react-image-gallery-with-cloudinary-xh1cekno3#comments-xh1cekno3
 */
 
-import React, { Component } from "react";
+import React, { useState, useEffect } from 'react'
 import { CloudinaryContext, Transformation, Image } from 'cloudinary-react';
 
 import ActiveSIconWindow from "./ActiveSIconWindow";
@@ -12,22 +12,20 @@ import SIconGrid from "./SIconGrid";
 
 import axios from "axios";
 
-export default class SIconsGallery extends Component {
+const SIconsGallery = () => {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      gallery: []
-    }
-  }
+  const [sicons, setSIcons] = useState([])
+  const [activeIndex, setActiveIndex] = useState(0)
 
-  componentDidMount() {
-  axios.get('http://res.cloudinary.com/nascvi/Sicons/borne.gif')
-    .then(res => { 
-      console.log(res.data.resources);
-      this.setState({gallery: res.data.resouces})      
-    })
-  }
+  useEffect(() => {
+  axios
+    .get(
+      'https://res.cloudinary.com/nascvi/image/Services/Services.json'
+    )
+    // choice to use a json local to be fee free
+    .then(res => setSIcons(res.data.resources))
+    console.log(res.data.resources)
+  }, [])
 
   render() {
     return (
