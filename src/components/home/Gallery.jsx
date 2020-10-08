@@ -1,12 +1,14 @@
-import React, { Component } from 'react'
-import SIconsGallery from './GSec-SIcons'
+import React from 'react'
+import Service from './GSec-SIcons'
+import { services } from '../../data/services'
 
-export default class Gallery extends Component {
-    render() {
-        return (
-            <div className="SDisplay">
-                <SIconsGallery />     
-            </div>
-        )
-    }
+const Gallery = () => {
+    return ( 
+    <div className="wrapper">
+        {services.map(service => <Service key={services.id} {...service} />)}     
+    </div>
+    )
 }
+
+export default Gallery
+

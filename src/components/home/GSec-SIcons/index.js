@@ -3,27 +3,35 @@ import Fade from 'react-reveal/Fade'
 
 import ActiveSIconWindow from "./ActiveSIconWindow";
 
-const SIconsGallery = ({ id, sUrl, title, info, budjet, iconlist }) => {
+const Service = ({ id, sUrl, title, info, cout, iconlist }) => {
 
   const renderSIcons = () => {
     return iconlist.map((icon, i) => {
-        return <li key={i} className="siconsgallery__icon"><i></i> <span>{icon}</span></li>
+        return <li key={i} className="services__icon"><i></i> <span>{icon}</span></li>
     })
   }
 
   return (
-    <div style={sIconGalleryStyles}>
+    <div className="services" style={sIconGalleryStyles}>
       {/* Left Side */}
       <div style={{ flex: 3 }}>
       <Fade top delay={id * 50} duration={400}>
-        <ActiveSIconWindow className="siconsgallery__info">
-        <div className="siconsgallery__display">
-          {renderSIcons()}
-          <div>
-            
+        <ActiveSIconWindow className="services__info">
+          <div className="services__display">
+            <img src={sUrl} alt="Services Icons" />
+             {renderSIcons()}
+            <span className="services__title">{title}</span>
           </div>
+          <p className="servicesy__info">
+          {info}
+          </p>
+          <p>
+            <div className="services__cout"><span>Installation Häger</span> €{cout.häger}</div>
+            <div className="services__cout"><span>Linky</span> €{cout.enedis}</div>
+            <div className="services__cout"><span>Domotique Legrand</span> €{cout.legrand}</div>
+          </p>
+          
         </ActiveSIconWindow>
-        </div>
       </Fade>
       </div>
 
@@ -42,4 +50,4 @@ const sIconGalleryStyles = {
   opacity: "0.9",
 }
 
-export default SIconsGallery
+export default Service
