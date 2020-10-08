@@ -1,46 +1,30 @@
-/* Inspired by the fabulous'
-  https://github.com/DZuz14/react-hooks-gallery
-  ıı &&
-  https://www.codementor.io/@christiannwamba/build-a-react-image-gallery-with-cloudinary-xh1cekno3#comments-xh1cekno3
-*/
-
-import React, { useState /*, useEffect */} from 'react'
-import { CloudinaryContext, Transformation, Image } from 'cloudinary-react';
+import React from 'react'
+import Fade from 'react-reveal/Fade'
 
 import ActiveSIconWindow from "./ActiveSIconWindow";
-import SIconGrid from "./SIconGrid";
 
-import axios from "axios";
-
-const SIconsGallery = ({ id, title, sUrl, favoris, budjet, iconlist }) => {
+const SIconsGallery = ({ id, sUrl, title, info, budjet, iconlist }) => {
 
   const renderSIcons = () => {
     return iconlist.map((icon, i) => {
-        return <li key={i} className="GSecDisplay__icon"> <i></i> <span>{icon}</span></li>
+        return <li key={i} className="siconsgallery__icon"><i></i> <span>{icon}</span></li>
     })
   }
-
-  const [sicons, setSIcons] = useState([])
-  const [activeIndex, setActiveIndex] = useState(0)
-
-  // useEffect(() => {
-  // axios
-  //   .get(
-  //     'https://res.cloudinary.com/nascvi/image/services/services.json'
-  //   )
-  //   // choice to use a json local to be fee free
-  //   .then(res => setSIcons(res.data.resources))
-  //   console.log(res.data.resources)
-  // }, [])
 
   return (
     <div style={sIconGalleryStyles}>
       {/* Left Side */}
       <div style={{ flex: 3 }}>
-        <ActiveSIconWindow>
-        {renderSIcons()}
+      <Fade top delay={id * 50} duration={400}>
+        <ActiveSIconWindow className="siconsgallery__info">
+        <div className="siconsgallery__display">
+          {renderSIcons()}
+          <div>
+            
+          </div>
         </ActiveSIconWindow>
-
+        </div>
+      </Fade>
       </div>
 
       {/* Right Side */}
