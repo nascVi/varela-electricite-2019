@@ -82,7 +82,7 @@ const Home = () => {
                     <div className="wrapper">
                         <div className="logo"></div>
                         <Nav context="home" />
-                        <div className="home__caption" onClick={() => scrollToLanding('SDisplay')}>
+                        <div className="home__caption" onClick={() => scrollToLanding('service__plaquette')}>
                             JE CONSULTE?
                         </div>
                         <h6 className="home__caption-hint">Ou tick-tap/clickerais-je <span className="home__coffee" role="img" aria-label="coffee">☕</span>!?</h6>

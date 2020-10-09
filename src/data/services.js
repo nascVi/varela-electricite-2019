@@ -2,7 +2,7 @@ export const services = [
     {
         id: 1,
         title: 'Installation',
-        sUrl: '/img/cover.jpg',
+        sUrl: 'https://res.cloudinary.com/nascvi/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1601627117/Icons/domo.gif',
         cout: {
             häger: 7.99,
             enedis: 11.99,
@@ -27,9 +27,9 @@ export const services = [
     },
     {
         id: 2,
-        title: 'Innovation',
+        title: 'Rénovation',
         year: 2019,
-        sUrl: 'https://res.cloudinary.com/nascvi/image/upload/v1588691793/WhatsApp_Image_2020-05-04_at_14.41.50_pnkdee.jpg',
+        sUrl: 'https://res.cloudinary.com/nascvi/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1601627117/Icons/reno.gif',
         cout: {
             häger: 7.99,
             enedis: 11.99,
@@ -52,7 +52,7 @@ export const services = [
         id: 3,
         title: 'Dépannage',
         year: 2018,
-        sUrl: 'https://res.cloudinary.com/nascvi/image/upload/v1588691793/WhatsApp_Image_2020-05-04_at_14.42.48_kjzpfk.jpg',
+        sUrl: 'https://res.cloudinary.com/nascvi/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1601627117/Icons/depan.gif',
         cout: {
             häger: 7.99,
             enedis: 11.99,
@@ -75,7 +75,7 @@ export const services = [
         id: 4,
         title: 'Borne Verte',
         year: 2018,
-        sUrl: 'https://res.cloudinary.com/nascvi/image/upload/v1588691793/WhatsApp_Image_2020-05-04_at_14.42.48_kjzpfk.jpg',
+        sUrl: 'https://res.cloudinary.com/nascvi/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1601627117/Icons/bor.gif',
         cout: {
             häger: 7.99,
             enedis: 11.99,
