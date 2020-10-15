@@ -1,10 +1,18 @@
 import React from "react";
 import SIcon from "./SIcon";
 
-const SIconGrid = () => {
+const SIconGrid = ({ services, onClick }) => {
   return (
     <div style={styles}>
-      <SIcon />
+      
+    {services.map((service, i) => (
+      <SIcon 
+        key={service.sUrl}
+        sUrl={service.sUrl}
+        index={i}
+        onClick={onClick}     
+      />
+    ))}
     </div>
   );
 };

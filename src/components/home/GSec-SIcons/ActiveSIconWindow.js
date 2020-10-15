@@ -1,25 +1,21 @@
 import React from 'react'
 import {Fade} from 'react-reveal'
 // import Sicon from './SIcon'
-import { services } from '../../../data/services'
+// import { services } from '../../../data/services'
 
 
 // Function to display 1 service at a time in the main frame
 
-const ActiveSIconWindow = () => {
+const ActiveSIconWindow = ({ activeService }) => {
 
     return (
         <div style={styles}>
-        {services.map((service, i) => {
-            const {id, sUrl} = service;
-            return(
-                <Fade delay={id * 50} key={i}>
+                <Fade delay={activeService.id}>
                     <div className="service__item">
-                        <img src={sUrl} alt="sIcon" height="150" width="150" className="sIcon__img" />                        
+                        <img src={activeService.sUrl} alt="sIcon" height="150" width="150" className="sIcon__img" />                        
                     </div>
                 </Fade>
             )
-        })}
         </div>
     )
 }
