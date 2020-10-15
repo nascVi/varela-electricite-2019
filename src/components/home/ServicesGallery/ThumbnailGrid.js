@@ -6,7 +6,7 @@ import SIcon from './Thumbnail'
 const ThumbnailGrid = ({ sicons, onClick }) => (
   <div
     css={css`
-      height: 35%;
+      height: 40%;
       width: 100%;
       display: flex;
       flex-wrap: wrap;
@@ -15,7 +15,7 @@ const ThumbnailGrid = ({ sicons, onClick }) => (
     {sicons.map((sicon, i) => (
       <SIcon
         key={sicon.sUrl}
-        imgUrl={sicon.sUrl}
+        sUrl={sicon.sUrl}
         index={i}
         onClick={onClick}
       />

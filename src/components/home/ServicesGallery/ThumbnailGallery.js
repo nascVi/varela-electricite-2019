@@ -12,7 +12,7 @@ const ThumbnailGallery = () => {
   useEffect(() => {
     axios
       .get(
-        'https://gist.githubusercontent.com/nascVi/43d7d5abdaeaaa6ffa8bcba9e6e5ade3/raw/c02a6f90b592984f72268fd0e33f1ca03753492f/data.json'
+        'https://gist.githubusercontent.com/nascVi/43d7d5abdaeaaa6ffa8bcba9e6e5ade3/raw/edc685619088501282363ea23f4f52e8f39a0e78/data.json'
       )
       .then(res => setSIcons(res.data.sicons))
   }, [])
@@ -47,20 +47,16 @@ const ThumbnailGallery = () => {
 }
 
 const ThumbnailGalleryCSS = css`
-  background: #ddd;
-  height: 500px;
-  width: 1024px;
-  margin: 40px auto;
+  background: transparent;
+  height: 100%;
+  width: 80%;
   display: flex;
 
   .left,
   .right {
-    flex: 1;
+    flex: 3;
   }
 
-  .right {
-    padding: 40px;
-  }
 `
 
 export default ThumbnailGallery

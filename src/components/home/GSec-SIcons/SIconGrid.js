@@ -7,7 +7,7 @@ const SIconGrid = ({ services, onClick }) => {
       
     {services.map((service, i) => (
       <SIcon 
-        key={service.sUrl}
+        key={service.title}
         sUrl={service.sUrl}
         index={i}
         onClick={onClick}     

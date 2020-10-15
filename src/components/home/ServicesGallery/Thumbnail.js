@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from 'react'
 import { css, jsx } from '@emotion/core'
-import { Image } from "cloudinary-react";
+// import { Image } from "cloudinary-react";
 
 const SIcon = ({ sUrl, index, onClick }) => (
   <div
@@ -12,12 +12,15 @@ const SIcon = ({ sUrl, index, onClick }) => (
       cursor: pointer;
 
       img {
+        background:rgba(184, 184, 184, 0.2) 35%;
         width: 100%;
         height: 100%;
+        z-index: 99;
+        opacity: 0.7;
       }
     `}
   >
-    <Image src={sUrl} data-index={index} onClick={onClick} />
+    <img src={sUrl} data-index={index} onClick={onClick} />
   </div>
 )
 
