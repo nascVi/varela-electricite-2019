@@ -10,6 +10,7 @@ $sneakyLinear: linear-gradient(
     rgba(184, 184, 184, 0.2) 35%,
     rgba(2, 0, 36, 0.8) 100%
   );
+$circularLi: linear-gradient(.51turn, blue, 0.9%, rgb(16, 16, 16));
 $varela-grey: rgb(169, 169, 169);
 $varela-blue: rgb(32, 141, 167);
 $link-hover-col: rgb(144, 242, 252);
@@ -130,7 +131,7 @@ input[type=text], select {
 .home {
   &__hero {
     height: 100vh;
-    background: rgba(2, 0, 36, 0.8);
+    background: $circularLi;
 
     @media #{$small} {
       background-position: 0 0;
