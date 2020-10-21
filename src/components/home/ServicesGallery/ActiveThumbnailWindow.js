@@ -18,9 +18,6 @@ const ActiveThumbnailWindow = ({ activeSIcon }) => (
     `}
   >
     <img src={activeSIcon.sUrl} />
-    <br/><h3>
-      We are connected!👷💑💠🔌
-      </h3>
   </div>
 )
 
