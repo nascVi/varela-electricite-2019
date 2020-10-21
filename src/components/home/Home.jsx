@@ -82,11 +82,11 @@ const Home = () => {
                     <div className="wrapper">
                         <div className="logo"></div>
                         <Nav context="home" />
-                        <div className="home__caption" onClick={() => scrollToLanding('service__plaquette')}>
-                            JE CONSULTE?
+                        <div className="home__caption" onClick={() => scrollToLanding('')}>
+                            
                         </div>
                         <h6 className="home__caption-hint">Ou tick-tap/clickerais-je <span className="home__coffee" role="img" aria-label="coffee">☕</span>!?</h6>
-                        <div className="home__scroll-down" onClick={() => scrollToLanding('footer')} />
+                        <div className="home__scroll-down" onClick={() => scrollToLanding('service__plaquette')} />
                     </div>
                 </div>
                 {/* <CloudinaryContext cloudName="nascvi"> like SDisplay section! */}

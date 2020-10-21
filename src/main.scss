@@ -156,7 +156,7 @@ input[type=text], select {
 
     @media #{$small} {
       font-size: $second-header-size;
-      margin-top: -20vh;
+      
     }
 
     &:hover {
@@ -170,31 +170,26 @@ input[type=text], select {
     color: rgba(240, 242, 242, 0.8);
     // z-index: 99;
 
-    @media #{$small} {
-      margin-top: 20vh;
-    }
-
     @media #{$medium} {
       margin-top: 20vh;
     }
   }
 
   &__scroll-down {
-    position: relative;
     width: 30px;
-    height: 16px;
     background: url("/img/scroll.png") no-repeat;
-    padding-bottom: 5%;
+    padding-bottom: 20%;
     animation: hovering 1s ease-in-out infinite;
     cursor: pointer;
     z-index: 99;
 
     @media #{$small} {
       font-size: $third-header-size;
+      margin-top: -20vh;
     }
 
     &:hover {
-      background: url("/img/scrollHover.png") no-repeat center !important;
+      background: url("/img/scrollHover.png") no-repeat ;
 
       @media #{$medium} {
         background: url("/img/scrollHover.png") no-repeat center !important;
