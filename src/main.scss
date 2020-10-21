@@ -130,11 +130,12 @@ input[type=text], select {
 .home {
   &__hero {
     height: 100vh;
-    background: $sneakyLinear;
+    background: rgba(2, 0, 36, 0.8);
 
     @media #{$small} {
       background-position: 0 0;
       text-decoration: none;
+
     }
   }
 
