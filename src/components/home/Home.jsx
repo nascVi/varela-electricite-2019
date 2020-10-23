@@ -35,7 +35,7 @@ const Particles = ({ children }) => {
                 events: {
                     onhover: {
                         enable: true,
-                        mode: "repulse"
+                        mode: "bubble"
                     }
                 }
         },
@@ -85,7 +85,7 @@ const Home = () => {
                         <div className="home__caption" onClick={() => scrollToLanding('')}>
                             
                         </div>
-                        <h6 className="home__caption-hint">Ou tick-tap/clickerais-je <span className="home__coffee" role="img" aria-label="coffee">☕</span>!?</h6>
+                        <h6 className="home__caption-hint">Je planifie une première visite<span className="home__coffee" role="img" aria-label="coffee"></span></h6>
                         <div className="home__scroll-down" onClick={() => scrollToLanding('service__plaquette')} />
                     </div>
                 </div>

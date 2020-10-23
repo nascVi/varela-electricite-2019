@@ -13,8 +13,7 @@ export default {
         "value": "#4CD9E4"
       },
       "line_linked": {
-          "enable": true,
-          "opacity": 0.02
+          "enable": false,
       },
       "move": {
           "direction": "right",
@@ -27,7 +26,7 @@ export default {
           "anim": {
               "enable": true,
               "speed": 1,
-              "opacity_min": 0.05
+              "opacity_min": 0.5
           }
       }
   },
@@ -35,7 +34,7 @@ export default {
       "events": {
           "onclick": {
               "enable": true,
-              "mode": "push"
+              "mode": "bubble"
           }
       },
       "modes": {

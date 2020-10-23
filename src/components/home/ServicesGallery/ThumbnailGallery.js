@@ -40,8 +40,8 @@ const ThumbnailGallery = () => {
 
   return (
     <div css={ThumbnailGalleryCSS}>
-      <div className="left">{renderSIcons()}</div>
-      <div className="right">{renderInfo()}</div>
+      <div className="leftGRen">{renderSIcons()}</div>
+      <div className="rightGRen">{renderInfo()}</div>
     </div>
   )
 }

@@ -132,7 +132,7 @@ input[type=text], select {
   &__hero {
     height: 100vh;
     background: $circularLi;
-
+    
     @media #{$small} {
       background-position: 0 0;
       text-decoration: none;
@@ -142,7 +142,7 @@ input[type=text], select {
 
   &__caption {
     font-size: $third-header-size;
-    color: rgba(240, 242, 242, 0.8);
+    color: rgb(240, 242, 242);
     transition: all 0.3s ease;
     z-index: 99;
     cursor: pointer;
@@ -169,18 +169,18 @@ input[type=text], select {
   &__caption-hint {
     text-align: right;
     font-size: 10px;
-    color: rgba(240, 242, 242, 0.8);
+    color: rgb(240, 242, 242,);
     // z-index: 99;
 
     @media #{$medium} {
-      margin-top: 20vh;
+      margin-top: 15vh;
     }
   }
 
   &__scroll-down {
     width: 30px;
     background: url("/img/scroll.png") no-repeat;
-    padding-bottom: 20%;
+    padding-bottom: 25%;
     animation: hovering 1s ease-in-out infinite;
     cursor: pointer;
     z-index: 99;
@@ -813,6 +813,8 @@ input[type=text], select {
 // Services Icons & presentation section
 
 .service__plaquette {
+  padding-top: 30vh;
+  margin: auto;
   width: 100%;
   height: 100%;
 }
@@ -830,6 +832,9 @@ input[type=text], select {
   }  
 }
 
+.rightGRen {
+  margin-left: 5%;
+}
 
 .landing {
   margin-top: 40%;
