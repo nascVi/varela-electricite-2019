@@ -19,7 +19,18 @@ const Particles = ({ children }) => {
                 value: 81
               },
               size: {
-                value: 3
+                value: 3,
+                random: true,
+                anim: {
+                  speed: 4,
+                  size_min: 0.3
+                }
+              },
+              line_linked: {
+                enable: true,
+                color:{
+                  value: "#8176c3"
+                }
               },
               color: {
                 value: "#4CD9E4"

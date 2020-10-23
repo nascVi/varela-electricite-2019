@@ -28,8 +28,8 @@ const ThumbnailGallery = () => {
   const renderInfo = () =>
       sicons.length ? (
       <Fragment>
-        <h1>{sicons[activeIndex].title}</h1>
-        <p>{sicons[activeIndex].info}</p>
+        <h1 className="rightGRenT">{sicons[activeIndex].title}</h1>
+        <p className="rightGRenP">{sicons[activeIndex].info}</p>
       </Fragment>
     ) : null
 
@@ -41,15 +41,17 @@ const ThumbnailGallery = () => {
   return (
     <div css={ThumbnailGalleryCSS}>
       <div className="leftGRen">{renderSIcons()}</div>
-      <div className="rightGRen">{renderInfo()}</div>
+      <div className="rightGRen"><div className="rightGRenB">
+        {renderInfo()}
+        </div>
+        </div>
     </div>
   )
 }
 
 const ThumbnailGalleryCSS = css`
-  background: transparent;
   height: 100%;
-  width: 80%;
+  width: 100%;
   display: flex;
 
   .left,
