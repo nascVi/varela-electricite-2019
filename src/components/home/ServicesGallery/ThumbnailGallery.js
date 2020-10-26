@@ -53,6 +53,10 @@ const ThumbnailGalleryCSS = css`
   height: 100%;
   width: 100%;
   display: flex;
+  border: 1px solid rgb(246, 246, 246);
+  border-radius: 3px;
+  background: rgb(246, 246, 246);
+
 
   .left,
   .right {

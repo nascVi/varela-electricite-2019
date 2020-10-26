@@ -102,10 +102,21 @@ const Home = () => {
                 </div>
                 {/* <CloudinaryContext cloudName="nascvi"> like SDisplay section! */}
                 <Gallery />
-                <Video className="storyVid" cloudName="nascvi" publicId="demoFoot" width="80%" height="80%" loop={true} autoPlay={true} controls={true}>
-                  {/* <Transformation width="0.4" angle="20" />
-                  <Transformation overlay="cloudinary_icon" opacity="50" width="60" gravity="south_east" y="15" x="60" /> */}
-                </Video>
+                <div className="storyVid">
+                  <Video  
+                  cloudName="nascvi" 
+                  publicId="demoFoot" 
+                  width="88%" 
+                  height="88%" 
+                  loop={true}
+                  autoPlay={true}
+                  controls={true} 
+                  />
+                    {/* <Transformation width="0.4" angle="20" />
+                    <Transformation overlay="cloudinary_icon" opacity="50" width="60" gravity="south_east" y="15" x="60" /> */}
+                </div>
+
+                
                 {/* </CloudinaryContext> */}
                   <InaSpace>
                     <Element name="landing">

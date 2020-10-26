@@ -7,7 +7,7 @@ const ActiveThumbnailWindow = ({ activeSIcon }) => (
     css={css`
       height: 80%;
       width: 100%;
-      background: rgba(184, 184, 184, 0.2) 35%;
+      background: rgba(246, 246, 246, 0.8);
       position: relative;
       color: white;
 

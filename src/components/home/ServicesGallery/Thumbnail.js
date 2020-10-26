@@ -12,7 +12,7 @@ const SIcon = ({ sUrl, index, onClick }) => (
       cursor: pointer;
 
       img {
-        background:rgba(184, 184, 184, 0.2) 35%;
+        background: rgb(184, 184, 184);
         width: 100%;
         height: 100%;
         z-index: 99;
