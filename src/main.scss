@@ -837,9 +837,21 @@ input[type=text], select {
   }  
 }
 
+.leftGRenB {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.8) 0%,
+    rgba(2, 0, 36, 0.5) 20%,
+    rgba(2, 0, 36, 0.8) 100%
+  );
+}
+
 .leftGRen {
   width: 100%;
-  margin-right: 0.3%
+  margin-right: 0.3%;
+  background: url('./components/home/science.png');
+  background-size: 50%;
 }
 
 

@@ -5,15 +5,15 @@ import { css, jsx } from '@emotion/core'
 const ActiveThumbnailWindow = ({ activeSIcon }) => (
   <div
     css={css`
-      height: 80%;
+      margin-top: 7%;
+      height: 70.5%;
       width: 100%;
-      background: rgba(246, 246, 246, 0.8);
       position: relative;
       color: white;
 
       img {
-        width: 70%;
-        height: 70%;
+        width: 100%;
+        height: 100%;
       }
     `}
   >

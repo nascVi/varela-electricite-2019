@@ -12,7 +12,7 @@ const ThumbnailGallery = () => {
   useEffect(() => {
     axios
       .get(
-        'https://gist.githubusercontent.com/nascVi/43d7d5abdaeaaa6ffa8bcba9e6e5ade3/raw/edc685619088501282363ea23f4f52e8f39a0e78/data.json'
+        'https://gist.githubusercontent.com/nascVi/43d7d5abdaeaaa6ffa8bcba9e6e5ade3/raw/74a4e525bd049384244de76d7e95a5bd1cc48024/data.json'
       )
       .then(res => setSIcons(res.data.sicons))
   }, [])
@@ -40,10 +40,16 @@ const ThumbnailGallery = () => {
 
   return (
     <div css={ThumbnailGalleryCSS}>
-      <div className="leftGRen">{renderSIcons()}</div>
-      <div className="rightGRen"><div className="rightGRenB">
-        {renderInfo()}
+      <div className="leftGRen">
+        <div className="leftGRenB">
+          {renderSIcons()}
         </div>
+      </div>
+
+      <div className="rightGRen">
+          <div className="rightGRenB">
+          {renderInfo()}
+          </div>
         </div>
     </div>
   )
@@ -53,7 +59,7 @@ const ThumbnailGalleryCSS = css`
   height: 100%;
   width: 100%;
   display: flex;
-  border: 1px solid rgb(246, 246, 246);
+  border: 1.5px solid rgb(246, 246, 246);
   border-radius: 3px;
   background: rgb(246, 246, 246);
 

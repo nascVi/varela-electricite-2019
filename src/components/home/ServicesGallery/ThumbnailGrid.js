@@ -6,8 +6,10 @@ import SIcon from './Thumbnail'
 const ThumbnailGrid = ({ sicons, onClick }) => (
   <div
     css={css`
-      height: 40%;
+      height: 37%;
       width: 100%;
+      padding-top: 0.5%;
+      margin-bottum: 1%;
       display: flex;
       flex-wrap: wrap;
     `}
