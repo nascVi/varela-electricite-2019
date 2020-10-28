@@ -101,6 +101,7 @@ const Home = () => {
                     </div>
                 </div>
                 {/* <CloudinaryContext cloudName="nascvi"> like SDisplay section! */}
+                
                 <Gallery />
                 <div className="storyVid">
                   <Video  
