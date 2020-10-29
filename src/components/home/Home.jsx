@@ -104,6 +104,7 @@ const Home = () => {
                 
                 <Gallery />
                 <div className="storyVid">
+                <h1 className="vidTitle">La première visite est essentielle</h1>
                   <Video  
                   cloudName="nascvi" 
                   publicId="demoFoot" 
