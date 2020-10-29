@@ -1,5 +1,5 @@
 import React from 'react'
-import { Global, css, jsx } from '@emotion/core'
+import { Global, css } from '@emotion/core'
 import ThumbnailGallery from './ThumbnailGallery'
 
 /**

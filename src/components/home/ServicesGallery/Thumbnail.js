@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React from 'react'
+// import React from 'react'
 import { css, jsx } from '@emotion/core'
 // import { Image } from "cloudinary-react";
 
@@ -19,7 +19,7 @@ const SIcon = ({ sUrl, index, onClick }) => (
       }
     `}
   >
-    <img src={sUrl} data-index={index} onClick={onClick} />
+    <img src={sUrl} data-index={index} onClick={onClick} alt="spthumbnail" />
   </div>
 )
 

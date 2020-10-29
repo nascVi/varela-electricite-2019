@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React from 'react'
+// import React from 'react'
 import { css, jsx } from '@emotion/core'
 
 const ActiveThumbnailWindow = ({ activeSIcon }) => (
@@ -15,7 +15,7 @@ const ActiveThumbnailWindow = ({ activeSIcon }) => (
       }
     `}
   >
-    <img src={activeSIcon.sUrl} />
+    <img src={activeSIcon.sUrl} alt="asthumbnail"/>
   </div>
 )
 
