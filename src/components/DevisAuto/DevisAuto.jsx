@@ -3,7 +3,7 @@ import { boutique } from '../../data/boutique'
 import { Fade } from 'react-reveal'
 import UniteBoutique from './UniteBoutique'
 
-const Boutique = () => {
+const DevisAuto = () => {
     const compteursBoutique = boutique.filter(unite => unite.type === 'compteurs');
     const cablesBoutique = boutique.filter(unite => unite.type === 'cables');
     const kitsDomotiqueBoutique = boutique.filter(unite => unite.type === 'kitsDomotiques');
@@ -48,4 +48,4 @@ const Boutique = () => {
     )
 }
 
-export default Boutique
+export default DevisAuto

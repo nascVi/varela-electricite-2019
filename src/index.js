@@ -6,7 +6,7 @@ import Varela from './components/Varela'
 import './main.scss'
 import Activite from './components/Activite'
 import Folio from './components/Folio'
-import Boutique from './components/Boutique/Boutique'
+import DevisAuto from './components/DevisAuto/DevisAuto'
 
 import Footer from './components/header-footer/Footer'
 import Header from './components/header-footer/Header'
@@ -21,7 +21,7 @@ const Routes = () => (
             <Route exact path="/varela" component={Varela} />
             <Route exact path="/activité" component={Activite} />
             <Route exact path="/folio" component={Folio} />
-            <Route exact path="/boutique" component={Boutique} />
+            <Route exact path="/devis-auto" component={DevisAuto} />
             <Route exact path="/consultation" component={Consultation} />
             <Footer />
         </div>
