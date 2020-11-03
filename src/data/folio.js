@@ -1,76 +1,77 @@
 export const folio = [
     {
-        day: '⛳',
+        day: '🌈',
         month: 'Est achevé',
         location: 'Maison Individuelle'
     },
     {
-        day: '🏌',
+        day: '🌋',
         month: 'Est en cours',
         location: 'Immeuble'
-    },
+    }, 
     {
-        day: '🍽',
+        
+        day: '🌊',
         month: 'Est à venir',
         location: 'Maison Individuelle'
     },
     {
-        day: '🏌',
+        day: '🌋',
         month: 'Est cours',
         location: 'Immeuble'
     },
     {
-        day: '🍽',
+        day: '🌊',
         month: 'Est à venir',
         location: 'Maison individuelle'
     },
     {
-        day: '🏌',
+        day: '🌋',
         month: 'Est en cours',
         location: 'Immeuble'
     },
     {
-        day: '⛳',
+        day: '🌈',
         month: 'Est achevé',
         location: 'Maison individuelle'
     },
     {
-        day: '🏌',
+        day: '🌋',
         month: 'Est en cours',
         location: 'Maison individuelle'
     },
     {
-        day: '🏌',
+        day: '🌋',
         month: 'Est en cours',
         location: 'Immeuble'
     },
     {
-        day: '🍽',
+        day: '🌊',
         month: 'Est à venir',
         location: 'Immeuble'
     },
     {
-        day: '⛳',
+        day: '🌈',
         month: 'Est achevé',
         location: 'Immeuble'
     },
     {
-        day: '🍽',
+        day: '🌊',
         month: 'Est à venir',
         location: 'Immeuble'
     },
     {
-        day: '⛳',
+        day: '🌈',
         month: 'Est achevé',
         location: 'Font de commerce'
     },
     {
-        day: '⛳',
+        day: '🌈',
         month: 'Est achevé',
         location: 'Maison individuelle'
     },
     {
-        day: '⛳',
+        day: '🌈',
         month: 'Est achevé',
         location: 'Immeuble'
     },
