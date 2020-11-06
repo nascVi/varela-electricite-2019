@@ -26,7 +26,7 @@ const Folio = () => {
                                         {location}
                                     </div>
                                     <Link to="/activité">
-                                        <Button variant="outlined" color="primary">Activité</Button>                                        
+                                        <Button variant="outlined" color="primary">activité</Button>                                        
                                     </Link>
                                 </div>
                             </div>
