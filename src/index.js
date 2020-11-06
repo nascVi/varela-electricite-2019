@@ -10,7 +10,7 @@ import PremiereVis from './components/PremiereVis/PremiereVis'
 
 import Footer from './components/header-footer/Footer'
 import Header from './components/header-footer/Header'
-import Consultation from './components/Consultation/Consultation'
+// import Consultation from './components/Consultation/Consultation'
 
 
 const Routes = () => (
@@ -22,8 +22,7 @@ const Routes = () => (
             <Route exact path="/activité" component={Activite} />
             <Route exact path="/folio" component={Folio} />
             <Route exact path="/premiere-visite" component={PremiereVis} />
-            <Route exact path="/consultation" component={Consultation} />
-            <Footer />
+        <Footer />
         </div>
     </BrowserRouter>
 )
