@@ -48,7 +48,6 @@ const ThumbnailGallery = () => {
 
       <div className="rightGRen">
           <div className="rightGRenB">
-            Le Scénario:
           {renderInfo()}
           </div>
         </div>
