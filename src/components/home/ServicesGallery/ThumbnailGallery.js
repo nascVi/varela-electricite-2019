@@ -12,7 +12,7 @@ const ThumbnailGallery = () => {
   useEffect(() => {
     axios
       .get(
-        'https://gist.githubusercontent.com/nascVi/43d7d5abdaeaaa6ffa8bcba9e6e5ade3/raw/74a4e525bd049384244de76d7e95a5bd1cc48024/data.json'
+        'https://gist.githubusercontent.com/nascVi/43d7d5abdaeaaa6ffa8bcba9e6e5ade3/raw/44a5c1fbdf0e0382c120edfab70708d91b77641f/data.json'
       )
       .then(res => setSIcons(res.data.sicons))
   }, [])
