@@ -1,6 +1,7 @@
 $main-back: rgb(16, 16, 16);
 $main-font-col: rgb(246, 246, 246);
 $headerNav-back: rgba(169, 169, 169, 0.98);
+$headerHr-back: rgba(144, 242, 252, 0.1);
 $third-header-size: 25px;
 $second-header-size: 15px;
 $main-nav-col: rgb(46, 46, 46);
@@ -199,6 +200,13 @@ input[type=text], select {
       }
     }
   }
+}
+
+.ColoredHr {
+  margin-top: 5%;
+  height: 40px;
+  width: 100%;
+  background-color: $headerHr-back;
 }
 
 .wrapper {

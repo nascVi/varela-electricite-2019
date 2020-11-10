@@ -99,6 +99,7 @@ const Home = () => {
                         <div className="home__scroll-down" onClick={() => scrollToLanding('landing')} />
                     </div>
                 </div>
+                <hr className="ColoredHr"/>
                 {/* <CloudinaryContext cloudName="nascvi"> like SDisplay section! */}
                 
                 {/* </CloudinaryContext> */}
