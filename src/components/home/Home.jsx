@@ -7,7 +7,6 @@ import { Fade } from 'react-reveal'
 import ReactParticles from 'react-particles-js'
 
 import Gallery from './Gallery'
-import { Video/*, CloudinaryContext, Transformation, Image*/} from 'cloudinary-react'
 
 const Particles = ({ children }) => {
     return (
@@ -97,34 +96,24 @@ const Home = () => {
                             
                         </div>
                         <h6 className="home__caption-hint">Je planifie une première visite<span className="home__coffee" role="img" aria-label="coffee"></span></h6>
-                        <div className="home__scroll-down" onClick={() => scrollToLanding('service__plaquette')} />
+                        <div className="home__scroll-down" onClick={() => scrollToLanding('landing')} />
                     </div>
                 </div>
                 {/* <CloudinaryContext cloudName="nascvi"> like SDisplay section! */}
                 
-                <Gallery />
-                <div className="storyVid">
-                <h1 className="vidTitle">La première visite est essentielle</h1>
-                  <Video  
-                  cloudName="nascvi" 
-                  publicId="demoFoot" 
-                  width="88%" 
-                  height="88%" 
-                  loop={true}
-                  autoPlay={true}
-                  controls={true} 
-                  />
-                    {/* <Transformation width="0.4" angle="20" />
-                    <Transformation overlay="cloudinary_icon" opacity="50" width="60" gravity="south_east" y="15" x="60" /> */}
-                </div>
-
-                
                 {/* </CloudinaryContext> */}
-                  <InaSpace>
+                <InaSpace>
                     <Element name="landing">
                         <Landing />
                     </Element>
-                  </InaSpace>
+                </InaSpace>
+                <Gallery />
+
+                <div>
+                  <br/>
+                  <br/>
+                  <br/>
+                </div>
             </Fade>
         </div>
       </Particles>

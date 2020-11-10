@@ -808,8 +808,6 @@ input[type=text], select {
   }
 }
 
-
-
 // Services Icons & presentation section
 
 
@@ -922,7 +920,8 @@ input[type=text], select {
 
 
 .landing {
-  margin-top: 40%;
+  padding-top: 10%;
+  padding-bottom: 8%;
 
   @media #{$large}{
     margin-top: 50%;
