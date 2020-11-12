@@ -202,11 +202,25 @@ input[type=text], select {
   }
 }
 
-.ColoredHr {
-  margin-top: 5%;
-  height: 40px;
-  width: 100%;
+.ColoredHr0 {
+  margin-top: 0;
+  height: 10px;
+  width: 70%;
   background-color: $headerHr-back;
+}
+
+.ColoredHr1 {
+  margin-top: 0.5%;
+  height: 20px;
+  width: 80%;
+  background-color: $main-font-col;
+}
+
+.ColoredHr {
+  margin-top: 0.5%;
+  height: 40px;
+  width: 90%;
+  background-color: $link-hover-col;
 }
 
 .wrapper {
