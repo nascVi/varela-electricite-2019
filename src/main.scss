@@ -927,6 +927,7 @@ input[type=text], select {
 }
 
 .vidTitle {
+  font-size: $caption-size;
   margin-bottom: 4em;
   color: $main-font-col;
 }
