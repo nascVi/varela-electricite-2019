@@ -96,12 +96,18 @@ const Home = () => {
                             
                         </div>
                         <h6 className="home__caption-hint">Je planifie une première visite<span className="home__coffee" role="img" aria-label="coffee"></span></h6>
-                        <div className="home__scroll-down" onClick={() => scrollToLanding('landing')} />
+                        <div className="home__scroll-down" onClick={() => scrollToLanding('home__coffee')} />
                     </div>
                 </div>
+                <Fade left>
                 <hr className="ColoredHr0"/>
+                </Fade>
+                <Fade right delay={1000} >
                 <hr className="ColoredHr1"/>
+                </Fade>
+                <Fade bottom duration={1000} delay={2000} >
                 <hr className="ColoredHr"/>
+                </Fade>
                 {/* <CloudinaryContext cloudName="nascvi"> like SDisplay section! */}
                 
                 {/* </CloudinaryContext> */}

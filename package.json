@@ -23,6 +23,7 @@
     "react-thanos-snap": "^0.0.7",
     "react-to-pdf": "^0.0.13",
     "react-to-print": "^2.11.0",
+    "react-wavify": "^1.4.0",
     "serve": "^11.3.0",
     "styled-components": "^5.1.0",
     "vercel": "^20.1.2"
