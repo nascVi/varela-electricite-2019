@@ -24,7 +24,7 @@ const Landing = () => {
                     height: 85,
                     amplitude: 40,
                     speed: 0.15,
-                    points: 5
+                    points: 3
                     }}
                     />
             {/* <svg class="wave-top" width="100" viewBox="0 0 1200 250">
@@ -38,7 +38,8 @@ const Landing = () => {
                 <h1 className="vidTitle">La première visite est essentielle</h1>
 
                 {/* <Link to="premiere-visite"> */}
-                  <Video  
+                  <Video
+                  className="vid"
                   cloudName="nascvi" 
                   publicId="demoFoot" 
                   width="100%" 
@@ -58,9 +59,9 @@ const Landing = () => {
                 </div>
 
 
-                    <div className="landing__video-container">
-                        <h1>PRODUIT QUE NOUS INSTALLONS SOUVENT</h1>
-                        <img className="landing__video" src="/img/linky-vieux-compteur.jpg" alt="vidéo produit de gamme" />
+                    <div className="landing__template-container">
+                   <h1>PRESTATIONS POUR LA MODERNISATION DES SYSTEMES</h1>
+                        <img className="landing__template" src="/img/linky-vieux-compteur.jpg" alt="vidéo produit de gamme" />
                     </div>
 
             </div>

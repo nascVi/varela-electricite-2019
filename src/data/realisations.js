@@ -11,14 +11,9 @@ export const realisations = [
             legrand: 23.99
         },
         piclist: [
-            'The Truth Beneath - Silence',
-            'The Truth Beneath - Floating',
-            'The Truth Beneath - Daydreamer',
-            'The Truth Beneath - Eternity',
-            'The Truth Beneath - Silence',
-            'The Truth Beneath - Floating',
-            'The Truth Beneath - Daydreamer',
-            'The Truth Beneath - Eternity',
+            'Luminaires - 150€',
+            'Eclairage extérieur - 200€',
+            'Réseau Eléctrique - 400€'
         ]
     },
     {
@@ -33,10 +28,9 @@ export const realisations = [
             legrand: 23.99
         },
         piclist: [
-            'The Truth Beneath - Silence',
-            'The Truth Beneath - Floating',
-            'The Truth Beneath - Daydreamer',
-            'The Truth Beneath - Eternity'
+            'Luminaires - 150€',
+            'Eclairage extérieur - 200€',
+            'Réseau Eléctrique - 400€'
         ]
     },
     {
@@ -51,10 +45,9 @@ export const realisations = [
             legrand: 23.99
         },
         piclist: [
-            'The Truth Beneath - Silence',
-            'The Truth Beneath - Floating',
-            'The Truth Beneath - Daydreamer',
-            'The Truth Beneath - Eternity'
+            'Luminaires - 150€',
+            'Eclairage extérieur - 200€',
+            'Réseau Eléctrique - 400€'
         ]
     }
 ]

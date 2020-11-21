@@ -20,6 +20,7 @@ const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, piclist }) =
 
                 <div className="realisation__info">
                     {favoris ? <div className="realisation__en-favoris">Favoris</div> : null}
+                    <br/>
                     <div className="realisation__budjet">
                         <div className="realisation__budjet-item"><span>Installation Häger</span> €{budjet.häger}</div>
                         <div className="realisation__budjet-item"><span>Linky</span> €{budjet.enedis}</div>
@@ -28,7 +29,7 @@ const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, piclist }) =
                     <div className="realisation__selection">
                         {renderPics()}
                     </div>
-                    <div className="realisation__carroussel">
+                    {/* <div className="realisation__carroussel">
                         <div className="realisation__trackline-container">
                             <div className="realisation__timing">--:--</div>
                             <div className="realisation__trackline"></div>
@@ -38,7 +39,7 @@ const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, piclist }) =
                             <div className="realisation__prev"></div>
                             <div className="realisation__next"></div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </Fade>
