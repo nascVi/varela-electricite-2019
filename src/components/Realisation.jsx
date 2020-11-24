@@ -29,8 +29,7 @@ const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, piclist }) =
                     </div>
                     </Fade>
                     <Fade delay={id * 80} left>
-
-                    <div className="realisation__selection">
+                    <div className="realisation__selection">                    
                         {renderPics()}
                     </div>
                     </Fade>

@@ -39,7 +39,7 @@ const ThumbnailGallery = () => {
   }
 
   return (
-    <div css={ThumbnailGalleryCSS}>
+    <div className="thumbnailG">
       <div className="leftGRen">
         <div className="leftGRenB">
           {renderSIcons()}
@@ -55,26 +55,5 @@ const ThumbnailGallery = () => {
   )
 }
 
-const ThumbnailGalleryCSS = css`
-  margin-left: -30%;
-  height: 200%;
-  width: 100%;
-  display: flex;
-  border: 1.5px solid rgb(246, 246, 246);
-  border-radius: 3px;
-  background: rgb(246, 246, 246);
-
-
-  @media #{$small} {
-    height: 250%;
-    margin-left: -100%;
-  }
-
-  .left,
-  .right {
-    flex: 3;
-  }
-
-`
 
 export default ThumbnailGallery

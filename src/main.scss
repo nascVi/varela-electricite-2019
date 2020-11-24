@@ -983,7 +983,7 @@ input[type=text], select {
   &__template-container {
     margin-left: -1em;
     align-self: flex-start;
-    
+    border: 1px solid $link-hover-col;
   }
 
   &__template {
@@ -1009,6 +1009,25 @@ input[type=text], select {
   }
 }
 
+.thumbnailG {
+  margin-left: -30%;
+  height: 200%;
+  width: 100%;
+  display: flex;
+  border: 1.5px solid rgb(246, 246, 246);
+  border-radius: 3px;
+  background: rgb(246, 246, 246);
+  
+  @media #{$small} {
+    height: 250%;
+    margin-left: -100%;
+  }
+
+  .left,
+  .right {
+    flex: 3;
+  }
+}
 
 .varela {
   max-width: 1088;
