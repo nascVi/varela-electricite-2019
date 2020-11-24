@@ -11,7 +11,7 @@ $sneakyLinear: linear-gradient(
     rgba(184, 184, 184, 0.2) 35%,
     rgba(2, 0, 36, 0.8) 100%
   );
-$circularLi: linear-gradient(.51turn, blue, 0.9%, rgb(16, 16, 16));
+$circularLi: linear-gradient(.51turn, blue, 0.9%, rgba(16, 16, 16, 0.9));
 $varela-grey: rgb(169, 169, 169);
 $varela-blue: rgb(144, 242, 252);
 $link-hover-col: rgb(144, 242, 252);
@@ -703,12 +703,19 @@ input[type=text], select {
   }
 
     &__selection {
+      width: 50%;
       text-align: left;
-      padding-left: 2%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      padding-left: 20%;
       background: $sneakyLinear;
       border: 1px solid $link-hover-col;
       max-height: 300px;
       overflow: auto;
+
+      @media #{$small} {
+       width: 100%;
+      } 
     }
 
     &__pic {
@@ -846,7 +853,7 @@ input[type=text], select {
   height: 99.9em;
 
   @media #{$large} {
-    padding-top: 18em;
+    padding-top: 14em;
     height: 89em !important;
     width: 100%;
   }
@@ -893,6 +900,7 @@ input[type=text], select {
 
 
 .rightGRen {
+  height: 100%;
   width: 100%;
   background: url('./components/home/science.png');
   background-size: 50%;
