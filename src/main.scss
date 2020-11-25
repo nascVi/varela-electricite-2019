@@ -983,12 +983,11 @@ input[type=text], select {
   &__template-container {
     margin-left: -1em;
     align-self: flex-start;
-    border: 1px solid $link-hover-col;
   }
 
   &__template {
     width: 100%;
-    
+    border: 1px solid $link-hover-col;
   }
 }
 
@@ -1245,13 +1244,27 @@ input[type=text], select {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  color: $main-nav-col !important;
+  padding-top: 5em;
+  padding-bottom: 5em;
   }
-    
-  .Post{
+
+.VFLogo {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.Post {
   max-width: 800px;
   width: 100%;
   display: table;
   margin: 0 auto;
-  padding: 20px 50px;
   }
+
+.text-center {
+  padding-top: 5px;
+  text-align: center;
+  font-size: $main-font-col;
+  position: inherit;
+  border-radius: 2px;
+}
