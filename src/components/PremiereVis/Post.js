@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PDF from './PDF';
 import logo from './icone.png'
+import DragDrop from './DragDrop'
 
 class Post extends Component {
     state = {
@@ -9,7 +10,7 @@ class Post extends Component {
         image: '',
         postSubmitted: false
     }
-
+    
     onChange = input => e => {
         this.setState({
             [input]: e.target.value
@@ -28,7 +29,7 @@ class Post extends Component {
         }
     }
 
-    render(){
+    render(props){
         return(
             <>
                 {  !this.state.postSubmitted ? 
@@ -62,19 +63,18 @@ class Post extends Component {
                                                     <input onChange={this.onChange('title')} name="title" type="text" placeholder="Nom de votre Projet..." className="form-control" />
                                                 </div>
                                                 <div className="form-group">
-                                                    <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-user bigicon">Ajouter une photo avec l'url.</i></span>
+                                                    <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-user bigicon">Ajouter une photo avec l'url. (Pas encore dispo pour toute les apps.)</i></span>
                                                     <input onChange={this.onChange('image')} name="image" type="text" placeholder="https://..." className="form-control" />
                                                 </div>
                                                 <div className="form-group">
-                                                    <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-user bigicon">Photo du bureau.</i></span>
-                                                    <input onChange={this.onChange('file')} name="file" type="file" className="form-control" />
+                                                    <DragDrop />
                                                 </div>
                                                 <div className="form-group">
                                                     <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-pencil-square-o bigicon"></i></span>
                                                     <textarea onChange={this.onChange('content')} className="form-control" name="content" placeholder="Décrivez votre projet... " rows="7"></textarea>
                                                 </div>
                                                 <div className="form-group">
-                                                    <button type="button" onClick={this.sunmitPost} className="btn btn-primary btn-lg">Carbone</button>
+                                                    <button type="button" onClick={this.sunmitPost} className="btn btn-primary btn-lg">Vers PDF</button>
                                                 </div>
                                             </fieldset>
                                         </form>
@@ -83,7 +83,7 @@ class Post extends Component {
                             </div>
                         </div>
                     </div>) : (
-                        <PDF title={this.state.title} content={this.state.content} image={this.state.image} />
+                        <PDF title={this.state.title} content={this.state.content} image={this.state.image} file={this.state.props}/>
                     )
                 }
             </>

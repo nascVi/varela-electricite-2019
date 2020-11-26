@@ -9,6 +9,7 @@ const PDF = (props) => {
       <div className="Post" ref={ref}>
         <h1>{props.title}</h1>
         <img src={props.image} alt={props.title} />
+        <img src={props.files} alt="deskimage" />
         <p>{props.content}</p>
       </div>
       <Pdf targetRef={ref} filename="post.pdf">
