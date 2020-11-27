@@ -122,13 +122,13 @@ function DragDrop(props) {
     <div className="container">
       <div {...getRootProps({ style })}>
         <input {...getInputProps()} />
-        <p>Drag 'n' drop some files here</p>
+        <p>Glisser déposer vos photos</p>
         <button type="button" onClick={open}>
-          Open File Dialog
+        bureau
         </button>
       </div>
       <aside>
-        <h4>Files</h4>
+        <h4>Les photos ou documents sur votre bureau</h4>
         <ul>{filepath}</ul>
       </aside>
       <aside style={thumbsContainer}>{thumbs}</aside>

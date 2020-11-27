@@ -8,6 +8,7 @@ class Post extends Component {
         title: '',
         content: '',
         image: '',
+        thumbs: '',
         postSubmitted: false
     }
     
@@ -30,6 +31,7 @@ class Post extends Component {
     }
 
     render(props){
+        const thumbs = this.state.props.thumbs
         return(
             <>
                 {  !this.state.postSubmitted ? 
@@ -44,17 +46,15 @@ class Post extends Component {
                                             </div>
                                             <fieldset>
                                                 <p className="text-center header">
-                                                    Par mail: 
-                                                        <a href="mailto:varenergie@gmail.com">
+                                                    📮 <a href="mailto:varenergie@gmail.com">
                                                         varenergie@gmail.com
                                                         </a>
                                                         <br/> 
-                                                    Ligne directe: 
-                                                        <a href="tel:+33164622649">
+                                                    📎  <a href="tel:+33164622649">
                                                         +331 64 62 26 49 
                                                         </a>
                                                         <br/>
-                                                    io: <a href="mailto:lpchampigny@hotmail.com">
+                                                    👨‍💻 <a href="mailto:lpchampigny@hotmail.com">
                                                             lpChamps`
                                                         </a>
                                                 </p>
@@ -67,7 +67,7 @@ class Post extends Component {
                                                     <input onChange={this.onChange('image')} name="image" type="text" placeholder="https://..." className="form-control" />
                                                 </div>
                                                 <div className="form-group">
-                                                    <DragDrop />
+                                                    <DragDrop onChange={this.onChange('thumbs')} thumbs={thumbs} />
                                                 </div>
                                                 <div className="form-group">
                                                     <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-pencil-square-o bigicon"></i></span>
@@ -83,7 +83,7 @@ class Post extends Component {
                             </div>
                         </div>
                     </div>) : (
-                        <PDF title={this.state.title} content={this.state.content} image={this.state.image} file={this.state.props}/>
+                        <PDF title={this.state.title} content={this.state.content} image={this.state.image} thumbs={this.state.thumbs}/>
                     )
                 }
             </>
