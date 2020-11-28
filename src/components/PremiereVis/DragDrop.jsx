@@ -1,6 +1,7 @@
 import React, { useMemo, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-import { useDropzone } from "react-dropzone";
+
+import { useDropzone } from 'react-dropzone'
 
 const baseStyle = {
   flex: 1,

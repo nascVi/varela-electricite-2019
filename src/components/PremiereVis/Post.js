@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, useMemo, useEffect, useState } from 'react';
 import PDF from './PDF';
 import logo from './icone.png'
-import DragDrop from './DragDrop'
 
 class Post extends Component {
+
     state = {
         title: '',
         content: '',
@@ -28,13 +28,12 @@ class Post extends Component {
                 postSubmitted: true
             });
         }
-    }
+    } 
 
-    render(props){
-        const thumbs = this.state.props.thumbs
+render(props){
         return(
             <>
-                {  !this.state.postSubmitted ? 
+                {  !this.state.postSubmitted ?
                     (<div className="container">
                         <div className="jumbotron mt-3">
                             <div className="row">
@@ -67,9 +66,6 @@ class Post extends Component {
                                                     <input onChange={this.onChange('image')} name="image" type="text" placeholder="https://..." className="form-control" />
                                                 </div>
                                                 <div className="form-group">
-                                                    <DragDrop onChange={this.onChange('thumbs')} thumbs={thumbs} />
-                                                </div>
-                                                <div className="form-group">
                                                     <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-pencil-square-o bigicon"></i></span>
                                                     <textarea onChange={this.onChange('content')} className="form-control" name="content" placeholder="Décrivez votre projet... " rows="7"></textarea>
                                                 </div>
@@ -82,8 +78,9 @@ class Post extends Component {
                                 </div>
                             </div>
                         </div>
-                    </div>) : (
-                        <PDF title={this.state.title} content={this.state.content} image={this.state.image} thumbs={this.state.thumbs}/>
+                    </div>
+                        ) : (
+                        <PDF title={this.state.title} content={this.state.content} image={this.state.image} />
                     )
                 }
             </>

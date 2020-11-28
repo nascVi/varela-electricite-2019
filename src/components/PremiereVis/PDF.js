@@ -1,5 +1,6 @@
 import React from 'react';
 import Pdf from "react-to-pdf";
+import DragDrop from './DragDrop'
 
 const ref = React.createRef();
 
@@ -9,7 +10,7 @@ const PDF = (props) => {
       <div className="Post" ref={ref}>
         <h1>{props.title}</h1>
         <img src={props.image} alt={props.title} />
-        <img src={props.files} alt="deskimage" />
+          <DragDrop />
         <p>{props.content}</p>
       </div>
       <Pdf targetRef={ref} filename="post.pdf">
