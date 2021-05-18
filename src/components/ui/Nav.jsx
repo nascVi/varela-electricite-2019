@@ -14,7 +14,7 @@ const Nav = props => {
             <NavLink className={getClassName('/varela')} to="/varela">Varela</NavLink>
             <NavLink className={getClassName('/activité')} exact to="/activité">Activité</NavLink>
             <NavLink className={getClassName('/folio')} exact to="/folio">Folio</NavLink>
-            <NavLink className={getClassName('/premiere-visite')} exact to="/premiere-visite">1ère Visite</NavLink>
+            <NavLink className={getClassName('/premiere-visite')} exact to="/contact">Contact</NavLink>
         </div>
     )
 }

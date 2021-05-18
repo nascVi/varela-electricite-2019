@@ -10,15 +10,15 @@ const Footer = () => {
                 </div>
                      <div className="flogo"></div>
                     {/*<div className="pro-ref-logo"></div> */}
-                <div className="footer__contactForm">
-                    <h3>PRISE DE CONTACT</h3>
-                    <Info />
-                </div>
+
                 <div className="footer__social">
                     <h3>RESEAUX SOCIAUX</h3>
                     <Socials />
                     <div className="footer__copy">
-                        ©2020 Varela Electricité - lpChamps` make
+                        <span>
+                            <br></br>
+                            ©2021 Varela Electricité - lpChamps` make
+                        </span>
                     </div>
                 </div>
                 <br />

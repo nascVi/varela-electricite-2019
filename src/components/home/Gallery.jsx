@@ -4,10 +4,10 @@ import Services from './ServicesGallery'
 
 const Gallery = () => {
     return ( 
-    <div className="wrapper service__plaquette">
+    <span className="wrapper service__plaquette">
         <h1 className="PnSTitle">Prestations & Services</h1>
         <Services />
-    </div>
+    </span>
     )
 }
 

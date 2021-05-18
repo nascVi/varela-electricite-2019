@@ -67,9 +67,7 @@ const Particles = ({ children }) => {
 
 function InaSpace({ children }) {
     return (
-        <div className="innerSpace">
-            <div className="iS-body">{children}</div>
-        </div>
+            <span className="inaSpace iS-body">{children}</span>
     );
 }
   
@@ -86,7 +84,7 @@ const Home = () => {
     return (
       <Particles>
         <div className="home">
-            <Fade>
+            {/*<Fade>*/}
                 <div className="home__hero">
                     <BackgroundVideo className="backgroundVid" />
                     <div className="wrapper">
@@ -99,6 +97,8 @@ const Home = () => {
                         <div className="home__scroll-down" onClick={() => scrollToLanding('home__coffee')} />
                     </div>
                 </div>
+                <br/>
+                <br/>
                 <Fade left>
                 <hr className="ColoredHr0"/>
                 </Fade>
@@ -108,6 +108,8 @@ const Home = () => {
                 <Fade bottom duration={1000} delay={2000} >
                 <hr className="ColoredHr"/>
                 </Fade>
+                <Gallery />
+
                 {/* <CloudinaryContext cloudName="nascvi"> like SDisplay section! */}
                 
                 {/* </CloudinaryContext> */}
@@ -116,14 +118,13 @@ const Home = () => {
                         <Landing />
                     </Element>
                 </InaSpace>
-                <Gallery />
 
                 <div>
                   <br/>
                   <br/>
                   <br/>
                 </div>
-            </Fade>
+            {/*</Fade>*/}
         </div>
       </Particles>
     )

@@ -969,8 +969,7 @@ input[type=text], select {
 
 .landing {
   color: $main-font-col;
-  padding-top: 10%;
-
+ 
   @media #{$large}{
     margin-top: 50%;
   }

@@ -35,6 +35,7 @@ const Landing = () => {
             -8.5451e-06H0V108.306Z" fill=""
             />
         </svg> */}
+                
                 <h1 className="vidTitle">La première visite est essentielle</h1>
 
                 {/* <Link to="premiere-visite"> */}
@@ -54,15 +55,9 @@ const Landing = () => {
                 </div>
                 </Fade>
                 <div>
-
+                
                 <Realisation {...notYetRea} />
                 </div>
-
-
-                    <div className="landing__template-container">
-                   <h1>PRESTATIONS POUR LA MODERNISATION DES SYSTEMES</h1>
-                        <img className="landing__template" src="/img/linky-vieux-compteur.jpg" alt="vidéo produit de gamme" />
-                    </div>
 
             </div>
         </div>
