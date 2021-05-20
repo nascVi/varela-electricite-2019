@@ -12,7 +12,7 @@ const ThumbnailGallery = () => {
   useEffect(() => {
     axios
       .get(
-        'https://gist.githubusercontent.com/nascVi/43d7d5abdaeaaa6ffa8bcba9e6e5ade3/raw/44a5c1fbdf0e0382c120edfab70708d91b77641f/data.json'
+        'https://gist.githubusercontent.com/nascVi/43d7d5abdaeaaa6ffa8bcba9e6e5ade3/raw/a2d697f6a3eaa14951db379056f0a14e5129b528/data.json'
       )
       .then(res => setSIcons(res.data.sicons))
   }, [])
@@ -47,9 +47,9 @@ const ThumbnailGallery = () => {
       </div>
 
       <div className="rightGRen">
-          <div className="rightGRenB">
+          <h5 className="rightGRenB">
           {renderInfo()}
-          </div>
+          </h5>
         </div>
     </div>
   )

@@ -365,12 +365,17 @@ input[type=text], select {
     display: flex;
     flex-direction: column;
     min-width: 340px;
-
+    
     @media #{$large} {
       margin-bottom: 40px;
       align-items: center;
       order: 2;
     }
+  }
+
+
+  &__partners{
+    width: 40% !important;
   }
 
   &__copy {
