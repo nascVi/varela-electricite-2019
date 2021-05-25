@@ -21,7 +21,7 @@ const Routes = () => (
             <Route exact path="/varela" component={Varela} />
             <Route exact path="/activité" component={Activite} />
             <Route exact path="/folio" component={Folio} />
-            <Route exact path="/premiere-visite" component={PremiereVis} />
+            <Route exact path="/contact" component={PremiereVis} />
         <Footer />
         </div>
     </BrowserRouter>

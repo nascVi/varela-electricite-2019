@@ -45,32 +45,29 @@ render(props){
                                             </div>
                                             <fieldset>
                                                 <p className="text-center header">
-                                                    📮 <a href="mailto:varenergie@gmail.com">
-                                                        varenergie@gmail.com
+                                                    📮 <a href="mailto:contact@varela-electricite.com">
+                                                        Nous écrire
                                                         </a>
                                                         <br/> 
-                                                    📎  <a href="tel:+33164622649">
-                                                        +331 64 62 26 49 
+                                                    📎  <a href="tel:+33160649896">
+                                                        +331 60 64 98 96
                                                         </a>
                                                         <br/>
                                                     👨‍💻 <a href="mailto:lpchampigny@hotmail.com">
-                                                            lpChamps`
+                                                        lpChamps`
                                                         </a>
                                                 </p>
                                                 <div className="form-group">
                                                     <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-user bigicon"></i></span>
                                                     <input onChange={this.onChange('title')} name="title" type="text" placeholder="Nom de votre Projet..." className="form-control" />
                                                 </div>
-                                                <div className="form-group">
-                                                    <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-user bigicon">Ajouter une photo avec l'url. (Pas encore dispo pour toute les apps.)</i></span>
-                                                    <input onChange={this.onChange('image')} name="image" type="text" placeholder="https://..." className="form-control" />
-                                                </div>
+                                                
                                                 <div className="form-group">
                                                     <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-pencil-square-o bigicon"></i></span>
                                                     <textarea onChange={this.onChange('content')} className="form-control" name="content" placeholder="Décrivez votre projet... " rows="7"></textarea>
                                                 </div>
                                                 <div className="form-group">
-                                                    <button type="button" onClick={this.sunmitPost} className="btn btn-primary btn-lg">Vers PDF</button>
+                                                    <button type="button" onClick={this.sunmitPost} className="btn btn-primary btn-lg">envoyer</button>
                                                 </div>
                                             </fieldset>
                                         </form>
@@ -80,7 +77,7 @@ render(props){
                         </div>
                     </div>
                         ) : (
-                        <PDF title={this.state.title} content={this.state.content} image={this.state.image} />
+                        <PDF title={this.state.title} content={this.state.content} />
                     )
                 }
             </>
