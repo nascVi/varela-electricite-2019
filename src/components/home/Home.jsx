@@ -6,6 +6,7 @@ import { Element, scroller } from 'react-scroll'
 import { Fade } from 'react-reveal'
 import ReactParticles from 'react-particles-js'
 
+import PhotosSlide from './PhotosSlide'
 import Gallery from './Gallery'
 
 const Particles = ({ children }) => {
@@ -108,6 +109,7 @@ const Home = () => {
                 <Fade bottom duration={1000} delay={2000} >
                 <hr className="ColoredHr"/>
                 </Fade>
+                <PhotosSlide />
                 <Gallery />
 
                 {/* <CloudinaryContext cloudName="nascvi"> like SDisplay section! */}
