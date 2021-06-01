@@ -27,12 +27,12 @@ const options = {
 };
 
 function App() {
-	const [tag, setTag] = useState('all');
+	const [tag, setTag] = useState('Toutes');
 	const [filteredImages, setFilteredImages] = useState([]);
 
 	useEffect(
 		() => {
-			tag === 'all' ? setFilteredImages(images) : setFilteredImages(images.filter(image => image.tag === tag));
+			tag === 'Toutes' ? setFilteredImages(images) : setFilteredImages(images.filter(image => image.tag === tag));
 		},
 		[tag]
 	);
@@ -40,10 +40,10 @@ function App() {
 	return (
 		<div className="App">
 			<div className="tags">
-				<TagButton name="all" tagActive={tag === 'Toutes' ? true : false} handleSetTag={setTag} /> /
-				<TagButton name="new" tagActive={tag === 'Entreprise' ? true : false} handleSetTag={setTag} /> /
-				<TagButton name="free" tagActive={tag === 'Privé' ? true : false} handleSetTag={setTag} /> /
-				<TagButton name="pro" tagActive={tag === 'Dispositifs' ? true : false} handleSetTag={setTag} />
+				<TagButton name="Toutes" tagActive={tag === 'Toutes' ? true : false} handleSetTag={setTag} /> /
+				<TagButton name="Entreprise" tagActive={tag === 'Entreprise' ? true : false} handleSetTag={setTag} /> /
+				<TagButton name="Privé" tagActive={tag === 'Privé' ? true : false} handleSetTag={setTag} /> /
+				<TagButton name="Materiel" tagActive={tag === 'Materiel' ? true : false} handleSetTag={setTag} />
 			</div>
 			<SRLWrapper options={options}>
 				<div className="container">
