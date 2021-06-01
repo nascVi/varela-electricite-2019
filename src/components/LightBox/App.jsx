@@ -42,7 +42,7 @@ function App() {
 			<div className="tags">
 				<TagButton name="Toutes" tagActive={tag === 'Toutes' ? true : false} handleSetTag={setTag} /> /
 				<TagButton name="Entreprise" tagActive={tag === 'Entreprise' ? true : false} handleSetTag={setTag} /> /
-				<TagButton name="Privé" tagActive={tag === 'Privé' ? true : false} handleSetTag={setTag} /> /
+				<TagButton name="Particulier" tagActive={tag === 'Particulier' ? true : false} handleSetTag={setTag} /> /
 				<TagButton name="Materiel" tagActive={tag === 'Materiel' ? true : false} handleSetTag={setTag} />
 			</div>
 			<SRLWrapper options={options}>
