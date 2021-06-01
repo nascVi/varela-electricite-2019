@@ -10,12 +10,12 @@ const deskUpload = () => {
   )
 }
 
-function PremiereVis() {
+function Contact() {
   return (
-    <div className="PremiereVis">
+    <div className="contact">
       <Post />
     </div>
   );
 }
 
-export default PremiereVis;
+export default Contact;
