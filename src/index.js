@@ -14,17 +14,19 @@ import Header from './components/header-footer/Header'
 
 
 const Routes = () => (
-    <BrowserRouter>
-        <div>
-            <Route path="/" render={props => (props.location.pathname !== '/') && <Header/> }/>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/varela" component={Varela} />
-            <Route exact path="/activité" component={Activite} />
-            <Route exact path="/folio" component={Folio} />
-            <Route exact path="/contact" component={Contact} />
-        <Footer />
-        </div>
-    </BrowserRouter>
+    <React.StrictMode>
+        <BrowserRouter>
+            <div>
+                <Route path="/" render={props => (props.location.pathname !== '/') && <Header/> }/>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/varela" component={Varela} />
+                <Route exact path="/activité" component={Activite} />
+                <Route exact path="/folio" component={Folio} />
+                <Route exact path="/contact" component={Contact} />
+            <Footer />
+            </div>
+        </BrowserRouter>
+    </React.StrictMode>
 )
 
 ReactDOM.render(<Routes />, document.getElementById('root'))

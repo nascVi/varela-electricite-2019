@@ -283,7 +283,7 @@ input[type=text], select {
 
 .flogo {
   width: 280px;
-  height: 140px;
+  height: 130px;
   background: url("/img/FooterTitle.png") repeat no-repeat;
   z-index: 1;
 }
@@ -349,10 +349,12 @@ input[type=text], select {
 }
 
 .footer {
+  display: flex;
+  flex-flow: row wrap;
   width: 100%;
   min-height: 356px;
   background: $header-back;
-  padding: 100px 0 40px;
+  padding: 70px 0 10px;
   box-sizing: border-box;
   background-position: top;
 
@@ -360,50 +362,93 @@ input[type=text], select {
     background: $header-back;
   }
 
+  @media #{large} {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
   &__logos {
+    padding-top: 12%;
+    margin-left: -120%;
     width: 40%;
     display: flex;
     flex-direction: column;
     min-width: 340px;
-    
-    @media #{$large} {
-      margin-bottom: 40px;
-      align-items: center;
-      order: 2;
+
+
+    @media #{$medium} {
+      margin-left: 9%;
     }
   }
 
 
   &__partners{
-    width: 40% !important;
-  }
+    padding-top: 1%;
+    margin-left: 38%;
+    position: absolute;
 
-  &__copy {
-    font-size: 15px;
-    font-family: $arial;
-    color: $footer-font-col;
-  }
+    flex: 1 auto;
+    
+    @media #{$medium} {
+      margin-top: 55%;
+      margin-left: 5%;
 
-  &__contact {
-    width: 40%;
-    min-width: 340px;
-
-    @media #{$large} {
-      margin-bottom: 40px;
-      order: 1;
+      h3 {
+        text-align: left;
+        margin-left: 15%;
+      }
     }
   }
 
+  &__copy {
+    padding-top: 13%;
+    margin-left: 40%; 
+    position: absolute;
+    text-align: center;
+    font-size: 15px;
+    font-family: $arial;
+    color: $footer-font-col;
+
+    @media #{$medium} {
+      margin-left: 10%;
+      margin-top: 135%;
+      padding-top: 15%;
+      padding-bottom: 5%;
+    }
+  }
+
+  // &__contact {
+  //   width: 40%;
+  //   min-width: 340px;
+
+  //   @media #{$large} {
+  //     margin-bottom: 40px;
+  //     order: 1;
+  //   }
+  // }
+
   &__social {
-    width: 20%;
+    padding-right: 15%;
+    padding-top: 1%;
+    width: 600px;
     min-width: 230px;
 
     @media #{$large} {
       order: 3;
     }
+
+    @media #{$medium} {
+      position: relative;
+      margin-left: 15%;
+      text-align: left;
+      padding-top: 70%;
+      padding-bottom: 30%;
+    }
   }
 
-  .logo {
+  .logo {;
+    display: flex;
     margin-top: 0;
   }
 
@@ -526,7 +571,10 @@ input[type=text], select {
 }
 
 .socials {
+  width:100%;
   display: flex;
+  flex-grow: 4;
+  text-align: right;
 
   &__facebook {
     @extend .social-icon;
@@ -554,8 +602,8 @@ input[type=text], select {
   }
   &__youtube {
     @extend .social-icon;
-    margin-left: -5px;
-    width: 42.2px;
+    margin-left: -4px;
+    width: 42.5px;
     background: url("/img/cloudinary.svg") center no-repeat;
     
     &:hover {
