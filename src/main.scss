@@ -369,8 +369,8 @@ input[type=text], select {
   }
 
   &__logos {
-    padding-top: 12%;
-    margin-left: -120%;
+    padding-top: 16%;
+    margin-left: -250%;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -385,14 +385,14 @@ input[type=text], select {
 
   &__partners{
     padding-top: 1%;
-    margin-left: 38%;
+    margin-left: 36.8%;
     position: absolute;
 
     flex: 1 auto;
-    
+
     @media #{$medium} {
       margin-top: 55%;
-      margin-left: 3%;
+      margin-left: 5%;
 
       h3 {
         text-align: left;
@@ -402,7 +402,7 @@ input[type=text], select {
   }
 
   &__copy {
-    padding-top: 13%;
+    padding-top: 18%;
     margin-left: 40%; 
     position: absolute;
     text-align: center;
@@ -411,8 +411,8 @@ input[type=text], select {
     color: $footer-font-col;
 
     @media #{$medium} {
-      margin-left: 10%;
-      margin-top: 135%;
+      margin-left: 12%;
+      margin-top: 138%;
       padding-top: 15%;
       padding-bottom: 5%;
     }
@@ -429,20 +429,21 @@ input[type=text], select {
   // }
 
   &__social {
-    padding-right: 15%;
-    padding-top: 1%;
-    width: 600px;
-    min-width: 230px;
+    position: absolute;
+    margin-left: 74%;
+    padding-top: 4.5%;
+    width: 700px;
+    min-width: 250px;
 
-    @media #{$large} {
-      order: 3;
-    }
+    // @media #{$large} {
+    //   order: 3;
+    // }
 
     @media #{$medium} {
       position: relative;
-      margin-left: 15%;
+      margin-left: 16%;
       text-align: left;
-      padding-top: 70%;
+      padding-top: 58%;
       padding-bottom: 30%;
     }
   }
