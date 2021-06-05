@@ -1289,19 +1289,88 @@ input[type=text], select {
   }
 }
 
-// pdf app
+// contact app
 .contact {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: $main-nav-col !important;
-  padding-top: 5em;
-  padding-bottom: 5em;
-  background-color: $main-font-col;
+  input:focus, input:invalid {
+    outline: none;
+    box-shadow: none;
   }
+  
+  .form-container {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .form-container form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+  }
+  
+  .form-section {
+    position: relative;
+    width: 50%;
+    height: 4rem;
+    margin-top: 1rem;
+    overflow: hidden;
+  }
+  
+  .form-section input {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #eee;
+    height: 100%;
+    width: 100%;
+    background: none;
+  /*   background: rgba(0,0,0,0.2); */
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-top: 2rem;
+  }
+  
+  .form-label {
+    position: absolute;
+    font-size: 1.5rem;
+    color: grey;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+  
+  .form-label::after {
+    position: absolute;
+    content: '';
+    border-bottom: 3px solid $varela-blue;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    transform: translate(-100%,0);
+    
+  }
+  
+  .label-text {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .contact-input:focus + .form-label .label-text, .contact-input:not(:placeholder-shown) + .form-label .label-text {
+    transform: translateY(-2rem);
+    transition: all 250ms ease;
+    color: $varela-blue;
+    font-size: 1rem;
+  }
+  
+  .contact-input:focus + .form-label::after, .contact-input:not(:placeholder-shown) + .form-section::after {
+    transform: translate(0,0);
+    transition: transform 250ms ease-in;
+  }
+}
 
 .VFLogo {
   text-align: center;
