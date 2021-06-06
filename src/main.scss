@@ -432,7 +432,7 @@ input[type=text], select {
     position: absolute;
     margin-left: 74%;
     padding-top: 4.5%;
-    width: 700px;
+    width: 350px;
     min-width: 250px;
 
     // @media #{$large} {
@@ -897,7 +897,6 @@ input[type=text], select {
 
 // Services Icons & presentation section
 
-
 .service__plaquette {
   padding-top: 20vh;
   padding-bottom: 30vh;
@@ -1011,12 +1010,16 @@ input[type=text], select {
 .storyVid{
   text-align: center;
   padding-top: 8%;
-  margin-left: -1em;
 
   @media #{$large} {
     padding-top: 16.8vh;
     padding-bottom: 10vh;
     width: 100%;
+  }
+
+  @media #{$medium} {
+    padding-top: 12vh;
+    margin-left: -1em;
   }
 }
 
@@ -1025,7 +1028,7 @@ input[type=text], select {
   color: $main-font-col;
  
   @media #{$large}{
-    margin-top: 50%;
+    margin-top: 5%;
   }
 
   @media #{$small} {

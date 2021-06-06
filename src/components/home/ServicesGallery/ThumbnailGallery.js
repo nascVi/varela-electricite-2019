@@ -29,7 +29,7 @@ const ThumbnailGallery = () => {
       sicons.length ? (
       <Fragment>
         <h1 className="rightGRenT">{sicons[activeIndex].title}</h1>
-        <p className="rightGRenP">{sicons[activeIndex].info}</p>
+        <h5 className="rightGRenP">{sicons[activeIndex].info}</h5>
       </Fragment>
     ) : null
 
