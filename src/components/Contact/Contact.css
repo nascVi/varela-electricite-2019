@@ -22,7 +22,7 @@ h1 {
 
 .form {
   background: #0e101c;
-  max-width: 400px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -96,6 +96,6 @@ input[type="submit"] {
 }
 
 .message-chars-left {
-  width: 600px;
+  width: 100%;
   text-align: left;
 }
