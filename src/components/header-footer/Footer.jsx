@@ -2,7 +2,7 @@ import React from 'react'
 
 import Carousel from './Carousel'
 
-import Info from './Info'
+// import Info from './Info'
 import Socials from '../ui/Socials'
 
 const Footer = () => {

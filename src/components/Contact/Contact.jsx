@@ -6,19 +6,29 @@ import { init, sendForm } from 'emailjs-com';
 init('user_T88n6gWGeTvbEW2Dluq3m');
 
 const Contact = () => {
+  const [statusMessage, setStatusMessage] = useState("Message");
   const [contactNumber, setContactNumber] = useState("000000");
   const generateContactNumber = () => {
     const numStr = "000000" + (Math.random() * 1000000 | 0);
     setContactNumber(numStr.substring(numStr.length - 6));
   }
-  const { register, handleSubmit, watch, errors } = useForm();
+  const { register, handleSubmit, watch } = useForm();
   const onSubmit = (data) => {
+    const statusMessage = document.querySelector('.status-message');
     // console.log(data);
     generateContactNumber();  sendForm('default_service', 'template_cj2uqd8', '#contact-form')
       .then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
+        setStatusMessage("Le message a bien été envoyé!");
+        statusMessage.className = "status-message success";
+        setTimeout(()=> {
+          statusMessage.className = 'status-message'
+        }, 5000)
       }, function(error) {
-        console.log('FAILED...', error);
+        setStatusMessage("Le message n'a put être envoyé! Essayez à nouveau, s'il vous plais.");
+        statusMessage.className = "status-message failure";
+        setTimeout(()=> {
+          statusMessage.className = 'status-message'
+        }, 5000);
       });
   }
   const message = watch('message') || "";
@@ -29,7 +39,10 @@ const Contact = () => {
       <form id='contact-form' onSubmit={handleSubmit(onSubmit)}>
       <h3>Prendre Contact</h3>
       <br/>
-      <br/>
+      <p className='status-message'>{statusMessage}</p>
+        <h6>Ligne directe: <a href="tel:+33160649896">01.60.64.98.96</a></h6>
+        <h6>Mail: <a href="mailto:contact@varela-electricite.com">contact@varela-electricite.com</a></h6>
+        <br />
         <input type='hidden' name='contact_number' value={contactNumber} />
         <input type='text' name='user_name' placeholder='Nom' {...register('user_name')} maxLength='30' />
         <br/>

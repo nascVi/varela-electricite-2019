@@ -39,10 +39,12 @@ function App() {
 
 	return (
 		<div className="App">
+			<br /><br />
+			<h1>Quelques Réalisations</h1>
 			<div className="tags">
-				<TagButton name="Toutes" tagActive={tag === 'Toutes' ? true : false} handleSetTag={setTag} /> /
-				<TagButton name="Entreprise" tagActive={tag === 'Entreprise' ? true : false} handleSetTag={setTag} /> /
-				<TagButton name="Particulier" tagActive={tag === 'Particulier' ? true : false} handleSetTag={setTag} /> /
+				<TagButton name="Toutes" tagActive={tag === 'Toutes' ? true : false} handleSetTag={setTag} /> |
+				<TagButton name="Entreprise" tagActive={tag === 'Entreprise' ? true : false} handleSetTag={setTag} /> |
+				<TagButton name="Particulier" tagActive={tag === 'Particulier' ? true : false} handleSetTag={setTag} /> |
 				<TagButton name="Materiel" tagActive={tag === 'Materiel' ? true : false} handleSetTag={setTag} />
 			</div>
 			<SRLWrapper options={options}>

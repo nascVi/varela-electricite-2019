@@ -17,7 +17,7 @@ const Varela = () => {
                 {/* <ShoesoneNine /> */}
                 <div className="varela-hero-img">
                 <br /><br />
-                    <img src={varelaHero} width="100%" alt="varela hero picture"/>
+                    <img src={varelaHero} width="100%" alt="hero varela"/>
                 </div>
                 <div className="qui">
                     <br />                

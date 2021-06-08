@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { useState, useEffect, Fragment } from 'react'
 import axios from 'axios'
-import { css, jsx } from '@emotion/core'
+import { jsx } from '@emotion/core'
 import ActiveThumbnailWindow from './ActiveThumbnailWindow'
 import ThumbnailGrid from './ThumbnailGrid'
 

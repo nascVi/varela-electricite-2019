@@ -1,7 +1,7 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 
 import './carousel.scss'
-
+// https://codepen.io/studiojvla/pen/qVbQqW
 const Carousel = () => (
     <div class="slider">
         <div class="slide-track">
