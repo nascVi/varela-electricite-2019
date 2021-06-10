@@ -43,9 +43,9 @@ function App() {
 			<h1>Quelques Réalisations</h1>
 			<div className="tags">
 				<TagButton name="Toutes" tagActive={tag === 'Toutes' ? true : false} handleSetTag={setTag} /> |
-				<TagButton name="Entreprise" tagActive={tag === 'Entreprise' ? true : false} handleSetTag={setTag} /> |
-				<TagButton name="Particulier" tagActive={tag === 'Particulier' ? true : false} handleSetTag={setTag} /> |
-				<TagButton name="Materiel" tagActive={tag === 'Materiel' ? true : false} handleSetTag={setTag} />
+				<TagButton name="Professionnels" tagActive={tag === 'Professionnels' ? true : false} handleSetTag={setTag} /> |
+				<TagButton name="Particuliers" tagActive={tag === 'Particuliers' ? true : false} handleSetTag={setTag} /> |
+				<TagButton name="Materiels" tagActive={tag === 'Materiels' ? true : false} handleSetTag={setTag} />
 			</div>
 			<SRLWrapper options={options}>
 				<div className="container">

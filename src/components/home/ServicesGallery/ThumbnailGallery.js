@@ -3,11 +3,11 @@ import { useState, useEffect, Fragment } from 'react'
 import axios from 'axios'
 import { jsx } from '@emotion/core'
 import ActiveThumbnailWindow from './ActiveThumbnailWindow'
-import ThumbnailGrid from './ThumbnailGrid'
+// import ThumbnailGrid from './ThumbnailGrid'
 
 const ThumbnailGallery = () => {
   const [sicons, setSIcons] = useState([])
-  const [activeIndex, setActiveIndex] = useState(0)
+  const [activeIndex] = useState(0)
 
   useEffect(() => {
     axios
@@ -21,7 +21,7 @@ const ThumbnailGallery = () => {
     sicons.length ? (
       <Fragment>
         <ActiveThumbnailWindow activeSIcon={sicons[activeIndex]} />
-        <ThumbnailGrid sicons={sicons} onClick={handleClick} />
+        {/* <ThumbnailGrid sicons={sicons} onClick={handleClick} /> */}
       </Fragment>
     ) : null
 
@@ -33,10 +33,10 @@ const ThumbnailGallery = () => {
       </Fragment>
     ) : null
 
-  const handleClick = e => {
-    const activeIndex = e.target.getAttribute('data-index')
-    setActiveIndex(activeIndex)
-  }
+  // const handleClick = e => {
+  //   const activeIndex = e.target.getAttribute('data-index')
+  //   setActiveIndex(activeIndex)
+  // }
 
   return (
     <div className="thumbnailG">

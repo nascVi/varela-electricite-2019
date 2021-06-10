@@ -10,6 +10,7 @@ const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, piclist }) =
     }
 
     return (
+        <div className="folio">
         <Fade delay={id * 80} duration={900}>
             <div className="realisation">
                 <div className="realisation__caption">
@@ -47,6 +48,7 @@ const Realisation = ({ id, title, year, lifletUrl, favoris, budjet, piclist }) =
                 </div>
             </div>
         </Fade>
+        </div>
     );
 };
  

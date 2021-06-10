@@ -5,7 +5,7 @@ import Services from './ServicesGallery'
 const Gallery = () => {
     return ( 
     <span className="wrapper service__plaquette">
-        <h1 className="PnSTitle">Prestations & Services</h1>
+        <h1 className="PnSTitle">Références & Prestations</h1>
         <Services />
     </span>
     )

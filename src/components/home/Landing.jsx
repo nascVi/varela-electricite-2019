@@ -1,6 +1,6 @@
 import React from 'react'
-import Realisation from '../Realisation'
-import { realisations } from '../../data/realisations'
+// import Realisation from '../Realisation'
+// import { realisations } from '../../data/realisations'
 import { Fade } from 'react-reveal'
 
 import Wave from 'react-wavify'
@@ -10,7 +10,7 @@ import Wave from 'react-wavify'
 import { Video/*, CloudinaryContext, Transformation, Image*/} from 'cloudinary-react'
 
 const Landing = () => {
-    const notYetRea = realisations.filter(realisation => realisation.id === 2)[0];
+    // const notYetRea = realisations.filter(realisation => realisation.id === 2)[0];
 
     return (
         <div className="landing">
@@ -54,10 +54,6 @@ const Landing = () => {
                     <Transformation overlay="cloudinary_icon" opacity="50" width="60" gravity="south_east" y="15" x="60" /> */}
                 </div>
                 </Fade>
-                <div>
-                
-                <Realisation {...notYetRea} />
-                </div>
 
             </div>
         </div>

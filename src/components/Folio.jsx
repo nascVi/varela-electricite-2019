@@ -9,13 +9,13 @@ const Folio = () => {
         <div className="wrapper">
             <div className="folio">
                 {folio.map((folioItem, i) => {
-                    const {day, month, location} = folioItem
+                    const {pic, desc, month, location} = folioItem
                     return (
                         <Flip delay={i*80} right key={i}>
                             <div className="folio__item">
                                 <div className="folio__date">
                                     <div className="folio__day">
-                                        {day}
+                                        <img src={pic} width='150' height='150' alt={desc} />
                                     </div>
                                     <div className="folio__month">
                                         {month}
@@ -26,7 +26,7 @@ const Folio = () => {
                                         {location}
                                     </div>
                                     <Link to="/activité">
-                                        <Button variant="outlined" color="primary">activité</Button>                                        
+                                        <Button variant="outlined" color="primary">caractéristiques</Button>                                        
                                     </Link>
                                 </div>
                             </div>

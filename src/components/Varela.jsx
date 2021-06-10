@@ -1,10 +1,10 @@
 import React from 'react'
-import { varela } from '../data/varela'
+// import { varela } from '../data/varela'
 import {Fade} from 'react-reveal'
 
 // import ShoesoneNine from '../components/shoesone'
 import varelaHero from './Hero/heroPic.png'
-import GoogleMap from "../components/map/map"
+// import GoogleMap from "../components/map/map"
 import Title from '../components/ui/Title'
 
 const Varela = () => {
@@ -49,46 +49,16 @@ const Varela = () => {
                     <h5><strong><u>NOUS CONTACTER</u></strong></h5>
                     <h5>Pour toute questions n’hésitez par à nous écrire par mail: <a href="mailto:contact@varela-electricite.com">contact@varela-electricite.com .</a></h5>
                     <br /><br /><br />
-                    <GoogleMap />
+                    {/* <GoogleMap /> */}
 
                     <br />
                     <br />
                     <br />
                 </div>
             </Fade>
-            <div className="varela">
-            <Title title="HISTORIQUE"/>
-                {varela.map((item, i) => {
-                    const {year, url, title, text} = item;
-                    return(
-                        <Fade key={i}>
-                            <div className="varela__item">
-                                <div className="varela__year">{year}</div>
-                                    <img src={url} alt="historique varela" className="varela__img" />
-                                    <div className="varela__title">{title}</div>
-                                <div className="varela__text">{text}</div>
-                            </div>
-                        </Fade>
-                    )
-                })}
-            </div>
+            
         </div>
     )
 }
 
 export default Varela
-
-// import React from 'react'
-// // import ShoesoneNine from '../components/shoesone'
-// import shoesonePicture from '../images/shoesonePicture.png'
-// import {Fade} from 'react-reveal';
-
-// import GoogleMap from "../components/shoesone/map"
-
-// const Shoesone = () => {
-//     return (
-
-//     )
-// }
-
-// export default Shoesone

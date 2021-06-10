@@ -7,7 +7,7 @@ import { Fade } from 'react-reveal'
 import ReactParticles from 'react-particles-js'
 
 import PhotosSlide from './PhotosSlide'
-import Gallery from './Gallery'
+// import Gallery from './Gallery'
 
 const Particles = ({ children }) => {
     return (
@@ -95,7 +95,7 @@ const Home = () => {
                             
                         </div>
                         <h6 className="home__caption-hint">Je planifie une première visite<span className="home__coffee" role="img" aria-label="coffee"></span></h6>
-                        <div className="home__scroll-down" onClick={() => scrollToLanding('home__coffee')} />
+                        <div className="home__scroll-down" onClick={() => scrollToLanding('ColoredHr0')} />
                     </div>
                 </div>
                 <br/>
@@ -110,7 +110,7 @@ const Home = () => {
                 <hr className="ColoredHr"/>
                 </Fade>
                 <PhotosSlide />
-                <Gallery />
+                {/* <Gallery /> */}
 
                 {/* <CloudinaryContext cloudName="nascvi"> like SDisplay section! */}
                 
