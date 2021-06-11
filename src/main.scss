@@ -370,15 +370,15 @@ input[type=text], select {
 
   &__logos {
     padding-top: 16%;
-    margin-left: -250%;
+    margin-left: -300%;
     width: 40%;
     display: flex;
     flex-direction: column;
-    min-width: 340px;
+    min-width: 300px;
 
 
     @media #{$medium} {
-      margin-left: 9%;
+      margin-left: 3%;
     }
   }
 
@@ -413,20 +413,10 @@ input[type=text], select {
     @media #{$medium} {
       margin-left: 12%;
       margin-top: 138%;
-      padding-top: 15%;
+      padding-top: 20%;
       padding-bottom: 5%;
     }
   }
-
-  // &__contact {
-  //   width: 40%;
-  //   min-width: 340px;
-
-  //   @media #{$large} {
-  //     margin-bottom: 40px;
-  //     order: 1;
-  //   }
-  // }
 
   &__social {
     position: absolute;
@@ -435,20 +425,16 @@ input[type=text], select {
     width: 350px;
     min-width: 250px;
 
-    // @media #{$large} {
-    //   order: 3;
-    // }
-
     @media #{$medium} {
       position: relative;
       margin-left: 16%;
       text-align: left;
-      padding-top: 58%;
+      padding-top: 70%;
       padding-bottom: 30%;
     }
   }
 
-  .logo {;
+  .logo {
     display: flex;
     margin-top: 0;
   }
@@ -895,116 +881,6 @@ input[type=text], select {
   }
 }
 
-// Services Icons & presentation section
-
-.service__plaquette {
-  padding-top: 20vh;
-  padding-bottom: 30vh;
-  margin: auto;
-  max-height: 1230px;
-  width: 100%;
-  height: 99.9em;
-
-  @media #{$large} {
-    padding-top: 14em;
-    margin-left: 14.5%;
-    height: 89em !important;
-    width: 100%;
-  }
-
-  @media #{$medium} {
-    height: 42.3em !important;
-    width: 100%;
-  }
-
-  @media #{$small}{
-    height: 33.8em !important;
-    width: 100%;
-  }
-}
-
-.PnSTitle {
-  margin-left: -35%;
-  margin-top: -5%;
-  text-align: left;
-  position: absolute;
-  font-size: 38px;
-  color: $main-font-col;
-
-  @media #{$large} {
-    margin-left: 10;
-  }
-  @media #{$medium} {
-    margin-top: -15%;
-    font-size: 24px;
-  }
-}
-
-.SDisplay {
-  @media only screen and (max-width: 700px){
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-
-  @media only screen and (max-width: 500px){
-    width: 100%;
-  }
-}
-
-.leftGRen {
-  width: 100%;
-  margin-right: 0.3%;
-  background-size: 50%;
-
-  @media only screen and (max-width: 700px){
-    background-size: 80%;
-  }
-}
-
-.leftGRenB {
-  height: 141.6%
-}
-
-
-.rightGRen {
-  height: 100%;
-  width: 100%;
-  background: url('./components/home/science.png');
-  background-size: 50%;
-  border: solid 1px $main-back;
-  
-  @media only screen and (max-width: 700px){
-    background-size: 80%;
-  }
-}
-
-.rightGRenB {
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 0.8) 0%,
-    rgba(2, 0, 36, 0.5) 20%,
-    rgba(2, 0, 36, 0.8) 100%
-  );
-}
-
-.rightGRenT {
-  padding-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  color: white;
-}
-
-.rightGRenP {
-  margin-left: 5%;
-  margin-right: 5%;
-  color: white;
-
-  @media only screen and (max-width: 700px){
-    font-size: 12px;
-   }
-}
-
 .vidTitle {
   position: absolute;
   margin-left: 30%;
@@ -1078,23 +954,82 @@ input[type=text], select {
   }
 }
 
-.thumbnailG {
-  margin-left: -30%;
-  height: 200%;
-  width: 100%;
-  display: flex;
-  border: 1.5px solid rgb(246, 246, 246);
-  border-radius: 3px;
-  background: rgb(246, 246, 246);
-  
-  @media #{$small} {
-    height: 250%;
-    margin-left: -100%;
-  }
+.varela-container {
+  width: 90%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2%;
 
-  .left,
-  .right {
-    flex: 3;
+  @media #{$medium} {
+    width: 95%;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }  
+}
+
+.modalTitle {
+  padding-bottom: 5%;
+  color: #f8f9fa !important;
+}
+
+.vrtext {
+  margin-top: 5%;
+
+  p {
+    color: #f8f9fa !important;
+    font-size: 20px;
+
+    &::before {
+      content: "" !important;
+    }
+  }
+}
+
+.vrtext1 {
+  margin-top: 5%;
+  text-align: left;
+  justify-content: left;
+
+  p {
+    color: #f8f9fa !important;
+    font-size: 20px;
+
+    &::before {
+      content: "" !important;
+    }
+  }
+}
+
+.modalTitle1 {
+  padding-top: 15%;
+  text-align: center;
+  padding-bottom: 2%;
+  color: #f8f9fa !important;
+}
+
+.varela-map {
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr) !important;
+
+  @media #{$medium} {
+    margin-left: -6%;
+    width: 111.5%;
+    padding-top: 60%;
+  }   
+}
+
+.vrtext2 {
+  margin-top: 5%;
+  text-align: center;
+  justify-content: center;
+
+  p {
+    color: #f8f9fa !important;
+    font-size: 20px;
+
+    &::before {
+      content: "" !important;
+    }
   }
 }
 
@@ -1174,7 +1109,7 @@ input[type=text], select {
    }
   }
 
-  &__day {
+  &__pic {
    font-size: 45px;
    line-height: 100px;
    color: #fafafa;

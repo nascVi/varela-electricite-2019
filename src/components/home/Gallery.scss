@@ -1,0 +1,61 @@
+$large: "only screen and (max-width: 1370px)";
+$medium: "only screen and (max-width: 900px)";
+$small: "only screen and (max-width: 430px)";
+
+.App {
+  margin-top: 10%;
+  padding-bottom: 10%;
+
+  h1 {
+    margin-bottom: 10%;
+  }
+
+  @media #{$medium} {
+    h1{
+      font-size: 24px;
+    }
+  }
+}
+
+.container {
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2px;
+}
+
+.lcard {
+  background: transparent;
+  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+	border-radius: 2px;
+
+  a {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  @media #{$medium} {
+    img {
+      width: 95% !important;
+      margin-top: 80px;
+    }
+  }
+}
+
+.rcard {
+  background: transparent;
+	border-radius: 2px;
+
+  p {
+    text-align: left;
+    color: white !important;
+    font-size: 20px;
+    font-weight: lighter;
+    &::before {
+      content: '' !important;
+    }
+  }
+}

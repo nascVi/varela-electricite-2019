@@ -14,7 +14,7 @@ const Folio = () => {
                         <Flip delay={i*80} right key={i}>
                             <div className="folio__item">
                                 <div className="folio__date">
-                                    <div className="folio__day">
+                                    <div className="folio__pic">
                                         <img src={pic} width='150' height='150' alt={desc} />
                                     </div>
                                     <div className="folio__month">

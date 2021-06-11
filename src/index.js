@@ -20,7 +20,7 @@ const Routes = () => (
                 <Route path="/" render={props => (props.location.pathname !== '/') && <Header/> }/>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/varela" component={Varela} />
-                <Route exact path="/folio" component={Folio} />
+                <Route exact path="/activite|folio" component={Folio} />
                 <Route exact path="/contact" component={Contact} />
             <Footer />
             </div>

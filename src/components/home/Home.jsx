@@ -7,7 +7,7 @@ import { Fade } from 'react-reveal'
 import ReactParticles from 'react-particles-js'
 
 import PhotosSlide from './PhotosSlide'
-// import Gallery from './Gallery'
+import Gallery from './Gallery'
 
 const Particles = ({ children }) => {
     return (
@@ -110,7 +110,7 @@ const Home = () => {
                 <hr className="ColoredHr"/>
                 </Fade>
                 <PhotosSlide />
-                {/* <Gallery /> */}
+                <Gallery />
 
                 {/* <CloudinaryContext cloudName="nascvi"> like SDisplay section! */}
                 

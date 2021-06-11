@@ -3,10 +3,10 @@ import GoogleMapReact from 'google-map-react'
 
 const defaultProps = {
     center: {
-        lat: 14.6160647,
-        lng: -61.1038119,
+        lat: 48.7974264,
+        lng: 2.6505338,
     },
-    zoom: 12,
+    zoom: 16,
 }
 
 // Map sort key
@@ -14,16 +14,16 @@ const defaultProps = {
 const AnyReactComponent = ({ text }) => <div>{text}</div>
 
 const GoogleMap = () => (
-    <div style={{ height: '60vh', width: '100%' }}>
+    <div style={{ height: '50vh', width: '100%' }}>
         <GoogleMapReact
-            bootstrapURLKeys={{ key: 'AIzaSyDz-HxkhZJ9OxNXShsBZ04avYnOKjC6x40' }}
+            bootstrapURLKeys={{ key: 'AIzaSyAjA1MN06RdR-qOIQe9HOCGh5wTHywBPDE' }}
             defaultCenter={defaultProps.center}
             defaultZoom={defaultProps.zoom}
         >
             <AnyReactComponent
-                lat={14.6160647}
-                lng={61.0587804}
-                text={'Shoesone972'}
+                lat={48.7974264}
+                lng={2.6505338}
+                text={'Varela-Electricite'}
             />
         </GoogleMapReact>
     </div>
