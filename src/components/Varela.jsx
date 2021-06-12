@@ -3,6 +3,7 @@ import {Fade} from 'react-reveal'
 
 import varelaHero from './Hero/heroPic.png'
 import varelaHero1 from './Hero/heroPic1.png'
+import jackson from './Hero/Jackson.png'
 import GoogleMap from "../components/map/map"
 import Title from '../components/ui/Title'
 import "../main.scss"
@@ -17,7 +18,7 @@ const Varela = () => {
                 </div>
             </Fade>
             <Fade Fade bottom delay={800} duration={900}>
-                <img src={logo} alt="vlogo"/>
+                <img className="vlogo" src={logo} alt="vlogo"/>
             </Fade>
                 <br />
 
@@ -32,7 +33,7 @@ const Varela = () => {
                 <Fade Fade right delay={2000} duration={900}>
                 <div className="vrtext">
 
-                    <h5 className="modalTitle"><strong><u>VARELA</u></strong></h5>
+                    <h5 className="modalTitle"><strong><u>Varela</u></strong></h5>
                     <p>
                         Une entreprise dédiée dans l’installation générale électrique du bâtiment.
                     </p>    
@@ -52,10 +53,10 @@ const Varela = () => {
                     </p>
                 </div>
                 </Fade>
-                <Fade Fade right delay={3000} duration={900}>
+                <Fade Fade right delay={3000} duration={1500}>
                 <div className="vrtext1">
 
-                    <h5 className="modalTitle"><strong><u>LA MAITRISE DE L'INSTALLATION ELECTRIQUE</u></strong></h5>
+                    <h5 className="modalTitle"><strong><u>La maîtrise de l'instllation électrique</u></strong></h5>
                     
                     <p>Monsieur VARELA Jackson à exercer le métier d’électricien du bâtiment en Ile de France
                         durant plus de 10 ans au sein d’entreprise général du bâtiment de renom, aujourd’hui il est
@@ -68,29 +69,34 @@ const Varela = () => {
                         Fort de son expérience dans ce domaine, Monsieur VARELA a su développer sa passion et en
                         faire son activité et compte aujourd’hui plusieurs salariés.
                     </p>
-                    <br/>
                 </div>
                 </Fade>
-                <Fade Fade left delay={3500} duration={900}>
-                <div className="varela-hero1-img">
-                    <img src={varelaHero1} width="100%" alt="hero varela"/>
-                </div>
+                <Fade left delay={2500} duration={2000}>
+
+                <span className="vrtext1">
+                    <img className="jacksonPic" src={jackson} alt="jackson" />
+                </span>
                 </Fade>
                 
 
                 </div>
+                <Fade Fade bottom delay={3000} duration={1500}>
+                <div className="varela-hero1-img">
+                    <img src={varelaHero1} width="100%" alt="hero varela"/>
+                </div>
+                </Fade>
                 <Fade>
                     <div className="varela-map">
-                    <h5 className="modalTitle1"><strong><u>OU NOUS TROUVER</u></strong></h5>
+                    <h5 className="modalTitle1"><strong><u>Où nous trouver</u></strong></h5>
                     <GoogleMap />
                     </div>
                 <div className="vrtext2">
                     <br />
                     <br />
                     <br />
-                    <Fade Fade bottom delay={1000} duration={900}>
-                    <h5 className="modalTitle"><strong><u>NOUS CONTACTER</u></strong></h5>
-                    <p>Pour toute questions n’hésitez par à nous écrire par mail: <a href="mailto:contact@varela-electricite.com">contact@varela-electricite.com .</a></p>
+                    <Fade Fade bottom delay={500} duration={1000}>
+                    <h5 className="modalTitle"><strong><u>Nous contacer</u></strong></h5>
+                    <p>Pour toutes questions n’hésitez pas à nous écrire par mail: <a href="mailto:contact@varela-electricite.com">contact@varela-electricite.com .</a></p>
                     </Fade>
                     <br /><br /><br />
 

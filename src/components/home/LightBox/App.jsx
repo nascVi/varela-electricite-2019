@@ -4,30 +4,30 @@ import images from './data';
 import { SRLWrapper } from 'simple-react-lightbox';
 
 const options = {
-	// settings: {
-	// 	overlayColor: 'rgb(25, 136, 124)',
-	// 	autoplaySpeed: 1500,
-	// 	transitionSpeed: 900
-	// },
-	// buttons: {
-	// 	backgroundColor: 'red',
-	// 	iconColor: 'rgba(126, 172, 139, 0.8)'
-	// },
-	// caption: {
-	// 	captionColor: '#a6cfa5',
-	// 	captionFontFamily: 'Raleway, sans-serif',
-	// 	captionFontWeight: '300',
-	// 	captionTextTransform: 'uppercase'
-	// },
-	// progressBar: {
-	// 	height: '20px',
-	// 	fillColor: 'blue',
-	// 	backgroundColor: 'white'
-	// }
+	settings: {
+		overlayColor: 'black',
+		autoplaySpeed: 3000,
+		transitionSpeed: 1000
+	},
+	buttons: {
+		backgroundColor: 'light-grey',
+		iconColor: 'black'
+	},
+	caption: {
+		captionColor: 'transparent',
+		captionFontFamily: 'Raleway, sans-serif',
+		captionFontWeight: '300',
+		captionTextTransform: 'uppercase'
+	},
+	progressBar: {
+		height: '20px',
+		fillColor: 'rgb(144, 242, 252)',
+		backgroundColor: 'transparent'
+	}
 };
 
 function App() {
-	const [tag, setTag] = useState('Toutes');
+	const [tag, setTag] = useState('Professionnels');
 	const [filteredImages, setFilteredImages] = useState([]);
 
 	useEffect(
@@ -39,7 +39,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<br /><br />
+			<br /><br /><br />
 			<h1>Quelques Réalisations</h1>
 			<div className="tags">
 				<TagButton name="Toutes" tagActive={tag === 'Toutes' ? true : false} handleSetTag={setTag} /> |

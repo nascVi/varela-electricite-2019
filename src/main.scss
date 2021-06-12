@@ -972,6 +972,16 @@ input[type=text], select {
   color: #f8f9fa !important;
 }
 
+.vlogo {
+    margin-left: -1%;
+}
+
+.varela-hero-img {
+  @media #{$medium} {
+    margin-left: -5.5%;
+  }   
+}
+
 .vrtext {
   margin-top: 5%;
 
@@ -1000,11 +1010,33 @@ input[type=text], select {
   }
 }
 
+.jacksonPic {
+  width: 100%;
+
+  @media #{$medium} {
+    margin-left: -2%;
+  }
+}
+
+
+.varela-hero1-img {
+  padding-top: 5%;
+  
+  @media #{$medium} {
+    padding-top: 50%;
+    margin-right: 5%;
+  }
+}
+
 .modalTitle1 {
   padding-top: 15%;
   text-align: center;
   padding-bottom: 2%;
   color: #f8f9fa !important;
+
+  @media #{$medium} {
+    margin-top: -40%;
+  }
 }
 
 .varela-map {

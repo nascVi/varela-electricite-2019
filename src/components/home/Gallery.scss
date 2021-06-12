@@ -3,7 +3,7 @@ $medium: "only screen and (max-width: 900px)";
 $small: "only screen and (max-width: 430px)";
 
 .App {
-  margin-top: 10%;
+  margin-top: -5%;
   padding-bottom: 10%;
 
   h1 {
@@ -13,21 +13,24 @@ $small: "only screen and (max-width: 430px)";
   @media #{$medium} {
     h1{
       font-size: 24px;
+      padding-bottom: 10%;
+    }
+    h3 {
+      padding-bottom: 10%;
     }
   }
 }
 
-.container {
+.gallery-container {
 	width: 100%;
 	margin: auto;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 2px;
+	grid-template-columns: repeat(2, 1fr)!important;
 }
 
 .lcard {
   background: transparent;
-  margin: auto;
+  margin-left: 10%;
   grid-template-columns: repeat(2, 1fr);
   gap: 2px;
 	border-radius: 2px;
@@ -46,6 +49,8 @@ $small: "only screen and (max-width: 430px)";
 }
 
 .rcard {
+
+  margin-right: 10%;
   background: transparent;
 	border-radius: 2px;
 
@@ -56,6 +61,11 @@ $small: "only screen and (max-width: 430px)";
     font-weight: lighter;
     &::before {
       content: '' !important;
+    }
+
+    @media #{$medium} {
+      font-size: 16px;
+      padding-bottom: 30%;
     }
   }
 }

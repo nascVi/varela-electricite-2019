@@ -8,6 +8,18 @@ const Folio = () => {
     return (
         <div className="wrapper">
             <div className="folio">
+                <aside>
+                <h5>
+                    <strong>
+
+                    <u>
+
+                    En cours de publication
+                    </u>   
+                    </strong>
+                </h5>
+                </aside>
+                    
                 {folio.map((folioItem, i) => {
                     const {pic, desc, month, location} = folioItem
                     return (

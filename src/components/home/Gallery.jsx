@@ -7,7 +7,7 @@ const Gallery = () => {
         <div className="App">
         <br /><br />
         <h1>Services & Références</h1>
-        <div className="container">
+        <div className="gallery-container">
             <div className="lcard">
                 <a href="/#">
                 <img src="https://res.cloudinary.com/nascvi/image/upload/b_rgb:ffffff/v1622800029/partners-logos/7-pl_p5y20t.png" height="100" width="250" alt="" />

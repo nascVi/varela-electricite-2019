@@ -1,6 +1,14 @@
+.App {
+
+	h1 {
+		padding-top: 80px;
+	}
+}
+
 .tags {
 	text-align: center;
-	padding: 5px 0px;
+	margin-top: -5%;
+	padding-bottom: 2%;
 	background-color: transparent;
 }
 
@@ -20,8 +28,8 @@
 	width: 100%;
 	margin: auto;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 5px;
+	grid-template-columns: repeat(4, 1fr) !important;
+	gap: 10px;
 }
 
 .image-card {
