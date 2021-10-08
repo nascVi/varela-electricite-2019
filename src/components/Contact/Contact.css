@@ -96,6 +96,7 @@ input[type="submit"] {
 .message-chars-left {
   width: 100%;
   text-align: left;
+  color: rgb(144, 242, 252);
 }
 
 .status-message {

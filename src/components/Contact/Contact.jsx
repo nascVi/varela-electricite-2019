@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 
 import "./Contact.css";
 import { init, sendForm } from 'emailjs-com';
-init('user_T88n6gWGeTvbEW2Dluq3m');
+init('user_nsqhzN524O4FXdA1nVKhL');
 
 const Contact = () => {
   const [statusMessage, setStatusMessage] = useState("Message");
@@ -16,7 +16,7 @@ const Contact = () => {
   const onSubmit = (data) => {
     const statusMessage = document.querySelector('.status-message');
     // console.log(data);
-    generateContactNumber();  sendForm('default_service', 'template_cj2uqd8', '#contact-form')
+    generateContactNumber();  sendForm('default_service', 'template_qpwmu8g', '#contact-form')
       .then(function(response) {
         setStatusMessage("Le message a bien été envoyé!");
         statusMessage.className = "status-message success";
@@ -54,7 +54,7 @@ const Contact = () => {
         <br/>
         <textarea name='message' placeholder='Votre message' {...register('message')} maxLength='1500' />
         <br />
-        <p className='message-chars-left'>{messageCharsLeft} caracters</p>
+        <p className='message-chars-left'>{messageCharsLeft} caractères</p>
 
         <input type='submit' value='Envoyer' />
       </form>
