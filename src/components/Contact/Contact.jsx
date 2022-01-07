@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 
 import "./Contact.css";
 import { init, sendForm } from 'emailjs-com';
-init('user_nsqhzN524O4FXdA1nVKhL');
+  init('user_nsqhzN524O4FXdA1nVKhL');
 
 const Contact = () => {
   const [statusMessage, setStatusMessage] = useState("Message");
