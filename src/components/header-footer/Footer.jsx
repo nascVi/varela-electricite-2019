@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
             <div className="footer__copy">
                 <div>
-                    ©2021 Varela Electricité - lpChamps` make
+                    ©2022 Varela Electricité - lpChamps` make
                 </div>
             </div>
         </footer>
