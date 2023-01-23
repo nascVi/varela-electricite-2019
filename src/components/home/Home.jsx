@@ -1,10 +1,11 @@
+
 import React from 'react'
 import Nav from '../ui/Nav'
 import BackgroundVideo from '../BackgroundVideo/BackgroundVideo'
 import Landing from './Landing'
 import { Element, scroller } from 'react-scroll'
 import { Fade } from 'react-reveal'
-import ReactParticles from 'react-particles-js'
+import ReactParticles from 'react-tsparticles'
 
 import PhotosSlide from './PhotosSlide'
 import Gallery from './Gallery'
