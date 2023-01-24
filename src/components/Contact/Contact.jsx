@@ -15,15 +15,17 @@ const Contact = () => {
   const { register, handleSubmit, watch } = useForm();
   const onSubmit = (data) => {
     const statusMessage = document.querySelector('.status-message');
-    // console.log(data);
+    console.log(data);
     generateContactNumber();  sendForm('default_service', 'template_qpwmu8g', '#contact-form')
       .then(function(response) {
+        console.log(response);
         setStatusMessage("Le message a bien été envoyé!");
         statusMessage.className = "status-message success";
         setTimeout(()=> {
           statusMessage.className = 'status-message'
         }, 5000)
       }, function(error) {
+        console.log(error);
         setStatusMessage("Le message n'a put être envoyé! Essayez à nouveau, s'il vous plais.");
         statusMessage.className = "status-message failure";
         setTimeout(()=> {
