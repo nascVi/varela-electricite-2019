@@ -1,70 +1,43 @@
 
-import React from 'react'
+import React, { useCallback } from 'react'
 import Nav from '../ui/Nav'
 import BackgroundVideo from '../BackgroundVideo/BackgroundVideo'
 import Landing from './Landing'
 import { Element, scroller } from 'react-scroll'
 import { Fade } from 'react-reveal'
-import ReactParticles from 'react-tsparticles'
+
+import Particles from 'react-tsparticles'
+import { loadFull } from "tsparticles";
+import particlesOptions from "../../particles.json";
 
 import PhotosSlide from './PhotosSlide'
 import Gallery from './Gallery'
 
-const Particles = ({ children }) => {
-    return (
-      <div style={{ position: 'relative' }}>
-        <ReactParticles
-          params={{
-        particles: {
-              number: {
-                value: 81
-              },
-              size: {
-                value: 3,
-                random: true,
-                anim: {
-                  speed: 4,
-                  size_min: 0.3
-                }
-              },
-              line_linked: {
-                enable: true,
-                color:{
-                  value: "#8176c3"
-                }
-              },
-              color: {
-                value: "#4CD9E4"
-              },
-              move: {
-                random: true,
-                speed: 1,
-                direction: "top",
-                out_mode: "out"
-              }
-        },
-      interactivity: {
-                events: {
-                    onhover: {
-                        enable: true,
-                        mode: "bubble"
-                    }
-                }
-        },
-      retina_detect: true
-      }}
-          style={{
-            position: 'absolute',
-            zIndex: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            top: 0,
-          }}
-        />
-        {children && <div style={{ position: 'relative' }}>{children}</div>}
+const ParticlesBackground = ({ children }) => {
+  const particlesInit = useCallback(main => {
+    loadFull(main);
+  }, [])
+
+  return (
+    <div style={{ position: 'relative' }}>
+    <Particles 
+    params={particlesOptions} 
+    init={particlesInit} 
+    style={{
+      position: 'absolute',
+      zIndex: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      top: 0,
+    }}/>
+      {children && <div style={{ position: 'relative' }}>
+      {children}
       </div>
-    );
+    }
+
+    </div>
+  );
 }
 
 function InaSpace({ children }) {
@@ -74,18 +47,17 @@ function InaSpace({ children }) {
 }
   
 const Home = () => {
-
-    const scrollToLanding = elem => {
-        scroller.scrollTo(elem, {
-            duration: 800,
-            delay: 100,
-            smooth: true
-        })
-    }
+  const scrollToLanding = elem => {
+      scroller.scrollTo(elem, {
+          duration: 800,
+          delay: 100,
+          smooth: true
+      })
+  }
 
     return (
-      <Particles>
-        <div className="home">
+      <div className="home">
+      <ParticlesBackground>
             {/*<Fade>*/}
                 <div className="home__hero">
                     <BackgroundVideo className="backgroundVid" />
@@ -128,8 +100,8 @@ const Home = () => {
                   <br/>
                 </div>
             {/*</Fade>*/}
+            </ParticlesBackground>
         </div>
-      </Particles>
     )
 }
 

@@ -265,11 +265,13 @@ input[type=text], select {
   &--footer {
     @media #{$large} {
       justify-content: center;
+      z-index: 99;
     }
 
     @media #{$medium} {
       flex-direction: column;
       align-items: center;
+      z-index: 99;
     }
   }
 }
@@ -357,6 +359,7 @@ input[type=text], select {
   padding: 70px 0 10px;
   box-sizing: border-box;
   background-position: top;
+  
 
   @media #{$medium} {
     background: $header-back;
