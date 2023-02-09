@@ -10,6 +10,7 @@ import Particles from 'react-tsparticles'
 import { loadFull } from "tsparticles";
 import particlesOptions from "../../particles.json";
 
+import DemoPieuvre from './DemoPieuvre'
 import PhotosSlide from './PhotosSlide'
 import Gallery from './Gallery'
 
@@ -60,9 +61,9 @@ const Home = () => {
       <ParticlesBackground>
             {/*<Fade>*/}
                 <div className="home__hero">
-                    <BackgroundVideo className="backgroundVid" />
+                  <BackgroundVideo className="backgroundVid" />
                     <div className="wrapper">
-                        <div className="logo"></div>
+                        <div className="logo"/>
                         <Nav context="home" />
                         <div className="home__caption" onClick={() => scrollToLanding('')}>
                             
@@ -82,6 +83,7 @@ const Home = () => {
                 <Fade bottom duration={1000} delay={2000} >
                 <hr className="ColoredHr"/>
                 </Fade>
+                <DemoPieuvre />
                 <PhotosSlide />
                 <Gallery />
 

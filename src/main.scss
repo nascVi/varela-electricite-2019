@@ -223,6 +223,38 @@ input[type=text], select {
   background-color: $link-hover-col;
 }
 
+.demo-pieuvre {
+  padding-top: 2%;
+  height: 600px;
+
+  &__pic {
+    margin-left: 8%;
+    width: 20%;
+    height: 4.3%;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-color: aqua;
+    position: absolute;
+    background: url("/img/picpieuvre.png") no-repeat;
+    z-index: 1;
+  }
+
+  &__schema {
+    margin-left: 20%;
+    height: 100%;
+    width: 80%;
+    background: url("/img/schempieuvre.png") no-repeat;
+    z-index: 99;
+  }
+  &__info {
+    color:rgb(240, 242, 242);
+    margin-left: 60%;
+    margin-top: -20%;
+    padding-bottom: 23%;
+    z-index: 99;
+  }
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1364px;
