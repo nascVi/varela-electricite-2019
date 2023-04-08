@@ -27,10 +27,10 @@ const Footer = () => {
             <div className="footer__social">
                 <h3>RESEAUX SOCIAUX</h3>
                 <Socials />
-            </div>
-            <div className="footer__copy">
-                <div>
-                    ©2022 Varela Electricité - lpChamps` make
+                <div className="footer__copy">
+                    <div>
+                        ©2022 Varela Electricité - lpChamps` make
+                    </div>
                 </div>
             </div>
         </footer>

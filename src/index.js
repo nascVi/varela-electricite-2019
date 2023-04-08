@@ -22,8 +22,8 @@ const Routes = () => (
                 <Route exact path="/varela" component={Varela} />
                 <Route exact path="/activite|folio" component={Folio} />
                 <Route exact path="/contact" component={Contact} />
-            <Footer />
             </div>
+            <Footer />
         </BrowserRouter>
     </React.StrictMode>
 )
