@@ -391,7 +391,7 @@ input[type=text], select {
   padding: 70px 0 10px;
   box-sizing: border-box;
   background-position: top;
-  
+  position: relative;
 
   @media #{$medium} {
     background: $header-back;
