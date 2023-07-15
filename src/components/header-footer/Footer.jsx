@@ -7,34 +7,35 @@ import Socials from '../ui/Socials'
 
 const Footer = () => {
     return (
-        <footer className="footer">
-            <div className="wrapper wrapper--footer">
-            <div className="footer__logos">
-                
-            <div className="flogo">
-            </div>
-                    {/*<div className="pro-ref-logo"></div> */}
+    <footer className="footer">
+        <div className="wrapper wrapper--footer">
+        <div className="footer__logos">
+            
+        <div className="flogo">
+        </div>
+                {/*<div className="pro-ref-logo"></div> */}
 
-                    <br></br>
+                <br></br>
+        </div>
+                    
+            <br />
+        </div>
+        <div className="footer__partners">                 
+            <h3>NOS PARTENAIRES</h3>
+            <Carousel />
+        </div>
+        <div className="footer__social">
+            <h3>RESEAUX SOCIAUX</h3>
+            <Socials />
+        </div>
+        <div className="footer__copy">
+            <div>
+                ©23 Varela Electricité - lpChamps` make
             </div>
-                        
-                <br />
-            </div>
-            <div className="footer__partners">                 
-                <h3>NOS PARTENAIRES</h3>
-                <Carousel />
-            </div>
-            <div className="footer__social">
-                <h3>RESEAUX SOCIAUX</h3>
-                <Socials />
-                <div className="footer__copy">
-                    <div>
-                        ©2022 Varela Electricité - lpChamps` make
-                    </div>
-                </div>
-            </div>
-        </footer>
-    )
-}
-
-export default Footer
+        </div>
+    </footer>
+        
+        )
+    }
+    
+    export default Footer

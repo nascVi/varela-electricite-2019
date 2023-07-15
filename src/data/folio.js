@@ -2,7 +2,7 @@ export const folio = [
     {
         pic: 'https://res.cloudinary.com/nascvi/image/upload/c_thumb,w_200,g_face/v1588691793/WhatsApp_Image_2020-05-04_at_14.41.50_pnkdee.jpg',
         desc: 'St-maur photo miniature',
-        month: 'Achevé',
+        month: 'Bien',
         location: 'Maison Individuelle'
     },
     {
@@ -38,7 +38,7 @@ export const folio = [
     {
         pic: 'https://res.cloudinary.com/nascvi/image/upload/c_thumb,w_200,g_face/v1588691939/IMG_6271_df4p0u.jpg',
         desc: 'Joinville photo miniature',
-        month: 'Achevé',
+        month: 'Bien',
         location: 'Maison individuelle'
     },
     {
@@ -62,31 +62,31 @@ export const folio = [
     {
         pic: 'https://res.cloudinary.com/nascvi/image/upload/c_thumb,w_200,g_face/v1623320319/20-lg_wcpxs5.jpg',
         desc: 'Saint maur des fossées photo miniature',
-        month: 'Achevé',
+        month: 'Bien',
         location: 'Professionnel'
     },
     {
         pic: 'https://res.cloudinary.com/nascvi/image/upload/c_thumb,w_200,g_face/v1623320318/12-lg_hhxfps.jpg',
         desc: 'Bry sur Marne photo miniature',
-        month: 'Achevé',
+        month: 'Bien',
         location: 'Professionnel'
     },
     {
         pic: 'https://res.cloudinary.com/nascvi/image/upload/c_thumb,w_200,g_face/v1623320317/6-lg_ke6kus.jpg',
         desc: 'Vincennes photo miniature',
-        month: 'Achevé',
+        month: 'Bien',
         location: 'Professionnel'
     },
     {
         pic: 'https://res.cloudinary.com/nascvi/image/upload/c_thumb,w_200,g_face/v1623320316/26-lg_fzlvhv.jpg',
         desc: 'Nogent photo miniature',
-        month: 'Achevé',
+        month: 'Bien',
         location: 'Maison individuelle'
     },
     {
         pic: 'https://res.cloudinary.com/nascvi/image/upload/c_thumb,w_200,g_face/v1623320317/1-lg_b7od04.jpg',
         desc: 'Boissy photo miniature',
-        month: 'Achevé',
+        month: 'Bien',
         location: 'Professionnel'
     },
 ]
